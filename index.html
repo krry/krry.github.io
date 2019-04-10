@@ -1,65 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>The Home of Kerry Snyder</title>
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/presently">Presently</a></li>
-        <li><a href="/previously">Previously</a></li>
-        <li><a href="/possibly">Possibly</a></li>
-        <li><a href="/gratitude">Gratitude</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <h2>Hi.</h2>
-    <h1><small>I am </small>K<sub class="lil">e</sub>rry.</h1>
-    <h3><small>This is my </small>home.</h3>
-    <p>I am glad you are here.</p>
-    <p>If you stop by in a more than a bit and less than ages, you will be
-      greeted by a being who calls itself Teran McWatken. From its nose
-      emanates future histories of an intergalactic elven psychonaut while its
-      mouth simultaneously intones the bliss and wisdom of
-      time/form/shapelessness in seven ancient mother tongues. For the time
-      being, I've written you this little paragraph to amuse you.
-    <p>I am an <a href="//atmanaut.us">Atmanaut</a>. I love to wander about
-      wondering about what I encounter, unencumbered by purpose, vehicle,
-      agenda, or schedule. <em>J'aime flâner</em> as the French
-      say. This is the kernel of bliss. My favorite pastime became much easier
-      with the advent of the Internet.</p>
-    <h2>Loves</h2>
-    <ul>
-      <li>Sustainability in all its forms</li>
-      <li>Snyding: solving for "Why?" using reckless intuition</li>
-      <li><a
-          href="https://www.nonviolentcommunication.com/aboutnvc/aboutnvc.htm"
-          target="_blank" rel="noopener">Non-Violent Communication</a> &amp; <a href="https://www.goodreads.com/book/show/235625.Conscious_Loving">Conscious Loving</a></li>
-      <li><a href="https://reddit.com/r/onebag">#onebag</a> life</li>
-      <li>That mystical rainbow nexus where panpsychism meets nondualism.</li>
-      <li>Zeroth principles: starting from utter scratch</li>
-      <li>Playing cyborg interpreter between humans and computers</li>
-      <li><a href="https://bits.ashleyblewer.com/i-ching/">The I Ching</a></li>
-      <li>Balanced Type</li>
-    </ul>
-  </main>
-  <footer>
-    <nav>
-      <ul>
-        <li><a href="https://github.com/krry">Github</a></li>
-        <li><a href="https://medium.com/@atmanaut">Medium</a></li>
-        <li><a href="https:/instagram.com/atmanaut">Instagram</a></li>
-        <li><a href="https://twitter.com/atmanuts">Twitter</a></li>
-        <li><a href="https://linkedin.com/in/kerrsnyder">Linkedin</a></li>
-      </ul>
-    </nav>
-  </footer>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Aleo|Righteous"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>The Home of Kerry Snyder</title>
+  </head>
+  <body>
+    <div class="drawer">
+      <div class="knob"></div>
+      <!--
+      <label for="filter_ctrl" class="select-menu-name">filters </label>
+      <select name="filters" aria-label="apply filter" id="filter_ctrl">
+        <option value="kodachrome">Koda</option>
+        <option value="sepiatone">Cleve</option>
+        <option value="grayscale">Dorian</option>
+        <option value="negative">sraM</option>
+        <option value="volcano">lovevol</option>
+        <option value="xray">Ɣamma</option>
+        <option value="arctic">Fris</option>
+        <option value="jungle">Jung</option>
+        <option value="ghost">Geist</option>
+      </select>
+      <script>
+        document
+          .getElementById("filter_ctrl")
+          .addEventListener("change", applyFilter);
 
-</body>
+        function applyFilter(e) {
+          let fltr = e.target.value;
+          if (!fltr) return false;
+          let celloEl = document.getElementById("cello");
+          let appliedFilters = celloEl.classList;
+          if (appliedFilters.contains(fltr)) return true; // make sure it's a new filter
+          let filterCtrl = document.getElementById("filter_ctrl");
+          filterCtrl.value = fltr; // keep select in sync
+          celloEl.classList.add(fltr); // apply the new filter
+          for (let x of [...celloEl.classList]) {
+            if (x !== "cello" && x !== fltr) {
+              celloEl.classList.remove(x); // apply the new filter
+            }
+          }
+        }
+      </script> -->
+      <h3>Spectra</h3>
+      <section class="ctrls">
+        <div class="spectrum">
+          <label for="mentality" class="spectrum-name">Mentality</label>
+          <label for="all">All</label>
+          <input id="mentality" type="range" />
+          <label for="one">One</label>
+        </div>
+        <div class="spectrum">
+          <label for="mentality" class="spectrum-name">Correspondence</label>
+          <label for="above">Above</label>
+          <input id="correspondence" type="range" />
+          <label for="below">Below</label>
+        </div>
+        <div class="spectrum">
+          <label for="mentality" class="spectrum-name">Vibration</label>
+          <label for="hi">Hi</label>
+          <input id="vibration" type="range" />
+          <label for="lo">Lo</label>
+        </div>
+        <div class="spectrum">
+          <label for="mentality" class="spectrum-name">Polarity</label>
+          <label for="positive">Positive</label>
+          <input id="polarity" type="range" />
+          <label for="negative">Negative</label>
+        </div>
+        <div class="spectrum">
+          <label for="mentality" class="spectrum-name">Rhythm</label>
+          <label for="order">Order</label>
+          <input id="rhythm" type="range" />
+          <label for="chaos">Chaos</label>
+        </div>
+        <div class="spectrum">
+          <label for="mentality" class="spectrum-name">Causation</label>
+          <label for="hard">Hard</label>
+          <input id="causation" type="range" />
+          <label for="soft">Soft</label>
+        </div>
+        <div class="spectrum">
+          <label for="mentality" class="spectrum-name">Gender</label>
+          <label for="yin">Yin</label>
+          <input id="gender" type="range" />
+          <label for="yang">Yang</label>
+        </div>
+      </section>
+    </div>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#presently">Presently</a></li>
+          <li><a href="#previously">Previously</a></li>
+          <li><a href="#possibly">Possibly</a></li>
+          <li><a href="#gratitude">Gratitude</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Hi. <small>I am K<sub>e</sub>rry.</small></h1>
+      <h2><small>Welcome to my humble abode.</small></h2>
+      <p>
+        If you stop by in a more than a bit and less than ages, you may be
+        greeted by a being who calls itself Teran McWatken. From its nose
+        emanates future histories of an intergalactic elven psychonaut while its
+        mouth simultaneously intones the bliss and wisdom of
+        time/form/shapelessness in seven ancient mother tongues. For the time
+        being, I've written you this little paragraph to amuse you.
+      </p>
+
+      <p>Please excuse the construction.</p>
+      <p>
+        I am an <a href="//atmanaut.us">Atmanaut</a>. I love to wander about
+        wondering about what I encounter, unencumbered by purpose, vehicle,
+        agenda, or schedule. <em>J'aime flâner</em> as the French say. This is
+        the kernel of bliss. My favorite pastime became much easier with the
+        advent of the Internet.
+      </p>
+      <h2>Loves</h2>
+      <ul>
+        <li>Sustainability in all its forms</li>
+        <li>Snyding: solving for "Why?" using reckless intuition</li>
+        <li>
+          <a
+            href="https://www.nonviolentcommunication.com/aboutnvc/aboutnvc.htm"
+            target="_blank"
+            rel="noopener"
+            >Non-Violent Communication</a
+          >
+          &amp;
+          <a href="https://www.goodreads.com/book/show/235625.Conscious_Loving"
+            >Conscious Loving</a
+          >
+        </li>
+        <li><a href="https://reddit.com/r/onebag">#onebag</a> life</li>
+        <li>
+          That mystical rainbow nexus where panpsychism meets nondualism.
+        </li>
+        <li>Zeroth principles: starting from utter scratch</li>
+        <li>Playing cyborg interpreter between humans and computers</li>
+        <li>
+          <a href="https://bits.ashleyblewer.com/i-ching/">The I Ching</a>
+        </li>
+      </ul>
+    </main>
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="https://github.com/krry">Github</a></li>
+          <li><a href="https://medium.com/@atmanaut">Medium</a></li>
+          <li><a href="https:/instagram.com/atmanaut">Instagram</a></li>
+          <li><a href="https://twitter.com/atmanuts">Twitter</a></li>
+          <li><a href="https://linkedin.com/in/kerrsnyder">Linkedin</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
 </html>

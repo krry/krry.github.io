@@ -1,0 +1,18 @@
+a:link {
+  color: var(--link-new);
+  transition: 200ms;
+}
+
+a:hover {
+  color: var(--link-on);
+}
+
+a:visited {
+  color: var(--link-old);
+}
+
+a:visited:hover {
+  color: var(--link-new);
+  transition: 200ms;
+}
+

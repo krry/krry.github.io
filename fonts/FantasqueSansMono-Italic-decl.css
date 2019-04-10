@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Fantasque Sans Mono';
+    src: url('FantasqueSansMono-Italic.eot');
+    src:
+        url('FantasqueSansMono-Italic.eot?#iefix') format('embedded-opentype'),
+        url('FantasqueSansMono-Italic.woff2') format('woff2'),
+        url('FantasqueSansMono-Italic.woff') format('woff'),
+        url('FantasqueSansMono-Italic.ttf') format('truetype'),
+        url('FantasqueSansMono-Italic.svg#FantasqueSansMono-Italic') format('svg');
+    font-weight: 400;
+    font-style: italic;
+}

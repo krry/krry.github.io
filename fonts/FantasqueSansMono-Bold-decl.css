@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Fantasque Sans Mono';
+    src: url('FantasqueSansMono-Bold.eot');
+    src:
+        url('FantasqueSansMono-Bold.eot?#iefix') format('embedded-opentype'),
+        url('FantasqueSansMono-Bold.woff2') format('woff2'),
+        url('FantasqueSansMono-Bold.woff') format('woff'),
+        url('FantasqueSansMono-Bold.ttf') format('truetype'),
+        url('FantasqueSansMono-Bold.svg#FantasqueSansMono-Bold') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fantasque Sans Mono';
+    src: url('FantasqueSansMono-Bold.eot');
+    src:
+        url('FantasqueSansMono-Bold.eot?#iefix') format('embedded-opentype'),
+        url('FantasqueSansMono-Bold.woff2') format('woff2'),
+        url('FantasqueSansMono-Bold.woff') format('woff'),
+        url('FantasqueSansMono-Bold.ttf') format('truetype'),
+        url('FantasqueSansMono-Bold.svg#FantasqueSansMono-Bold') format('svg');
+    font-weight: 600;
+    font-weight: bold;
+    font-weight: bolder;
+    font-weight: 700;
+    font-style: normal;
+}

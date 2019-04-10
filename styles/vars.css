@@ -1,0 +1,19 @@
+:root {
+  --body: "Lato", system-ui, sans-serif;
+  --text: "Aleo", Georgia, serif;
+  --heading: "Righteous", var(--body);
+  --fore: hsla(186, 95%, 95%, 1);
+  --bkgd: hsla(186, 15%, 12%, 1);
+  --link-on: hsla(186, 75%, 65%, 1);
+  --link-old: hsla(186, 50%, 40%, 1);
+  --link-new: hsla(186, 72%, 49%, 1);
+  --well: hsla(186, 12%, 2%, 0.825);
+  --well-ful: hsla(186, 12%, 2%, 1);
+}
+
+/* from moving gradient
+ * orange #ee7752
+ * red #e73c7e
+ * blue #23a6d5
+ * green #23d5ab hsl(186, 72%, 49%)
+ */
