@@ -10,8 +10,10 @@ header {
 header,
 footer {
   transition: 250ms;
+  border-radius: 1em;
 }
 
+footer:hover,
 header:hover {
   background-color: var(--well-ful);
 }
@@ -45,20 +47,11 @@ footer a:hover {
 footer {
   font-size: 67%;
   font-weight: bolder;
-  opacity: 0.75;
-  z-index: 10;
+  z-index: 1;
   position: sticky;
   bottom: 1rem;
   margin-bottom: 1rem;
-  background-color: hsla(0, 0%, 100%, 0.95);
   background-color: var(--well);
-  /* padding: 0.0625rem 0; */
-  filter: grayscale(0.5);
-}
-
-footer:hover {
-  opacity: 1;
-  background-color: var(--well-ful);
 }
 
 footer ul {

@@ -12,10 +12,19 @@ body {
   -moz-animation: Gradient 15s ease infinite;
   animation: Gradient 15s ease infinite;
   overflow-x: hidden;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 main {
-  padding: 2rem;
+  padding: 3rem;
   color: var(--fore);
-  background-color: var(--bkgd);
+  background-color: var(--well);
+  margin: 1rem 0;
+  position: relative;
+  z-index: 2;
+  max-width: 72ch;
+  border-radius: 12vw 18rem 18rem 10rem / 16vw 24rem 36rem 12rem;
 }
