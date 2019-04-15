@@ -1,6 +1,11 @@
 h1 {
   font-size: 3rem;
-  text-indent: 1em;
+}
+
+@media (min-width: 48rem) {
+  h1 {
+    text-indent: 1em;
+  }
 }
 
 h2 {

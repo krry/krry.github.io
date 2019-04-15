@@ -18,10 +18,15 @@
 }
 
 ol.lovelist {
-  margin-left: 2em;
   margin-top: 0;
   padding-top: 0;
   list-style: decimal url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
+}
+
+@media (min-width: 48rem) {
+  ol.lovelist {
+    margin-left: 2em;
+  }
 }
 
 .lovelist li {
