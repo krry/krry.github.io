@@ -6,11 +6,12 @@ html {
 
 body {
   margin: 0;
-  background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  -webkit-animation: Gradient 15s ease infinite;
-  -moz-animation: Gradient 15s ease infinite;
-  animation: Gradient 15s ease infinite;
+  background-color: var(--purp-deep);
+  /* background: linear-gradient(45deg, #1695C5, #3A54CF, #5D17D9); */
+  /* background-size: 400% 400%; */
+  /* -webkit-animation: Gradient 15s ease infinite; */
+  /* -moz-animation: Gradient 15s ease infinite; */
+  /* animation: Gradient 15s ease infinite; */
   overflow-x: hidden;
   display: flex;
   flex-flow: column nowrap;
@@ -19,17 +20,19 @@ body {
 }
 
 main {
-  padding: 3rem;
+  padding: 4rem;
   color: var(--fore);
   background-color: var(--well);
   margin: 1rem 0;
   position: relative;
   z-index: 2;
-  max-width: 72ch;
+  max-width: 64ch;
 }
 
 @media screen and (min-width: 48rem) {
   main {
-    border-radius: 12vw 18rem 18rem 10rem / 16vw 24rem 36rem 12rem;
+    -webkit-animation: Blob 10s ease infinite;
+    -moz-animation: Blob 10s ease infinite;
+    animation: Blob 10s ease infinite;
   }
 }

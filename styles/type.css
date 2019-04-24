@@ -2,12 +2,6 @@ h1 {
   font-size: 3rem;
 }
 
-@media (min-width: 48rem) {
-  h1 {
-    text-indent: 1em;
-  }
-}
-
 h2 {
   font-size: 2rem;
 }
@@ -30,7 +24,6 @@ h3 {
 p {
   font-family: var(--text);
   line-height: 1.44;
-  text-indent: 1em;
   overflow-wrap: break-word;
   word-wrap: break-word;
   hyphens: auto;

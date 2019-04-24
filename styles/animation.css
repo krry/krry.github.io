@@ -1,3 +1,17 @@
+@keyframes Blob {
+  0%,
+  50%,
+  100% {
+    border-radius: 14vw 24vw 14vw 14vw / 14vw 24vw 14vw 14vw;
+  }
+  25% {
+    border-radius: 16vw 20vw 16vw 12vw / 12vw 28vw 12vw 16vw;
+  }
+  75% {
+    border-radius: 12vw 28vw 12vw 16vw / 16vw 20vw 16vw 12vw;
+  }
+}
+
 @keyframes pulse {
   0% {
     background-color: hsla(332, 76%, 75%, 0);
@@ -16,7 +30,7 @@
 
   30% {
     background-color: hsla(332, 96%, 75%, 1);
-    box-shadow: 0 0 0 100vh hsla(332, 96%, 75%, 0);
+    box-shadow: 0 0 0 100vw hsla(332, 96%, 75%, 0);
   }
 
   100% {
@@ -26,15 +40,12 @@
 }
 
 @keyframes Gradient {
-  0% {
+  0%,
+  100% {
     background-position: 0% 50%;
   }
 
   50% {
     background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
   }
 }
