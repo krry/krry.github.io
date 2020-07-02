@@ -58,6 +58,7 @@ $on-laptop:        40rem !default;
 //     padding-left: $spacing-unit / 2;
 //   }
 // }
+
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
     @content;
@@ -71,10 +72,8 @@ $on-laptop:        40rem !default;
 // Import partials.
 @import
   "normalize",
-  "minima/base",
-  "minima/layout",
-  "minima/syntax-highlighting",
-  // "bloob/vars",
+  "bloob/core",
+  "bloob/syntax-highlighting",
   "bloob/animation",
   "bloob/base",
   "bloob/waves",

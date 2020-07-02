@@ -21,20 +21,21 @@
 title: Folio of an Atmanaut
 email: kerry@atmanaut.me
 description: >- # this means to ignore newlines until "baseurl:"
-  The Home Base and Folio of Kerry Alan Snyder,
-  an Atmanaut, Storyteller, Devsigner, and Entreflaneur in California,
-  now accepting contracts for storytelling,
-  writing, tech strategy, web design & development.
+  The Home Base and Folio of Kerry Alan Snyder
+  Atmanaut, Storyteller, Devsigner, and Entreflaneur
+  now accepting engagements for storytelling,
+  writing, strategy, design & development
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://atmanaut.me" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: anatmanaut
 github_username:  krry
 
 # Build settings
-theme: minima
-sourcemap: development
-# plugins:
-#- jekyll-feed
+# theme: minima
+# sourcemap: development
+plugins:
+- jekyll-feed
+- jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
