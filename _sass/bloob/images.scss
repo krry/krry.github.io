@@ -1,0 +1,41 @@
+svg:not(:root) {
+  overflow: hidden;
+}
+
+.foot,
+.closer {
+  display: block;
+  cursor: pointer;
+
+  svg.icon {
+    display: block;
+    fill: $white;
+  }
+}
+
+.foot > span,
+.closer > span {
+  position: absolute;
+  z-index: 1;
+}
+
+.foot > span {
+  width: 2rem;
+  height: 2rem;
+}
+
+.closer,
+.closer > span {
+  width: 24px;
+  height: 24px;
+}
+
+.framed {
+  border: 3px solid $well;
+  margin: 1rem;
+  border-radius: 0.5rem;
+}
+
+.looper {
+  max-width: 80vw;
+}

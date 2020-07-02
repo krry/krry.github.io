@@ -1,0 +1,37 @@
+@media screen and (min-width: 48rem) {
+  h1 {
+    font-size: 5vw;
+  }
+
+  h2 {
+    font-size: 4vw;
+  }
+
+  h3 {
+    font-size: 3vw;
+  }
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  letter-spacing: 2px;
+  font-family: $heading;
+  font-weight: 300;
+  /* text-align: center; */
+}
+
+p {
+  font-family: $text;
+  line-height: 1.44;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+label {
+  font-family: $body;
+}

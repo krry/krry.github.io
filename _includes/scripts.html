@@ -1,0 +1,24 @@
+<div class="quiver" id="quiver">
+  <div class="abscen" id="waves"></div>
+  <script src="{{ "/assets/lib/three.r92.min.js" | relative_url }}"></script>
+  <script src="{{ "/assets/lib/vanta.waves.min.js" | relative_url }}"></script>
+  <script src="{{ "/assets/lib/ZzFX.min.js" | relative_url }}"></script>
+  <script src="{{ "/assets/lib/sfx.js" | relative_url }}"></script>
+  <script src="{{ "/assets/lib/lenses.js" | relative_url }}"></script>
+  <script src="{{ "/assets/lib/folds.js" | relative_url }}"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      VANTA.WAVES({
+        el: "#waves",
+        color: 0x280664,
+        shininess: 32.00,
+        waveHeight: 12.00,
+        waveSpeed: 1.50,
+        mouseControls: false,
+        touchControls: false,
+        zoom: 1
+      })
+      document.getElementById("waves").classList.add("on");
+    })
+  </script>
+</div>

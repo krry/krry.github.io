@@ -1,0 +1,41 @@
+<section class="blob hidden money" id="money">
+  <h1 class="bloob bloor75">Show Me the Money</h1>
+  <p>The more beautiful world our hearts know is possible operates without
+    generalizing, commodifying, and monetizing what matters to us. That world
+    sits just over the horizon, and in these times of transition and
+    transformation, I have occasional and lessening needs that can be
+    satisfied with money. If you find yourself with a surplus of money and wish
+    to offer me a gift, I will gladly accept. You have my gratitude either way,
+    for being, for being you, for being present now•here.</p>
+  <h2>🎁 Giving === Loving 💗</h2>
+  <div class="payments">
+    <img src="/assets/img/venmo.png" class="framed fit-phone" alt="Kerry's Venmo QR code">
+    <div id="paypal-button-container"></div>
+    <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
+    <script>
+      paypal.Buttons({
+        style: {
+          shape: 'rect',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'paypal',
+
+        },
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{
+              amount: {
+                value: '27'
+              }
+            }]
+          });
+        },
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(details) {
+            alert('Transaction completed by ' + details.payer.name.given_name + '!');
+          });
+        }
+      }).render('#paypal-button-container');
+    </script>
+  </div>
+</section>

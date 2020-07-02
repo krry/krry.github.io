@@ -1,0 +1,86 @@
+.bloob {
+  height: 30vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &.leanover {
+    min-height: 15rem;
+    margin-bottom: -2rem;
+  }
+
+  &.purp25 {
+    background-image: url("img/bloobs/purp025.png");
+  }
+
+  &.bloor00 {
+    background-image: url("img/bloobs/bloor000.png");
+  }
+
+  &.bloor25 {
+    background-image: url("img/bloobs/bloor025.png");
+  }
+
+  &.bloor33 {
+    background-image: url("img/bloobs/bloor033.png");
+  }
+
+  &.bloor50 {
+    background-image: url("img/bloobs/bloor050.png");
+  }
+
+  &.bloor75 {
+    background-image: url("img/bloobs/bloor075.png");
+  }
+
+  &.purp25,
+  &.bloor00,
+  &.bloor25,
+  &.bloor33,
+  &.bloor50,
+  &.bloor75 {
+    @extend .leanover;
+
+    line-height: 6;
+  }
+
+  &.ghost {
+    position: absolute;
+    height: 6em;
+    top: -0.75em;
+    z-index: 3;
+    opacity: 0.25;
+    -webkit-animation: haunt 45s ease-in-out infinite;
+    -moz-animation: haunt 45s ease-in-out infinite;
+    animation: haunt 45s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  &.dangler {
+    bottom: -20vh;
+  }
+}
+
+@media screen and (min-height: 37rem) {
+  .bloob {
+    height: 40vh;
+
+    &.leanover {
+      margin-bottom: 0;
+      margin-top: -2rem;
+      line-height: 10;
+    }
+  }
+}
+
+@media screen and (min-width: 37rem) {
+  .bloob {
+    height: 40vh;
+  }
+}
+
+@media screen and (min-width: 60rem) and (min-height: 48rem) {
+  .bloob.leanover {
+    line-height: 6;
+  }
+}

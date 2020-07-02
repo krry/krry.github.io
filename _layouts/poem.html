@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<article class="poem">
+
+  <header class="poem-header">
+    <h1 class="poem-title">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="poem-content">
+    {{ content }}
+  </div>
+
+  <footer class="poem-footer">
+    {%- if page.punchline -%}
+    <h2 class="punchline">{{ page.punchline | escape }}</h2>
+    {%- endif -%}
+    {%- if page.notes -%}
+    <figcaption class="poem-notes">{{ page.notes | markdownify }}</figcaption>
+    {%- endif -%}
+  </footer>
+</article>

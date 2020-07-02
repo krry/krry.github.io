@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-02T06:57:56-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Folio of an Atmanaut</title><subtitle>The Home Base and Folio of Kerry Alan Snyder, an Atmanaut, Storyteller, Devsigner, and Entreflaneur in California, now accepting contracts for storytelling, writing, tech strategy, web design &amp; development.</subtitle><entry><title type="html">Paging Dr. Obvious</title><link href="http://localhost:4000/2020/06/30/paging-dr-obvious.html" rel="alternate" type="text/html" title="Paging Dr. Obvious" /><published>2020-06-30T19:24:00-07:00</published><updated>2020-06-30T19:24:00-07:00</updated><id>http://localhost:4000/2020/06/30/paging-dr-obvious</id><content type="html" xml:base="http://localhost:4000/2020/06/30/paging-dr-obvious.html">&lt;p&gt;Paging Doctor Obvious.&lt;/p&gt;
+
+&lt;p&gt;Excuse me everyone, paging Dr. Obvious.&lt;/p&gt;</content><author><name></name></author><summary type="html">Paging Doctor Obvious.</summary></entry><entry><title type="html">Welcome to Home Base</title><link href="http://localhost:4000/2020/06/29/welcome-to-home-base.html" rel="alternate" type="text/html" title="Welcome to Home Base" /><published>2020-06-29T00:00:00-07:00</published><updated>2020-06-29T00:00:00-07:00</updated><id>http://localhost:4000/2020/06/29/welcome-to-home-base</id><content type="html" xml:base="http://localhost:4000/2020/06/29/welcome-to-home-base.html">&lt;p&gt;Here goes nothing.&lt;/p&gt;
+
+&lt;p&gt;I’ve languished and avoided making a portfolio of my work for going on my
+entire life. And having finally nearly completed that feat of absurd torture,
+I want to take a short break to thank everyone.&lt;/p&gt;
+
+&lt;p&gt;Gratitude to all the developers and writers and such that have come before me,
+that have generously shared their struggles and learnings and insights and
+expertise. I have learned volumes from you, and yet I still know practically
+nothing. For example, on this Jekyll blog, we must name our posts according to
+the following scheme, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR-MONTH-DAY-title.MARKUP&lt;/code&gt;, for example
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2000-05-05-Prom-Drama.md&lt;/code&gt;. Didn’t know that, but I’m guessing that helps
+Jekyll parse the posts and keep them in order. We can also use front matter to
+organize the metadata above each post.&lt;/p&gt;
+
+&lt;p&gt;Right before going this direction, I was getting pretty excited about iframes.
+Yes, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;iframe&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/code&gt;s. Turns out I can’t use them to form includeable
+partials without javascript or a web server. But for a minute I thought I
+could. The crux came in two forms: (1) loading the contents of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;head&amp;gt;&lt;/code&gt; tag
+inside of a self-destructing iframe did not mesh well with the old DOM load,
+and (2) these magic iframes take their sweet time loading and
+self-destructing, so page load got irretrievably spotty and sluggish right
+away. Here is a snippet of the magic iframe approach to vanilla HTML templating, in case you care to try it out:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;  &lt;span class=&quot;nt&quot;&gt;&amp;lt;iframe&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;./inc/head.html&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;onload=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;With the gritty nits out of the way, I had better get back to porting that
+lovely little custom job I was tinkering with into this Jekyll framework. It
+might work. Seriously. It might.&lt;/p&gt;</content><author><name></name></author><summary type="html">Here goes nothing.</summary></entry></feed>

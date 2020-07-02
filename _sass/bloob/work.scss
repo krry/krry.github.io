@@ -1,0 +1,242 @@
+.my-work .unfolder {
+  color: $fore;
+  letter-spacing: 2px;
+  text-decoration: none;
+  line-height: 1.5;
+  font-size: 150%;
+  display: block;
+  z-index: 1;
+}
+
+.my-work .unfolder.shown {
+  z-index: 4;
+  padding: 1rem 0;
+  font-family: $heading;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 37rem) {
+  .my-work .unfolder.shown {
+    letter-spacing: 0.5em;
+  }
+}
+
+.folded {
+  overflow-y: scroll;
+  margin: 1rem;
+  padding: 1rem;
+  top: 0;
+  color: $fore;
+  border: 0.25em solid $glass;
+  border-radius: 1em;
+  background-color: $well-ful;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+
+  &::backdrop {
+    background-color: $shade;
+    backdrop-filter: blur(3px);
+  }
+
+  &::after {
+    content: "";
+    background: $shade;
+    position: fixed;
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+  }
+
+  &[open] {
+    position: fixed;
+    height: calc(100vh - 2rem);
+    max-width: 80ch;
+    overflow-y: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  video {
+    z-index: 2;
+  }
+
+  h1 {
+    text-align: center;
+    margin: 1em auto;
+  }
+
+  h3 {
+    text-align: left;
+    margin: 1em auto;
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  ul {
+    position: relative;
+    z-index: 1;
+  }
+
+  h4 {
+    color: $fore;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.25;
+    margin-top: 1em;
+  }
+
+  p {
+    text-align: justify;
+    line-height: 1.375em;
+    font-family: $text;
+  }
+}
+
+.closer {
+  width: 2rem;
+  height: 2rem;
+
+  &.corner {
+    z-index: 2;
+    position: fixed;
+    top: 1em;
+    right: 1em;
+  }
+
+  svg {
+    fill: $white;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .work-logo {
+    width: 25vw;
+  }
+}
+
+@media screen and (min-height: 48rem) {
+  .work-fold {
+    height: 25vh;
+  }
+}
+
+.work-logo {
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 50vw;
+  z-index: 4;
+  max-width: 300px;
+  flex: 1;
+}
+
+.my-work .work-fold {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border: 4px solid $muted;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-fold + .work-fold {
+  margin-top: 2rem;
+}
+
+.my-work .work-fold,
+.my-work .work-fold::after {
+  border-radius: 0.75em;
+}
+
+.my-work .work-fold::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+/* JOB-SPECIFIC STYLES */
+
+.my-work .fold-atmanaut {
+  background-position: top center;
+  background-image: url('img/bkgds/bkgd-atmanaut.png');
+
+  .folded { background-image: url('img/bkgds/bkgd-atmanaut-bloob.png'); }
+}
+
+.logo-atmanaut { background-image: url('img/logos/logo-atmt-long.png'); }
+
+.my-work .fold-passage {
+  background-image: url('img/bkgds/bkgd-passage.png');
+  background-position: bottom center;
+
+  .folded { background-image: url('img/bkgds/bkgd-passage-2d.png'); }
+}
+
+.logo-passage { background-image: url('img/logos/logo-atmanaut.png'); }
+
+.my-work .fold-mandarin9 {
+  background-image: url('img/bkgds/bkgd-mandarin9.jpg');
+
+  .folded { background-image: url('img/bkgds/bkgd-m9-products.jpg'); }
+}
+
+.logo-mandarin9 { background-image: url('img/logos/logo-mandarin9.png'); }
+
+.my-work .fold-arrivo {
+  background-image: url('img/bkgds/bkgd-arrivo-rail.jpg');
+
+  .folded { background-image: url('img/bkgds/bkgd-arrivo-timeline.png'); }
+}
+
+.logo-arrivo { background-image: url('img/logos/logo-arrivo.png'); }
+
+.my-work .fold-scty {
+  background-image: url('img/bkgds/bkgd-scty-roof.jpg');
+
+  .folded { background-image: url('img/bkgds/bkgd-scty-power-back.jpg'); }
+}
+
+.logo-scty { background-image: url('img/logos/logo-scty.png'); }
+
+.my-work .fold-disney {
+  background-image: url('img/bkgds/bkgd-disney-bands.png');
+
+  .folded { background-image: url('img/bkgds/bkgd-disney-pins.png'); }
+}
+
+.logo-disney { background-image: url('img/logos/logo-disney.png'); }
+
+.my-work .fold-tville {
+  background-image: url('img/bkgds/bkgd-tville.jpg');
+
+  .folded { background-image: url('img/bkgds/bkgd-tville-levar.jpg'); }
+}
+
+.logo-tville { background-image: url('img/logos/logo-tville.png'); }
+
+.my-work .fold-thirdprime {
+  background-image: url('img/bkgds/bkgd-3p-cart.jpg');
+
+  .folded { background-image: url('img/bkgds/bkgd-3p-web.png'); }
+}
+
+.logo-thirdprime { background-image: url('img/logos/logo-thirdprime.png'); }

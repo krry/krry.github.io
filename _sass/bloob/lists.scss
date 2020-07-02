@@ -1,0 +1,36 @@
+ul.reset {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.links,
+ul.pros,
+ul.pills {
+  @extend ul, .reset;
+}
+
+ul.pros li {
+  font-family: $text;
+  font-weight: bolder;
+  color: $glass;
+}
+
+ul.pills li {
+  display: inline-block;
+  color: $purp;
+  background: $green-lite;
+  font-family: $body;
+  font-weight: bolder;
+  line-height: 1.25;
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  margin: 0.25em 0.5em;
+}
+
+// ul.links { }
+
+.identity-list > li:first-child {
+  color: $muted;
+  border-right: 2px dotted $muted;
+}

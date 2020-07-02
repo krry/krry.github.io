@@ -1,0 +1,116 @@
+.blob {
+  color: $fore;
+  background-color: $well;
+  margin: 1rem 0;
+  padding: 2rem 1rem;
+  position: relative;
+  max-width: 100vw;
+  text-align: center;
+
+  h1,
+  h2,
+  h3,
+  p {
+    position: relative;
+    z-index: 2;
+  }
+
+  h2 {
+    margin-bottom: 1em;
+  }
+
+  p,
+  .post p {
+    text-align: justify;
+  }
+}
+
+.blob.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    margin: 0;
+  }
+
+  @media screen and (min-width: 64rem) and (min-height: 48rem) {
+    margin-top: 2rem;
+  }
+}
+
+.blob.money {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+
+  h1 {
+    flex: 1 0 100%;
+  }
+
+  .payments {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .fit-phone {
+    max-height: 8rem;
+  }
+
+  #paypal-button-container {
+    max-width: 10rem;
+    z-index: 1;
+  }
+
+  @media screen and (min-width: 48rem) {
+    .fit-phone {
+      max-height: 10rem;
+    }
+
+    #paypal-button-container {
+      max-width: 12rem;
+    }
+  }
+}
+
+@media screen and (min-width: 30rem) {
+  .blob {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding: 2rem;
+    -webkit-animation: Blob 45s ease infinite;
+    -moz-animation: Blob 45s ease infinite;
+    animation: Blob 45s ease infinite;
+  }
+
+  .blob:nth-of-type(2n) {
+    animation-direction: reverse;
+    animation-duration: 30s;
+    animation-delay: 4s;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .blob {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    max-width: 87vw;
+    padding: 3rem;
+  }
+}
+
+@media screen and (min-height: 48rem) {
+  .blob {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 64rem) and (min-height: 48rem) {
+  .blob {
+    padding: 4rem;
+    margin: 4rem 0;
+  }
+}

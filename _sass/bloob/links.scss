@@ -1,0 +1,29 @@
+a:link {
+  color: $link-new;
+  transition: 200ms;
+}
+
+a:hover {
+  color: $link-on;
+}
+
+a:hover svg.icon {
+  fill: $link-on;
+}
+
+a:visited {
+  color: $purp-lite;
+}
+
+a:visited svg.icon {
+  fill: $purp-lite;
+}
+
+a:visited:hover {
+  color: $link-new;
+}
+
+a:visited:hover svg.icon {
+  fill: $link-new;
+  transition: 200ms;
+}
