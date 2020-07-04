@@ -59,4 +59,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         zzfx(...[,,pitch,.03,,.09,1,2.18,,-72,223,.02,.01,,,-0.1,,,.06]); // Blip 47 - Mutation 1
     })
     //the event occurred
+    dresser.classList.remove('hidden');
+    dresser.classList.add('bob-in');
 })
