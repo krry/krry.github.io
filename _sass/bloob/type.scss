@@ -1,37 +1,115 @@
-@media screen and (min-width: 48rem) {
-  h1 {
-    font-size: 5vw;
-  }
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+hr,
+dl,
+dd,
+ol,
+ul,
+figure {
+  margin: 0;
+  padding: 0;
+}
 
-  h2 {
-    font-size: 4vw;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+ol,
+dl,
+figure,
+%vertical-rhythm {
+  margin-bottom: $spacing-unit / 2;
+}
 
-  h3 {
-    font-size: 3vw;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $base-font-weight;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.25em; }
+
+@include media-min-width($on-pad) {
+  h1 { font-size: 3em; }
+  h2 { font-size: 2.25em; }
+  h3 { font-size: 1.5em; }
 }
 
 h1,
 h2,
 h3 {
+  font-family: $heading-font;
+  font-weight: 300;
+  // text-align: center;
   line-height: 1.25;
   margin-bottom: 1em;
   margin-top: 1em;
   letter-spacing: 2px;
-  font-family: $heading;
-  font-weight: 300;
-  /* text-align: center; */
 }
 
 p {
-  font-family: $text;
-  line-height: 1.44;
+  font-family: $text-font;
+  line-height: 1.4;
+  text-align: justify;
+  margin: 1em auto;
   overflow-wrap: break-word;
   word-wrap: break-word;
   hyphens: auto;
 }
 
 label {
-  font-family: $body;
+  font-family: $body-font;
+}
+
+blockquote {
+  color: $grey-color;
+  border-left: 4px solid $grey-color-light;
+  padding-left: $spacing-unit / 2;
+
+  @include relative-font-size(1.125);
+
+  letter-spacing: -1px;
+  font-style: italic;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+hr {
+  margin: 2em auto;
+  color: $fore;
+  opacity: 0.5;
+
+  &.bloobies {
+    background-image: url("img/bloobs/purp025.png");
+    background-size: contain;
+    height: 3em;
+    width: 87%;
+    border: 0;
+    opacity: 1;
+  }
+}
+
+.folded hr {
+  width: 72%;
 }

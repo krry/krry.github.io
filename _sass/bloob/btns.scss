@@ -12,7 +12,7 @@ a.btn,
   border-width: 6px;
   border-style: solid;
   border-radius: 1em;
-  font-family: $body;
+  font-family: $body-font;
   font-weight: bolder;
   cursor: pointer;
   text-align: center;
@@ -27,13 +27,14 @@ select.btn::before {
   float: right;
 }
 
-@media screen and (min-width: 30rem) {
+@include media-min-width($on-lap) {
   .btn.lg {
-    font-size: 3vw;
+    font-size: 1.25em;
   }
 }
 
 .btn.sm {
+  font-size: 0.875em;
   padding: 0.25em;
   border-width: 2px;
   border-radius: 4px;

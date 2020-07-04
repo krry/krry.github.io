@@ -1,16 +1,24 @@
 @keyframes Blob {
   0%,
   100% {
-    border-radius: 24vw 12vw 6vw 12vw / 12vw 6vw 12vw 24vw;
+    @include media-min-width($on-pad) {
+      border-radius: 24vw 12vw 6vw 12vw / 12vw 6vw 12vw 24vw;
+    }
+
     background-color: hsla(336, 22%, 59%, 0.325);
   }
 
   25% {
-    border-radius: 12vw 24vw 12vw 6vw / 24vw 12vw 6vw 12vw;
+    @include media-min-width($on-pad) {
+      border-radius: 12vw 24vw 12vw 6vw / 24vw 12vw 6vw 12vw;
+    }
   }
 
   50% {
-    border-radius: 6vw 12vw 24vw 12vw / 12vw 24vw 12vw 6vw;
+    @include media-min-width($on-pad) {
+      border-radius: 6vw 12vw 24vw 12vw / 12vw 24vw 12vw 6vw;
+    }
+
     background-color: hsla(196, 82%, 49%, 0.325);
   }
 

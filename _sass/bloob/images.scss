@@ -1,3 +1,16 @@
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+figure > img {
+  display: block;
+}
+
+figcaption {
+  font-size: $small-font-size;
+}
+
 svg:not(:root) {
   overflow: hidden;
 }

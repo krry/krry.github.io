@@ -1,3 +1,14 @@
+ul, ol {
+  margin-left: $spacing-unit;
+}
+
+li {
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
+}
+
 ul.reset {
   list-style-type: none;
   padding: 0;
@@ -10,18 +21,20 @@ ul.pills {
   @extend ul, .reset;
 }
 
+ul.links a::before {
+  content: "🔗\00a0";
+  text-decoration: none;
+}
+
 ul.pros li {
-  font-family: $text;
-  font-weight: bolder;
-  color: $glass;
+  font-family: $text-font;
 }
 
 ul.pills li {
   display: inline-block;
   color: $purp;
   background: $green-lite;
-  font-family: $body;
-  font-weight: bolder;
+  font-size: 0.875em;
   line-height: 1.25;
   border-radius: 0.25em;
   padding: 0.25em 0.5em;
@@ -33,4 +46,14 @@ ul.pills li {
 .identity-list > li:first-child {
   color: $muted;
   border-right: 2px dotted $muted;
+}
+
+.work-lists {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+
+  .work-list {
+    max-width: 22rem;
+  }
 }

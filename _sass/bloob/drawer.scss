@@ -20,7 +20,7 @@
   margin-top: 1em;
 }
 
-@media screen and (min-height: 30rem) {
+@include media-min-height($on-pad) {
   .drawer h3 {
     margin-top: 2em;
   }
@@ -30,7 +30,7 @@
   position: relative;
   height: 100%;
   min-width: 60vw;
-  max-width: 15rem;
+  max-width: 87vw;
   overflow-y: scroll;
   background-color: $well-ful;
   color: $fore;
@@ -40,21 +40,20 @@
 
 .knob {
   position: absolute;
-  bottom: 4.25rem;
-  right: -2.25rem;
+  bottom: 3em;
+  right: -1.5em;
   z-index: 20;
   background-color: $well-ful;
-  border-radius: 2.25rem;
+  border-radius: 1.5em;
   transition: all 250ms ease-in-out;
 }
 
 .knob::before {
   content: "🤓";
   display: block;
-  width: 2.25rem;
-  height: 2.5rem;
-  line-height: 2.5rem;
-  font-size: 2.25rem;
+  width: 1.5em;
+  height: 1.5em;
+  font-size: 2em;
   text-align: center;
   animation: whirl 5s infinite linear alternate;
 }

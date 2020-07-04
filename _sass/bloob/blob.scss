@@ -6,6 +6,9 @@
   position: relative;
   max-width: 100vw;
   text-align: center;
+  -webkit-animation: Blob 45s ease infinite;
+  -moz-animation: Blob 45s ease infinite;
+  animation: Blob 45s ease infinite;
 
   h1,
   h2,
@@ -13,6 +16,7 @@
   p {
     position: relative;
     z-index: 2;
+    max-width: 60ch;
   }
 
   h2 {
@@ -22,6 +26,8 @@
   p,
   .post p {
     text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -34,7 +40,8 @@
     margin: 0;
   }
 
-  @media screen and (min-width: 64rem) and (min-height: 48rem) {
+
+  @include media-min($on-pad) {
     margin-top: 2rem;
   }
 }
@@ -48,41 +55,20 @@
     flex: 1 0 100%;
   }
 
-  .payments {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-
   .fit-phone {
     max-height: 8rem;
-  }
 
-  #paypal-button-container {
-    max-width: 10rem;
-    z-index: 1;
-  }
-
-  @media screen and (min-width: 48rem) {
-    .fit-phone {
+    @include media-min-width($on-pad) {
       max-height: 10rem;
-    }
-
-    #paypal-button-container {
-      max-width: 12rem;
     }
   }
 }
 
-@media screen and (min-width: 30rem) {
+@include media-min-width($on-pad) {
   .blob {
     margin-right: 1rem;
     margin-left: 1rem;
     padding: 2rem;
-    -webkit-animation: Blob 45s ease infinite;
-    -moz-animation: Blob 45s ease infinite;
-    animation: Blob 45s ease infinite;
   }
 
   .blob:nth-of-type(2n) {
@@ -92,7 +78,7 @@
   }
 }
 
-@media screen and (min-width: 48rem) {
+@include media-min-width($on-pad) {
   .blob {
     margin-right: 2rem;
     margin-left: 2rem;
@@ -101,14 +87,14 @@
   }
 }
 
-@media screen and (min-height: 48rem) {
+@include media-min-height($on-pad) {
   .blob {
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
 }
 
-@media screen and (min-width: 64rem) and (min-height: 48rem) {
+@include media-min($on-pad) {
   .blob {
     padding: 4rem;
     margin: 4rem 0;

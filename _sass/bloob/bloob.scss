@@ -1,16 +1,39 @@
 .bloob {
-  height: 30vh;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+  padding-top: 3.25em;
+  padding-bottom: 1.75em;
+  overflow-wrap: break-word;
 
-  &.leanover {
-    min-height: 15rem;
-    margin-bottom: -2rem;
+  @include media-min($on-pad) {
+    padding-top: 2em;
+    padding-bottom: 1.5em;
+  }
+
+  @include media-min($on-lap) {
+    // height: 25rem;
+    // font-size: 4.5rem;
+    // padding-top: 12.52.5;
+    // padding-bottom: 8rem;
+  }
+
+  &.purp00 {
+    background-image: url("img/bloobs/purp000.png");
   }
 
   &.purp25 {
     background-image: url("img/bloobs/purp025.png");
+  }
+
+  &.purp33 {
+    background-image: url("img/bloobs/purp033.png");
+  }
+
+  &.purp50 {
+    background-image: url("img/bloobs/purp050.png");
   }
 
   &.bloor00 {
@@ -33,22 +56,17 @@
     background-image: url("img/bloobs/bloor075.png");
   }
 
-  &.purp25,
-  &.bloor00,
-  &.bloor25,
-  &.bloor33,
-  &.bloor50,
-  &.bloor75 {
-    @extend .leanover;
-
-    line-height: 6;
+  &.bloor100 {
+    background-image: url("img/bloobs/bloor100.png");
   }
 
   &.ghost {
     position: absolute;
-    height: 6em;
-    top: -0.75em;
+    top: -1.25em;
     z-index: 3;
+    height: 3em;
+    padding: 0;
+    font-size: 100%;
     opacity: 0.25;
     -webkit-animation: haunt 45s ease-in-out infinite;
     -moz-animation: haunt 45s ease-in-out infinite;
@@ -58,29 +76,5 @@
 
   &.dangler {
     bottom: -20vh;
-  }
-}
-
-@media screen and (min-height: 37rem) {
-  .bloob {
-    height: 40vh;
-
-    &.leanover {
-      margin-bottom: 0;
-      margin-top: -2rem;
-      line-height: 10;
-    }
-  }
-}
-
-@media screen and (min-width: 37rem) {
-  .bloob {
-    height: 40vh;
-  }
-}
-
-@media screen and (min-width: 60rem) and (min-height: 48rem) {
-  .bloob.leanover {
-    line-height: 6;
   }
 }
