@@ -2,7 +2,10 @@
   display: block;
   width: 100%;
   height: 100%;
-  padding: 2rem;
+  padding: 1.5rem;
+
+
+  padding: 2rem 1.5rem 1.5rem;
   z-index: 1;
   font-size: 150%;
   border: 4px solid $muted;
@@ -20,15 +23,15 @@
   z-index: 4;
   margin: auto;
 
-  &.word-mark {
-    font-family: $heading-font;
-    line-height: 1.5;
-    text-decoration: none;
-    letter-spacing: 2px;
-    text-align: center;
-    text-transform: uppercase;
-    color: $white;
-  }
+  // &.word-mark {
+  //   font-family: $heading-font;
+  //   line-height: 1.5;
+  //   text-decoration: none;
+  //   letter-spacing: 2px;
+  //   text-align: center;
+  //   text-transform: uppercase;
+  //   color: $white;
+  // }
 }
 
 @include media-min-width($on-pad) {
@@ -37,7 +40,7 @@
   }
 }
 
-.folded {
+.work-zoom {
   overflow-y: scroll;
   margin: 1rem;
   padding: 1rem;
@@ -45,7 +48,7 @@
   color: $fore;
   border: 0.25rem solid $glass;
   border-radius: 1.5rem;
-  background-color: $well-ful;
+  background-color: $shade;
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -55,19 +58,19 @@
     backdrop-filter: blur(3px);
   }
 
-  &::after {
-    content: "";
-    background: $shade;
-    position: fixed;
-    display: block;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
-  }
+  // &::after {
+  //   content: "";
+  //   background: $shade;
+  //   position: fixed;
+  //   display: block;
+  //   height: 100%;
+  //   width: 100%;
+  //   top: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   left: 0;
+  //   z-index: 0;
+  // }
 
   &[open] {
     position: fixed;
@@ -90,6 +93,8 @@
   h3 {
     text-align: left;
     max-width: 37ch;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   p,
@@ -171,74 +176,137 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: $shade;
   z-index: 0;
+}
+
+.gallery {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-height: 33vh;
+  height: 6em;
+  margin: 1rem auto;
+
+  @include media-min($on-pad) {
+    height: 10em;
+  }
+}
+
+a.btn.picto {
+  position: relative;
+  padding: 0;
+
+  &::after {
+    background-color: $shade;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 1em;
+  }
+
+  img {
+    border-radius: 1em;
+    max-height: 25vh;
+  }
+
+  label {
+    position: absolute;
+    font-size: 1.25em;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+}
+
+.thumb {
+  flex: 1;
+
+  & + .thumb {
+    margin-left: 0.5rem;
+  }
+
+  img {
+    min-width: 15rem;
+    max-width: 100%;
+  }
+
+  span,
+  span:hover {
+    text-decoration: none;
+    color: $white;
+  }
+}
+
+.looper,
+.work-zoom img {
+  max-height: 40vh;
+  max-width: 40vw;
 }
 
 /* JOB-SPECIFIC STYLES */
 
 .fold-atmanaut {
   background-position: top right;
-  background-image: url('img/bkgds/bkgd-atmanaut.jpg');
-
-  .folded { background-image: url('img/bkgds/bkgd-atmanaut-bloob.jpg'); }
+  background-image: url('img/work/atmanautus.jpg');
 }
 
 .logo-atmanaut { background-image: url('img/logos/logo-atmt.png'); }
 
 .fold-passage {
-  background-image: url('img/bkgds/bkgd-passage.jpg');
+  background-image: url('img/work/passage-3d.jpg');
   background-position: bottom center;
-
-  .folded { background-image: url('img/bkgds/bkgd-passage-2d.jpg'); }
 }
 
 .logo-passage { background-image: url('img/logos/logo-passage.png'); }
 
 .fold-mandarin9 {
-  background-image: url('img/bkgds/bkgd-mandarin9.jpg');
-
-  .folded { background-image: url('img/bkgds/bkgd-huashan.jpg'); }
+  background-image: url('img/work/mandarin9.jpg');
 }
 
 .logo-mandarin9 { background-image: url('img/logos/logo-mandarin9.png'); }
 
 .fold-arrivo {
-  background-image: url('img/bkgds/bkgd-arrivo-rail.jpg');
-
-  .folded { background-image: url('img/bkgds/bkgd-arrivo-timeline.jpg'); }
+  background-image: url('img/work/arrivo-rail.jpg');
 }
 
 .logo-arrivo { background-image: url('img/logos/logo-arrivo.png'); }
 
 .fold-scty {
-  background-image: url('img/bkgds/bkgd-scty-roof.jpg');
-
-  .folded { background-image: url('img/bkgds/bkgd-scty-power-back.jpg'); }
+  background-image: url('img/work/scty-roof.jpg');
 }
 
 .logo-scty { background-image: url('img/logos/logo-scty.png'); }
 
 .fold-disney {
-  background-image: url('img/bkgds/bkgd-disney-bands.jpg');
+  background-image: url('img/work/disney-bands.jpg');
 
-  .folded { background-image: url('img/bkgds/bkgd-disney-pins.png'); }
+  .unfolder {
+    padding: 2rem 1.5rem 1.5rem;
+  }
 }
 
 .logo-disney { background-image: url('img/logos/logo-disney.png'); }
 
 .fold-tville {
-  background-image: url('img/bkgds/bkgd-tville.jpg');
-
-  .folded { background-image: url('img/bkgds/bkgd-tville-levar.jpg'); }
+  background-image: url('img/work/tville-trumpet.jpg');
+  background-position: right center;
 }
 
 .logo-tville { background-image: url('img/logos/logo-tville.png'); }
 
 .fold-thirdprime {
-  background-image: url('img/bkgds/bkgd-3p-cart.jpg');
+  background-image: url('img/work/3p-carts.jpg');
 
-  .folded { background-image: url('img/bkgds/bkgd-3p-web.png'); }
+  .unfolder {
+    padding: 2rem 1.5rem 1.5rem;
+  }
 }
 
 .logo-thirdprime { background-image: url('img/logos/logo-thirdprime.png'); }

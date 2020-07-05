@@ -14,7 +14,7 @@ $mute-lite: hsl(195, 10%, 75%);
 $muted: hsla(196, 10%, 50%, 0.5);
 $shade: hsla(262, 10%, 10%, 0.5);
 $glass: hsla(196, 90%, 90%, 0.75);
-$well: hsla(262, 89%, 21%, 0.325);
+$well: hsla(262, 89%, 21%, 0.5);
 $well-ful: hsla(262, 89%, 12%, 1);
 $purp-deep: hsl(262, 71%, 27%);
 $purp: hsl(262, 81%, 47%);
@@ -51,6 +51,17 @@ $content-width: 87vw;
 $on-palm:       25rem !default;
 $on-pad:        40rem !default;
 $on-lap:        60rem !default;
+
+// store some color-scheme variables in the :root
+$accent-color: #fbbc04;
+
+:root {
+  // WRONG, will not work in recent Sass versions.
+  // --accent-color-wrong: $accent-color;
+  // RIGHT, will work in all Sass versions.
+  --accent-color-right: #{$accent-color};
+  color-scheme: light dark; /* both supported */
+}
 
 // Use media queries like this:
 // @include media-min-width($on-palm) {
