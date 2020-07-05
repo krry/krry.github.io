@@ -2,14 +2,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let knob = document.getElementById("knob");
     let drawer = document.getElementById("drawer");
     let dresser = document.getElementById("dresser");
+    let cello = document.getElementById("cello");
+
     knob.addEventListener("click", function(){
         dresser.classList.toggle("open");
         zzfx(...[,,315,.14,.03,.24,,.63,.8,,200,,.04,,,,.13,.62,.09]); // Powerup 57
     });
     let mentality = document.getElementById("mentality");
     let tone = mentality.value/10;
-    mentality.addEventListener("input", function (value) {
+    mentality.addEventListener("input", function () {
         tone = mentality.value/10;
+        console.log(mentality.value);
+        cello.style.filter = "blur("+mentality.value/100+")"
         zzfx(...[,,1250,.06,,.04,,2.7,,39,,,,.5,tone]);
     });
     let correspondence = document.getElementById("correspondence");
@@ -36,16 +40,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
         stut = rhythm.value/100;
         zzfx(...[,,776,,.26,.44,,.46,.9,.7,,,,.7,,stut,,.92,.05]); // Explosion 45 - Mutation 1
     });
-    let causation = document.getElementById("causation");
-    let gel = 100/causation.value;
-    causation.addEventListener("input", function() {
-        gel = 100/causation.value;
+    let causality = document.getElementById("causality");
+    let gel = 100/causality.value;
+    causality.addEventListener("input", function() {
+        gel = 100/causality.value;
         zzfx(...[,,368,,.06,.12,2,1.2,,,400,.01,,,gel,,,.9,.09]); // Pickup 46
     });
-    let gender = document.getElementById("gender");
-    let pitch = gender.value*40;
-    gender.addEventListener("input", function() {
-        pitch = gender.value*40;
+    let chirality = document.getElementById("chirality");
+    let pitch = chirality.value*40;
+    chirality.addEventListener("input", function() {
+        pitch = chirality.value*40;
         zzfx(...[,,pitch,.03,,.09,1,2.18,,-72,223,.02,.01,,,-0.1,,,.06]); // Blip 47 - Mutation 1
     });
     let play = document.getElementById("play_all");
