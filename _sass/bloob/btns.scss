@@ -20,6 +20,29 @@ a.btn,
   -webkit-appearance: none;
   -moz-appearance: none;
   box-shadow: inset 0 0 1em 1em rgba(0, 0, 0, 0.25);
+
+  &:hover,
+  &:focus {
+    background: $link-new;
+  }
+
+  &:focus {
+    outline: 4px solid rgba(255, 255, 255, 0.2);
+  }
+
+  &:active {
+    transform: scale(0.97);
+    background: $blue;
+  }
+
+  &:link,
+  &:focus,
+  &:hover,
+  &:active,
+  &:visited,
+  &:visited:hover {
+    color: $white;
+  }
 }
 
 select.btn::before {
@@ -41,41 +64,17 @@ select.btn::before {
   margin: 0;
 }
 
-.btn.holo {
-  background: transparent;
-  border: 3px solid white;
-}
-
 .btn.center {
   display: block;
   margin: 1rem auto 0.5rem;
 }
 
-.btn:hover,
-a.btn:hover,
-a.btn:focus,
-a.btn:active,
-a.btn:focus,
-a.btn:visited,
-a.btn:visited:hover {
-  color: white;
-}
+.btn.holo {
+  background: transparent;
+  border: 3px solid $white;
 
-.btn:hover,
-.btn:focus {
-  background: $link-new;
-}
-
-.btn.holo:hover,
-.btn.holo:focus {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.btn:focus {
-  outline: 4px solid rgba(255, 255, 255, 0.2);
-}
-
-.btn:active {
-  transform: scale(0.97);
-  background: $blue;
+  &:hover,
+  &:focus {
+    background: rgba(255, 255, 255, 0.2);
+  }
 }
