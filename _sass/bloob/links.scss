@@ -1,29 +1,45 @@
-a:link {
-  color: $link-new;
-  transition: 200ms;
+a {
+  color: inherit;
+  transition: all 250ms ease-in-out;
 
-  &:hover {
-    color: $link-on;
+  p > & {
+    font-weight: normal;
   }
 
-  &:hover svg.icon {
-    fill: $link-on;
+  &:link {
+    color: $link-new;
   }
 
   &:visited {
     color: $link-old;
+
+    svg.icon {
+      fill: $link-old;
+    }
   }
 
-  &:visited svg.icon {
-    fill: $link-old;
+  &:active {
+    color: $green;
+
+    svg.icon {
+      fill: $green;
+    }
+  }
+
+  &:link:hover {
+    color: $link-on;
+
+    svg.icon {
+      fill: $link-on;
+    }
   }
 
   &:visited:hover {
-    color: $link-new;
+    color: $link-on;
   }
 
   &:visited:hover svg.icon {
-    fill: $link-new;
+    fill: $link-on;
     transition: 200ms;
   }
 }

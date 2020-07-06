@@ -15,10 +15,15 @@ ul.reset {
   margin: 0;
 }
 
+ul {
+  text-align: left;
+}
+
 ul.links,
 ul.pros,
 ul.pills {
   @extend ul, .reset;
+  text-align: justify;
 }
 
 ul.links a::before {
@@ -40,8 +45,6 @@ ul.pills li {
   padding: 0.25em 0.5em;
   margin: 0.25em 0.5em;
 }
-
-// ul.links { }
 
 .identity-list > li:first-child {
   color: $muted;

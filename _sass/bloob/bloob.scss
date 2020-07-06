@@ -8,12 +8,12 @@
   padding-bottom: 1.75em;
   overflow-wrap: break-word;
 
-  @include media-min($on-pad) {
+  @include media-min($pad) {
     padding-top: 2em;
     padding-bottom: 1.5em;
   }
 
-  @include media-min($on-lap) {
+  @include media-min($lap) {
     // height: 25rem;
     // font-size: 4.5rem;
     // padding-top: 12.52.5;

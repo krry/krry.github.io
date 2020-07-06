@@ -20,7 +20,7 @@
   margin-top: 1em;
 }
 
-@include media-min-height($on-pad) {
+@include media-min-height($pad) {
   .drawer h3 {
     margin-top: 2em;
   }
@@ -29,13 +29,30 @@
 .drawer {
   position: relative;
   height: 100%;
-  min-width: 60vw;
-  max-width: 87vw;
+  width: 60vw;
+  min-width: 16.5rem;
+  max-width: 24rem;
   overflow-y: scroll;
   background-color: $well-ful;
   color: $fore;
   padding: 0 1.5rem;
   border-radius: 0 0.5rem 0.5rem 0;
+
+  .button-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin: 0.5rem 0;
+    align-items: center;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+
+    @include media-min-width($pad) {
+      font-size: 1rem;
+    }
+  }
 }
 
 .knob {
@@ -113,4 +130,3 @@ label.spectrum-name {
   position: relative;
   left: 0;
 }
-

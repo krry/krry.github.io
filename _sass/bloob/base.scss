@@ -19,6 +19,18 @@ html {
 }
 
 body {
+  margin: 0;
+  padding: 0;
+  background-color: $purp-deep;
+  color: $white;
+  overflow-x: hidden;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
   font-family: $body-font;
   font-weight: $base-font-weight;
   font-size: $base-font-size;
@@ -29,26 +41,15 @@ body {
   -o-font-feature-settings: "kern" 1;
   font-feature-settings: "kern" 1;
   font-kerning: normal;
-  margin: 0;
-  padding: 0;
-  background-color: $purp-deep;
-  overflow-x: hidden;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 100vh;
-  height: 100%;
-  width: 100%;
 }
 
-@include media-min($on-pad) {
+@include media-min($pad) {
   body {
     font-size: 125%;
   }
 }
 
-@include media-min($on-lap) {
+@include media-min($lap) {
   body {
     font-size: 150%;
   }
@@ -70,4 +71,14 @@ main {
 
 .hidden {
   display: none;
+}
+
+:focus {
+  outline-style: dashed;
+  outline-color: $blue;
+  outline-offset: 4px;
+}
+
+:active {
+  color: $green;
 }

@@ -27,7 +27,8 @@ a.btn,
   }
 
   &:focus {
-    outline: 4px solid rgba(255, 255, 255, 0.2);
+    outline: 1px solid rgba(255, 255, 255, 0.2);
+    outline-offset: 4px;
   }
 
   &:active {
@@ -50,7 +51,7 @@ select.btn::before {
   float: right;
 }
 
-@include media-min-width($on-lap) {
+@include media-min-width($lap) {
   .btn.lg {
     font-size: 1.25em;
   }
@@ -76,5 +77,18 @@ select.btn::before {
   &:hover,
   &:focus {
     background: rgba(255, 255, 255, 0.2);
+    color: $link-on;
+    border-color: $link-on;
+  }
+
+  &:focus {
+    outline: 1px solid rgba(255, 255, 255, 0.2);
+    outline-offset: 4px;
+  }
+
+  &:active {
+    color: $green;
+    border-color: $green;
+    background: $shade;
   }
 }

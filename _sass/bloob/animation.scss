@@ -1,7 +1,7 @@
 @keyframes Blob {
   0%,
   100% {
-    @include media-min-width($on-pad) {
+    @include media-min-width($pad) {
       border-radius: 24vw 12vw 6vw 12vw / 12vw 6vw 12vw 24vw;
     }
 
@@ -9,13 +9,13 @@
   }
 
   25% {
-    @include media-min-width($on-pad) {
+    @include media-min-width($pad) {
       border-radius: 12vw 24vw 12vw 6vw / 24vw 12vw 6vw 12vw;
     }
   }
 
   50% {
-    @include media-min-width($on-pad) {
+    @include media-min-width($pad) {
       border-radius: 6vw 12vw 24vw 12vw / 12vw 24vw 12vw 6vw;
     }
 
@@ -84,5 +84,17 @@
 
   50% {
     transform: translate3d(150%, 0, 0) rotate(20deg);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 2rem, 0) scale(0.5);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
   }
 }
