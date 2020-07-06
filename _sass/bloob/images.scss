@@ -26,16 +26,17 @@ svg:not(:root) {
   right: 0;
   bottom: 0;
   left: 0;
+}
 
-  img {
-    margin: auto;
-    max-width: 90vw;
-    max-height: 90vh;
-    box-shadow: 0 0 100vw 100vw $glass;
+.zoomed img,
+video.zoomed {
+  margin: auto;
+  max-width: 90vw;
+  max-height: 90vh;
+  box-shadow: 0 0 100vw 100vw $glass;
 
-    @include dark-mode {
-      box-shadow: 0 0 100vw 100vw $shade;
-    }
+  @include dark-mode {
+    box-shadow: 0 0 100vw 100vw $shade;
   }
 }
 

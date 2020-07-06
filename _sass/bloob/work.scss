@@ -159,6 +159,7 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
+  align-items: center;
   overflow-x: auto;
   overflow-y: hidden;
   max-height: 33vh;
@@ -166,12 +167,16 @@
   margin: 1rem auto;
 
   @include media-min($pad) {
-    height: 8em;
+    max-height: 45vh;
+    height: 12em;
   }
 
-  @include media-min($lap) {
-    height: 10em;
-  }
+  // @include media-min-width($lap) {
+  //   @include media-min-height($pad) {
+  //     max-height: 45vh;
+  //     height: 10em;
+  //   }
+  // }
 }
 
 .thumb {

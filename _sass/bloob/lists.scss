@@ -15,15 +15,24 @@ ul.reset {
   margin: 0;
 }
 
-ul {
+ul.details {
   text-align: left;
+  margin-left: 3em;
+  padding-left: 2em;
+  max-width: 60ch;
 }
 
 ul.links,
 ul.pros,
 ul.pills {
   @extend ul, .reset;
-  text-align: justify;
+
+  text-align: center;
+}
+
+.work-list {
+  max-width: 75%;
+  margin: auto;
 }
 
 ul.links a::before {
