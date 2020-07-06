@@ -1,0 +1,36 @@
+// Use media queries like this:
+// @include media-min-width($palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+
+@mixin media-min-width($device) {
+  @media screen and (min-width: $device) {
+    @content;
+  }
+}
+
+@mixin media-min($device) {
+  @media screen and (min-width: $device) and (min-height: $device) {
+    @content;
+  }
+}
+
+@mixin media-min-height($device) {
+  @media screen and (min-height: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
+@mixin dark-mode() {
+  @media (prefers-color-scheme: dark) {
+    @content;
+  }
+}
+

@@ -1,0 +1,60 @@
+// absolute variables first
+$body-font: "Lato", system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$text-font: "Aleo", Georgia, serif;
+$heading-font: "Righteous", "Comic Sans MS", cursive;
+$fore: hsla(196, 87%, 92%, 1);
+$bkgd: hsla(262, 85%, 12%, 1);
+$link-on: hsla(196, 80%, 70%, 1);
+$link-old: hsla(196, 70%, 50%, 1);
+$link-new: hsla(196, 85%, 60%, 1);
+$white: hsl(196, 0%, 98%);
+$black: hsl(262, 0%, 2%);
+$mute: hsl(195, 10%, 50%);
+$mute-lite: hsl(195, 10%, 75%);
+$muted: hsla(196, 10%, 50%, 0.5);
+$shade: hsla(262, 70%, 15%, 0.7);
+$glass: hsla(196, 70%, 90%, 0.7);
+$well: hsla(262, 89%, 21%, 0.7);
+$well-ful: hsla(262, 89%, 12%, 1);
+$purp-deep: hsl(262, 71%, 27%);
+$purp: hsl(262, 81%, 47%);
+$purp-lite: hsl(262, 71%, 67%);
+$green-deep: hsl(82, 71%, 27%);
+$green: hsl(82, 81%, 47%);
+$green-lite: hsl(82, 71%, 67%);
+$blue: hsl(196, 80%, 43%);
+
+// then relative variables, define defaults for each
+
+$base-font-family: $body-font !default;
+$base-font-size:   24px !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-font-weight: 400 !default;
+$base-line-height: 1.5 !default;
+
+$spacing-unit:     2rem !default;
+
+$text-color:       $fore !default;
+$background-color: $bkgd !default;
+$brand-color:      $purp !default;
+
+$grey-color:       $mute !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
+
+$table-text-align: left !default;
+
+$palm:       25rem !default;
+$pad:        40rem !default;
+$lap:        60rem !default;
+
+// store some color-scheme variables in the :root
+// $accent-color: #fbbc04;
+
+:root {
+  // WRONG, will not work in recent Sass versions.
+  // --accent-color-wrong: $accent-color;
+  // RIGHT, will work in all Sass versions.
+  // --accent-color-right: #{$accent-color};
+  color-scheme: light dark; /* both supported */
+}
