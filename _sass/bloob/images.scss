@@ -33,10 +33,10 @@ video.zoomed {
   margin: auto;
   max-width: 90vw;
   max-height: 90vh;
-  box-shadow: 0 0 100vw 100vw $glass;
+  box-shadow: 0 0 100vw 100vw $shade;
 
-  @include dark-mode {
-    box-shadow: 0 0 100vw 100vw $shade;
+  @include light-mode {
+    box-shadow: 0 0 100vw 100vw $glass;
   }
 }
 

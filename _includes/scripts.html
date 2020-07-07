@@ -1,12 +1,13 @@
 <div class="quiver" id="quiver">
   <div class="abscen" id="waves"></div>
-  <script src="{{ "/assets/scripts/three.r92.min.js" | relative_url }}"></script>
-  <script src="{{ "/assets/scripts/vanta.waves.min.js" | relative_url }}"></script>
-  <script src="{{ "/assets/scripts/ZzFX.min.js" | relative_url }}"></script>
-  <script src="{{ "/assets/scripts/drawer.js" | relative_url }}"></script>
-  <script src="{{ "/assets/scripts/lenses.js" | relative_url }}"></script>
-  <script src="{{ "/assets/scripts/folds.js" | relative_url }}"></script>
-  <script src="{{ "/assets/scripts/thumbs.js" | relative_url }}"></script>
+  <script src="/assets/scripts/three.r92.min.js"></script>
+  <script src="/assets/scripts/vanta.waves.min.js"></script>
+  <script src="/assets/scripts/ZzFX.min.js"></script>
+  <script src="/assets/scripts/drawer.js"></script>
+  <script src="/assets/scripts/lenses.js"></script>
+  <script src="/assets/scripts/folds.js"></script>
+  <script src="/assets/scripts/thumbs.js"></script>
+  <script src="/assets/scripts/lazyloads.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', (event) => {
       VANTA.WAVES({
@@ -22,4 +23,7 @@
       document.getElementById("waves").classList.add("on");
     })
   </script>
+  <noscript>
+    <style>.lazy { display: none; }</style>
+  </noscript>
 </div>

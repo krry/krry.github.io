@@ -35,21 +35,23 @@
   }
 
   border-radius: 1.5rem;
-  color: $bkgd;
-  border: 0.25rem solid $shade;
-  background-color: $glass;
+  color: $fore;
+  border: 0.25rem solid $glass;
+  background-color: $shade;
   text-align: center;
 
-  @include dark-mode {
-    color: $fore;
-    border: 0.25rem solid $glass;
-    background-color: $shade;
+  @include light-mode {
+    color: $bkgd;
+    border: 0.25rem solid $shade;
+    background-color: $glass;
   }
 
   &::backdrop {
-    background-color: $glass;
+    background-color: $shade;
 
-    @include dark-mode { background-color: $shade; }
+    @include light-mode {
+      background-color: $glass;
+    }
 
     backdrop-filter: blur(4px);
   }
@@ -105,10 +107,10 @@
     text-decoration: underline;
     letter-spacing: 2px;
     line-height: 1.25;
-    color: $bkgd;
+    color: $fore;
 
-    @include dark-mode {
-      color: $fore;
+    @include light-mode {
+      color: $bkgd;
     }
   }
 }
@@ -179,7 +181,7 @@
   // }
 }
 
-.thumb {
+.work-zoom .thumb {
   flex: 1;
   cursor: pointer;
 
@@ -193,6 +195,15 @@
 
   img {
     min-width: 15rem;
+
+    @include media-min-width($pad) {
+      min-width: 20rem;
+    }
+
+    @include media-min-width($lap) {
+      min-width: 25rem;
+    }
+
     max-width: 100%;
     pointer-events: none;
   }
