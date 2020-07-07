@@ -1,7 +1,7 @@
 // Run after the HTML document has finished loading
 document.addEventListener("DOMContentLoaded", function() {
     // Get our lazy-loaded images
-    var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+    var lazyImages = [].slice.call(document.querySelectorAll(".lazy"));
     // Do this only if IntersectionObserver is supported
     if ("IntersectionObserver" in window) {
         // Create new observer object
@@ -22,5 +22,14 @@ document.addEventListener("DOMContentLoaded", function() {
         lazyImages.forEach(function(lazyImage) {
             lazyImageObserver.observe(lazyImage);
         });
+    } else {
+      // `document.querySelectorAll` does not work in Opera Mini
+      var lazyImages = document.getElementsByClassName("lazy");
+      // https://stackoverflow.com/questions/3871547/js-iterating-over-result-of-getelementsbyclassname-using-array-foreach
+      [].forEach.call(lazyImages, function (lazyImage) {
+        lazyImage.src = lazyImage.dataset.src;
+        lazyImage.classList.remove("lazy");
+        lazyImage.height = 'auto';
+      });
     }
 });

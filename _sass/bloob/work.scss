@@ -75,10 +75,6 @@
     }
   }
 
-  video {
-    z-index: 2;
-  }
-
   h2 {
     text-align: center;
   }
@@ -173,12 +169,10 @@
     height: 12em;
   }
 
-  // @include media-min-width($lap) {
-  //   @include media-min-height($pad) {
-  //     max-height: 45vh;
-  //     height: 10em;
-  //   }
-  // }
+  .gallery-item {
+    height: 100%;
+    margin-bottom: 0;
+  }
 }
 
 .work-zoom .thumb {
@@ -187,6 +181,10 @@
 
   &.zoomed {
     cursor: default;
+
+    figcaption {
+      display: block;
+    }
   }
 
   & + .thumb {
@@ -210,12 +208,12 @@
 
   figcaption {
     display: none;
-    color: $green-deep;
-    background: $white;
+    background: $black;
+    color: $green-lite;
 
-    @include dark-mode {
-      background: $black;
-      color: $green-lite;
+    @include light-mode {
+      color: $green-deep;
+      background: $white;
     }
 
     font-size: 0.875em;
@@ -235,12 +233,6 @@
     }
   }
 
-  &.zoomed {
-    figcaption {
-      display: block;
-    }
-  }
-
   figure {
     display: flex;
     flex-flow: column nowrap;
@@ -253,8 +245,7 @@
   }
 }
 
-.looper,
-.work-zoom img {
+.interstitial {
   max-height: 40vh;
   max-width: 40vw;
 }
@@ -293,38 +284,38 @@ a.btn.picto {
 
 .fold-atmanaut {
   background-position: top right;
-  background-image: url('img/work/atmanautus.jpg');
+  background-image: url('img/work/full/atmanautus.jpg');
 }
 
 .logo-atmanaut { background-image: url('img/logos/logo-atmt.png'); }
 
 .fold-passage {
-  background-image: url('img/work/passage-3d.jpg');
+  background-image: url('img/work/full/passage-3d.jpg');
   background-position: bottom center;
 }
 
 .logo-passage { background-image: url('img/logos/logo-passage.png'); }
 
 .fold-mandarin9 {
-  background-image: url('img/work/mandarin9.jpg');
+  background-image: url('img/work/full/mandarin9.jpg');
 }
 
 .logo-mandarin9 { background-image: url('img/logos/logo-mandarin9.png'); }
 
 .fold-arrivo {
-  background-image: url('img/work/arrivo-rail.jpg');
+  background-image: url('img/work/full/arrivo-rail.jpg');
 }
 
 .logo-arrivo { background-image: url('img/logos/logo-arrivo.png'); }
 
 .fold-scty {
-  background-image: url('img/work/scty-roof.jpg');
+  background-image: url('img/work/full/scty-roof.jpg');
 }
 
 .logo-scty { background-image: url('img/logos/logo-scty.png'); }
 
 .fold-disney {
-  background-image: url('img/work/disney-bands.jpg');
+  background-image: url('img/work/full/disney-bands.jpg');
 
   .trigger {
     padding: 2rem 1.5rem 1.5rem;
@@ -334,14 +325,14 @@ a.btn.picto {
 .logo-disney { background-image: url('img/logos/logo-disney.png'); }
 
 .fold-tville {
-  background-image: url('img/work/tville-trumpet.jpg');
+  background-image: url('img/work/full/tville-trumpet.jpg');
   background-position: right center;
 }
 
 .logo-tville { background-image: url('img/logos/logo-tville.png'); }
 
 .fold-thirdprime {
-  background-image: url('img/work/3p-carts.jpg');
+  background-image: url('img/work/full/3p-carts.jpg');
 
   .trigger {
     padding: 2rem 1.5rem 1.5rem;

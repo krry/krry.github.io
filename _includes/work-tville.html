@@ -8,41 +8,12 @@
     <h3>Pioneering a fun, safe social network for kids and their families</h3>
     <div class="gallery">
       {%- include closer.html content="tville-thumb-closer" -%}
-      <figure class="thumb" href="#tville-home">
-        <img src="{{ '/assets/img/work/tville-home.jpg' | relative_url }}"
-        alt="Togetherville landing page">
-        <figcaption>A landing page from Togetherville.com</figcaption>
-      </figure>
-      <figure class="thumb" href="#tville-kids">
-        <img src="{{ '/assets/img/work/tville-kids.jpg' | relative_url }}"
-             alt="Togetherville kids home">
-        <figcaption>The Kids launch page</figcaption>
-      </figure>
-      <figure class="thumb" href="#tville-homepage">
-        <img src="{{ '/assets/img/work/tville-homepage.jpg' | relative_url
-        }}" alt="Togetherville homepage">
-        <figcaption>Once the homepage of Togetherville.com</figcaption>
-      </figure>
-      <figure class="thumb" href="#tville-levar">
-        <img src="{{ '/assets/img/work/tville-levar.jpg' | relative_url }}"
-             alt="The Togethervillains with Levar and Mark">
-        <figcaption>Our team with Levar Burton of Reading Rainbow</figcaption>
-      </figure>
-      <figure class="thumb">
-        <video class="looper" autoPlay loop muted>
-          <source src="{{ '/assets/img/videos/TV-3D-graphic.mp4' | relative_url }}" />
-            Your browser does not support the video tag.
-        </video>
-        <figcaption>We never did go 3-D, but we thought about it.</figcaption>
-      </figure>
-      <figure class="thumb">
-        <video class="looper" autoPlay loop muted>
-          <source src="{{ '/assets/img/videos/tville-in-a-minute.mov' | relative_url }}" />
-            Your browser does not support the video tag.
-        </video>
-        <figcaption>Our lean startup-friendly budget-friendly promo video. I
-          still shudder at the voiceovers.</figcaption>
-      </figure>
+      {%- include image.html file="tville-home.jpg" caption="A landing page from Togetherville.com" link="http://web.archive.org/web/20100711134137/http://togetherville.com/" -%}
+      {%- include image.html file="tville-kids.jpg" caption="Togetherville's Kids launch page" link="" -%}
+      {%- include image.html file="tville-homepage.jpg" caption="Once the homepage of Togetherville.com" link="http://web.archive.org/web/20110313033132/http://togetherville.com/" -%}
+      {%- include image.html file="tvillians.jpg" caption="The
+      Togethervillians circa 2010" link="" -%}
+      {%- include video.html file="TV-3D-graphic" caption="" -%}
     </div>
     <p>In 2010, Facebook was just beginning its pandemic spread. Kids,
       restricted from joining by the Children's Online Privacy Protection Act,
@@ -54,6 +25,9 @@
       Stretching to fit our needs, I developed our content strategy, designed
       flash games and art apps, made promo videos, conduct user research,
       prototyped new features and interaces, and started learning to code.</p>
+    <figure class="interstitial">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/pXRdCtwaMb4?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </figure>
     <div class="work-lists">
       <div class="work-list">
         <h4>Roles</h4>

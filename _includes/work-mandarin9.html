@@ -8,21 +8,23 @@
     <h3>Offering the western world an entertaining way to learn Mandarin</h3>
     <div class="gallery">
       {%- include closer.html content="m9-thumb-closer" -%}
-      <figure class="thumb" href="#m9-products">
-        <img src="{{ '/assets/img/work/m9-products.jpg' | relative_url }}"
-        alt="M9 Products">
-        <figcaption>We laid out a multi-approach, multimedia product line</figcaption>
+      {%- include image.html file="m9-products.jpg" caption="We laid out a multi-approach, multimedia product line" link="" -%}
+      <figure class="thumb gallery-item">
+        <img
+          class="lazy gallery-image"
+          src="/assets/img/work/pre/m9-assemble.png"
+          data-src="/assets/img/work/full/m9-assemble.webp"
+          alt=""
+          />
+        <noscript>
+        <img
+          src="/assets/img/work/full/m9-assemble.webp"
+          alt="{{ include.caption }}"
+          />
+        </noscript>
+        <figcaption class=gallery-caption>Mandarin9 under construction</figcaption>
       </figure>
-      <figure class="thumb" href="#assemble">
-        <img src="{{ '/assets/img/videos/m9-assemble.webp' | relative_url }}"
-        alt="Mandarin9 Under Construction">
-        <figcaption>Mandarin9 under construction</figcaption>
-      </figure>
-      <figure class="thumb" href="#huashan">
-        <img src="{{ '/assets/img/work/huashan.jpg' | relative_url }}"
-        alt="Huashan from Unsplash">
-        <figcaption>A peak at Huashan (credit: Unsplash)</figcaption>
-      </figure>
+      {%- include image.html file="huashan.jpg" caption="A peak at Huashan" link="" -%}
     </div>
     <p>Learning Mandarin as an adult is no small feat. At the very least it
       can be entertaining. We did our best to bring an effective,
