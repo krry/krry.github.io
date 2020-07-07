@@ -23,6 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let thumbs = document.querySelectorAll('.thumb');
     for (const thumb of thumbs) {
-        thumb.addEventListener('click', zoomThumbs)
-    };
+        thumb.addEventListener('click', zoomThumbs);
+    }
 })

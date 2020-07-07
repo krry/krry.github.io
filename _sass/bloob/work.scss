@@ -179,18 +179,11 @@
   flex: 1;
   cursor: pointer;
 
-  &.zoomed {
-    cursor: default;
-
-    figcaption {
-      display: block;
-    }
-  }
-
   & + .thumb {
     margin-left: 0.5rem;
   }
 
+  video,
   img {
     min-width: 15rem;
 
@@ -233,7 +226,15 @@
     }
   }
 
-  figure {
+  &.zoomed {
+    cursor: default;
+
+    figcaption {
+      display: block;
+    }
+  }
+
+  .gallery-item {
     display: flex;
     flex-flow: column nowrap;
   }
@@ -248,6 +249,7 @@
 .interstitial {
   max-height: 40vh;
   max-width: 40vw;
+  margin: auto;
 }
 
 a.btn.picto {
