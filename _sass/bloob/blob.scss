@@ -29,6 +29,10 @@
     margin-left: auto;
     margin-right: auto;
     font-weight: lighter;
+
+    @include light-mode {
+      font-weight: normal;
+    }
   }
 }
 
