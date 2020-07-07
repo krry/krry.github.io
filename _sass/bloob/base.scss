@@ -73,7 +73,7 @@ main {
   display: none;
 }
 
-::focus {
+:focus {
   outline-style: dashed;
   outline-color: cyan;
   outline-offset: 4px;

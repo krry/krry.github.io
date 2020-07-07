@@ -79,11 +79,54 @@
 @keyframes haunt {
   0%,
   100% {
-    transform: translate3d(0%, 0, 0) rotateZ(-20deg);
+    transform: translate3d(0%, -0.5em, 0) rotateZ(-20deg);
+  }
+
+  25% {
+    transform: translate3d(100%, 0, 0) rotateZ(0deg);
   }
 
   50% {
-    transform: translate3d(150%, 0, 0) rotate(20deg);
+    transform: translate3d(0%, 0.5em, 0) rotateZ(20deg);
+  }
+
+  75% {
+    transform: translate3d(-100%, 0, 0) rotateZ(0deg);
+  }
+}
+
+@keyframes helica {
+  0%,
+  10%,
+  30%,
+  65%,
+  85%,
+  100% {
+    transform: translate3d(0%, 0, 0) rotateX(0) rotateY(0) rotateZ(0) scale(1);
+  }
+
+  20% {
+    transform: translate3d(0%, 0.5rem, 0) rotateX(-45deg) rotateY(0) rotateZ(0) scale(1);
+  }
+
+  40% {
+    transform: translate3d(0%, 0, 0) rotateX(0) rotateY(35deg) rotateZ(0) scale(1);
+  }
+
+  45% {
+    transform: translate3d(0%, 0, 0) rotateX(0) rotateY(-35deg) rotateZ(0) scale(1);
+  }
+
+  50% {
+    transform: translate3d(0%, 0, 0) rotateX(0) rotateY(35deg) rotateZ(0) scale(1);
+  }
+
+  60% {
+    transform: translate3d(0%, 0, 0) rotateX(0) rotateY(-35deg) rotateZ(0) scale(1);
+  }
+
+  90% {
+    transform: translate3d(0%, 0.5rem, 0) rotateX(0) rotateY(0) rotateZ(0) scale(1.1);
   }
 }
 
