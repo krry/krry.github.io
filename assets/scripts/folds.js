@@ -32,8 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     let triggers = document.getElementsByClassName("trigger");
-    // wire triggers to show modal dialogs
-    for (var i = 0; i < triggers.length; i++) {
-        triggers[i].addEventListener("click", showJob);
+    for (const trigger of triggers) {
+        trigger.addEventListener("click", showJob);
     }
 });

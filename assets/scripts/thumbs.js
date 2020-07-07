@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    let thumbs = document.querySelectorAll('.thumb');
-
     let closeThumb = function (e, closer) {
         let thumb = e.target;
         if (typeof thumb === 'object') {
@@ -23,7 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
         thumb.classList.add('zoomed');
     };
 
-    for (let i = 0; i < thumbs.length; i++) {
-        thumbs[i].addEventListener('click', zoomThumbs);
-    }
+    let thumbs = document.querySelectorAll('.thumb');
+    for (const thumb of thumbs) {
+        thumb.addEventListener('click', zoomThumbs)
+    };
 })

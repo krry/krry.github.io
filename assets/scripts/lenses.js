@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', () => {
     document
         .getElementById("filter_ctrl")
         .addEventListener("change", applyFilter);
@@ -19,5 +19,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
             }
         }
     }
-    //the event occurred
 })
