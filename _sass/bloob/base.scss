@@ -73,12 +73,13 @@ main {
   display: none;
 }
 
-:focus {
+::focus {
   outline-style: dashed;
-  outline-color: $blue;
+  outline-color: cyan;
   outline-offset: 4px;
 }
 
-:active {
-  color: $green;
+::highlight {
+  color: $white;
+  background-color: $green;
 }
