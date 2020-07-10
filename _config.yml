@@ -37,6 +37,11 @@ google_analytics: UA-170088360-2
 plugins:
 - jekyll-feed
 - jekyll-seo-tag
+- jekyll-minifier
+
+# jekyll-minifier:
+#   uglifier_args:
+#     harmony: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
