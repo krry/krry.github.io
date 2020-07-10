@@ -13,14 +13,24 @@
   h1,
   h2,
   h3,
+  ul,
+  li,
   p {
     position: relative;
     z-index: 2;
-    max-width: 60ch;
   }
 
-  h2 {
+  h1,
+  h2,
+  h3 {
+    max-width: 80%;
     margin-bottom: 1em;
+  }
+
+  ul,
+  li,
+  p {
+    max-width: 60ch;
   }
 
   p,
@@ -30,9 +40,9 @@
     margin-right: auto;
     font-weight: lighter;
 
-    @include light-mode {
-      font-weight: normal;
-    }
+    // @include light-mode {
+    //   font-weight: normal;
+    // }
   }
 }
 
