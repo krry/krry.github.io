@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Animated Backgrounds Figured
+author: Kerrbear
 date: 2020-07-10 03:21:00 -0700
-----
+---
 
 For a while I have shamelessly poached [this wavy purple Vanta.js
 background](https://www.vantajs.com/?effect=waves), plopping it behind
@@ -13,7 +14,7 @@ now.
 As it turns out there are a host of other wonderful animated backgrounds for
 your web sites/apps/pages. Let's give them a spin, shall we?
 
-## Animated background demos galore!
+## Some schmancy animated background demos
 - [Tympanus](https://tympanus.net/Development/AmbientCanvasBackgrounds/index4.html)
 - [THPACE!](https://www.braedin.com/Thpace/)
 - [Naker.back](https://app.naker.io/back/)
