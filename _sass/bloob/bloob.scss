@@ -13,11 +13,8 @@
     padding-bottom: 1.5em;
   }
 
-  @include media-min($lap) {
-    // height: 25rem;
-    // font-size: 4.5rem;
-    // padding-top: 12.52.5;
-    // padding-bottom: 8rem;
+  #work > & {
+    margin-bottom: 0;
   }
 
   &.purp00 {
@@ -78,9 +75,4 @@
   &.dangler {
     bottom: -20vh;
   }
-
-  &.greeter {
-    animation: helica 10s linear infinite;
-  }
-
 }

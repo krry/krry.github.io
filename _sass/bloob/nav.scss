@@ -2,7 +2,10 @@
   position: sticky;
   top: 1rem;
   margin-bottom: 1rem;
-  padding: 0.5rem 1rem;
+
+  nav {
+    padding: 0.5rem 1rem;
+  }
 
   a.site-title {
     color: $fore;
