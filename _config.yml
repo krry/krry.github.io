@@ -18,19 +18,17 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Folio of an Atmanaut
+title: Atmanautica
 email: kerry@atmanaut.me
 description: >- # this means to ignore newlines until "baseurl:"
-  The Home Base and Folio of Kerry Alan Snyder
-  Atmanaut, Storyteller, Devsigner, and Entreflaneur
-  now accepting engagements for storytelling,
-  writing, strategy, design & development
+  We design and develop heart-first hand-crafted experiences
+  from the well of being for our world wide web.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://atmanaut.me" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://atmanautica.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: anatmanaut
 github_username:  krry
 google_analytics: UA-170088360-2
-
+#
 # Build settings
 # theme: minima
 # sourcemap: development

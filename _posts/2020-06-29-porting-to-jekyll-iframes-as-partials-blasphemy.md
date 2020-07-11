@@ -1,16 +1,12 @@
 ---
 layout: post
-title: Welcome to Home Base
+title: Porting to Jekyll, and iframes as Partials? Blasphemy!
 date: 2020-06-29 19:24:00 -0700
 ---
 
-Here goes nothing.
+Here goes nothing. An inaugural post ought to be haphazard, right?
 
-We've languished and avoided making a portfolio of our work for our whole career.
-And having finally nearly completed that feat of absurd torture,
-we want to take a short break to thank everyone.
-
-Gratitude to all the developers and writers and such that have come before me,
+Gratitude to all the developers and writers and such that have come before us,
 that have generously shared their struggles and learnings and insights and
 expertise. We have learned volumes from you, and yet we still know practically
 nothing. For example, on this Jekyll blog, we must name our posts according to
@@ -35,3 +31,5 @@ away. Here is a snippet of the magic iframe approach to vanilla HTML templating,
 With the gritty nits out of the way, we had better get back to porting that
 lovely little custom job we was tinkering with into this Jekyll framework. It
 might work. Seriously. It might.
+
+We're so glad you're here 🥰

@@ -9,5 +9,3 @@ Paging Doctor Obvious.
 Excuse me everyone, paging Dr. Obvious.
 
 This has been a test post. Have you found the Zound FX yet?
-
-
