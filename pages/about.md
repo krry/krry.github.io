@@ -8,6 +8,7 @@ poem: true
 # Who am I?
 
 I am plural, more *us* than *me*  
+who are we?  
 spirit-soul-mind-body  
 lover-healer-partner-buddy  
 brother-son-father-to-be  
@@ -25,10 +26,11 @@ esoteric acolyte
 card-carrying un-ist  
 loving awareness
 
-And truly I am none of these nouns, these bubbles  
-I am always only echoing in the vibratory field  
+and truly we are none of these nouns, these bubbles  
+we are always only echoing in the vibratory field  
 of being-knowing-enjoying  
-I am embodying patterns in the foam emerging still and silent  
-from the well of being seated at the core of our heart-center.
+we are embodying patterns in the foam emerging still and silent  
+from the well of being seated at the core of our heart-center
 
-## satchitananda
+hridayam
+satchitananda
