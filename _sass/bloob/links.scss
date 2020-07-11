@@ -8,6 +8,14 @@ a {
 
   &:link {
     color: $link-new;
+
+    &:hover {
+      color: $link-on;
+
+      svg.icon {
+        fill: $link-on;
+      }
+    }
   }
 
   &:visited {
@@ -15,6 +23,14 @@ a {
 
     svg.icon {
       fill: $link-old;
+    }
+
+    &:hover {
+      color: $link-on;
+
+      svg.icon {
+        fill: $link-on;
+      }
     }
   }
 
@@ -24,22 +40,5 @@ a {
     svg.icon {
       fill: $green;
     }
-  }
-
-  &:link:hover {
-    color: $link-on;
-
-    svg.icon {
-      fill: $link-on;
-    }
-  }
-
-  &:visited:hover {
-    color: $link-on;
-  }
-
-  &:visited:hover svg.icon {
-    fill: $link-on;
-    transition: 200ms;
   }
 }

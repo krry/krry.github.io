@@ -7,8 +7,8 @@ a.btn,
   white-space: nowrap;
   outline: none;
   color: $white;
-  background: $link-old;
-  border-color: $link-old;
+  background: $link-new;
+  border-color: $link-new;
   border-width: 6px;
   border-style: solid;
   border-radius: 1em;
@@ -16,24 +16,19 @@ a.btn,
   font-weight: bolder;
   cursor: pointer;
   text-align: center;
-  transition: background 250ms ease-in-out, transform 150ms ease;
+  transition: all 250ms ease;
   -webkit-appearance: none;
   -moz-appearance: none;
   box-shadow: inset 0 0 1em 1em rgba(0, 0, 0, 0.25);
 
   &:hover,
   &:focus {
-    background: $link-new;
-  }
-
-  &:focus {
-    outline: 1px solid rgba(255, 255, 255, 0.2);
-    outline-offset: 4px;
+    background: $link-on;
   }
 
   &:active {
     transform: scale(0.97);
-    background: $blue;
+    background: $link-old;
   }
 
   &:link,
@@ -44,11 +39,6 @@ a.btn,
   &:visited:hover {
     color: $white;
   }
-}
-
-select.btn::before {
-  content: "❖";
-  float: right;
 }
 
 @include media-min-width($lap) {
@@ -76,19 +66,14 @@ select.btn::before {
 
   &:hover,
   &:focus {
-    background: rgba(255, 255, 255, 0.2);
     color: $link-on;
     border-color: $link-on;
-  }
-
-  &:focus {
-    outline: 1px solid rgba(255, 255, 255, 0.2);
-    outline-offset: 4px;
+    background: transparent;
   }
 
   &:active {
     color: $green;
     border-color: $green;
-    background: $shade;
+    background: transparent;
   }
 }
