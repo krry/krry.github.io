@@ -27,11 +27,13 @@ form {
 
     &:hover {
       background: $fore;
+      border-color: $link-new;
     }
 
     &:active,
     &:focus {
       background: $white;
+      outline-color: $pink-new;
     }
   }
 }

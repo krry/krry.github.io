@@ -202,10 +202,10 @@
   figcaption {
     display: none;
     background: $black;
-    color: $green-lite;
+    color: $link-new;
 
     @include light-mode {
-      color: $green-deep;
+      color: $blue;
       background: $white;
     }
 
@@ -221,7 +221,7 @@
       color: $green;
 
       &:hover {
-        color: green-dark;
+        color: green-on;
       }
     }
   }
@@ -248,8 +248,11 @@
 
 .interstitial {
   max-height: 40vh;
-  max-width: 40vw;
   margin: auto;
+
+  @include media-min-width($lap) {
+    max-width: 40vw;
+  }
 }
 
 a.btn.picto {

@@ -19,10 +19,10 @@ a {
   }
 
   &:visited {
-    color: $link-old;
+    color: $blue;
 
     svg.icon {
-      fill: $link-old;
+      fill: $blue;
     }
 
     &:hover {
@@ -35,10 +35,10 @@ a {
   }
 
   &:active {
-    color: $green;
+    color: $pink;
 
     svg.icon {
-      fill: $green;
+      fill: $pink;
     }
   }
 }
