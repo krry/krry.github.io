@@ -9,7 +9,7 @@ a.btn,
   color: $white;
   background: $link-new;
   border-color: $link-new;
-  border-width: 6px;
+  border-width: 0.25em;
   border-style: solid;
   border-radius: 1em;
   font-family: $body-font;
@@ -63,7 +63,6 @@ a.btn,
 .btn.sm {
   font-size: 0.875em;
   padding: 0.25em;
-  border-width: 2px;
   border-radius: 4px;
   margin: 0;
 }
@@ -75,7 +74,7 @@ a.btn,
 
 .btn.holo {
   background: transparent;
-  border: 3px solid $white;
+  border-color: $white;
 
   &:hover,
   &:focus {

@@ -41,9 +41,12 @@ svg:not(:root) {
 
 svg.icon {
   display: block;
-  fill: $fore;
   pointer-events: none;
   margin: 0.25rem;
+}
+
+svg.icon path {
+  fill: $fore;
 }
 
 .foot,
@@ -61,6 +64,7 @@ svg.icon {
 .foot > span {
   width: 2rem;
   height: 2rem;
+  margin: 0.25rem;
 }
 
 .closer,
@@ -89,8 +93,8 @@ svg.icon {
   &:hover {
     background: $bkgd;
 
-    svg.icon {
-      fill: $red;
+    svg.icon path {
+      fill: $pink-on;
     }
   }
 }

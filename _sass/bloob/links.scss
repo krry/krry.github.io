@@ -12,8 +12,8 @@ a {
     &:hover {
       color: $link-on;
 
-      svg.icon {
-        fill: $link-on;
+      svg.icon path {
+        fill: $link-new;
       }
     }
   }
@@ -21,15 +21,15 @@ a {
   &:visited {
     color: $blue;
 
-    svg.icon {
+    svg.icon path {
       fill: $blue;
     }
 
     &:hover {
       color: $link-on;
 
-      svg.icon {
-        fill: $link-on;
+      svg.icon path {
+        fill: $link-old;
       }
     }
   }
@@ -37,7 +37,7 @@ a {
   &:active {
     color: $pink;
 
-    svg.icon {
+    svg.icon path {
       fill: $pink;
     }
   }
