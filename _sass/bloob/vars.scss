@@ -28,13 +28,11 @@ $mute: hsl(195, 10%, 50%);
 $mute-lite: hsl(195, 10%, 75%);
 $muted: hsla(196, 10%, 50%, 0.5);
 $shade: hsla(262, 43%, 10%, 0.7);
-$glass: hsla(196, 43%, 90%, 0.7);
-$red: hsl(342, 81%, 47%);
 
 // then relative variables, define defaults for each
 
 $base-font-family: $body-font !default;
-$base-font-size:   24px !default;
+$base-font-size:   20px !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-font-weight: 400 !default;
 $base-line-height: 1.5 !default;
@@ -58,10 +56,10 @@ $lap:        60rem !default;
 // store some color-scheme variables in the :root
 // $accent-color: #fbbc04;
 
-:root {
-  // WRONG, will not work in recent Sass versions.
-  // --accent-color-wrong: $accent-color;
-  // RIGHT, will work in all Sass versions.
-  // --accent-color-right: #{$accent-color};
-  color-scheme: light dark; /* both supported */
-}
+// :root {
+//   // WRONG, will not work in recent Sass versions.
+//   // --accent-color-wrong: $accent-color;
+//   // RIGHT, will work in all Sass versions.
+//   // --accent-color-right: #{$accent-color};
+//   color-scheme: light dark; /* both supported */
+// }

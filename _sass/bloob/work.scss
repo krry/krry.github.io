@@ -34,25 +34,14 @@
     margin-bottom: 1rem;
   }
 
-  border-radius: 1.5rem;
-  color: $fore;
-  border: 0.25rem solid $glass;
-  background-color: $shade;
+  border-radius: 4px;
   text-align: center;
-
-  @include light-mode {
-    color: $bkgd;
-    border: 0.25rem solid $shade;
-    background-color: $glass;
-  }
+  color: $fore;
+  border: 0.25rem solid $bkgd;
+  background-color: $bkgd;
 
   &::backdrop {
     background-color: $shade;
-
-    @include light-mode {
-      background-color: $glass;
-    }
-
     backdrop-filter: blur(4px);
   }
 
@@ -99,15 +88,10 @@
   h4 {
     margin: 1em auto;
     text-transform: uppercase;
-    margin-bottom: 1px solid inherit;
     text-decoration: underline;
     letter-spacing: 2px;
     line-height: 1.25;
     color: $fore;
-
-    @include light-mode {
-      color: $bkgd;
-    }
   }
 }
 
@@ -161,27 +145,23 @@
   overflow-x: auto;
   overflow-y: hidden;
   max-height: 33vh;
-  height: 6em;
+  min-height: 6em;
   margin: 1rem auto;
+  background: $bkgd;
 
   @include media-min($pad) {
     max-height: 45vh;
-    height: 12em;
+    min-height: 12em;
   }
 
   .gallery-item {
-    height: 100%;
-    margin-bottom: 0;
+    margin: 1em;
   }
 }
 
 .work-zoom .thumb {
   flex: 1;
   cursor: pointer;
-
-  & + .thumb {
-    margin-left: 0.5rem;
-  }
 
   video,
   img {
@@ -203,12 +183,6 @@
     display: none;
     background: $black;
     color: $link-new;
-
-    @include light-mode {
-      color: $blue;
-      background: $white;
-    }
-
     font-size: 0.875em;
     font-style: italic;
     padding: 0.5em;
@@ -228,9 +202,20 @@
 
   &.zoomed {
     cursor: default;
+    overflow: auto;
+
+    img {
+      max-width: none;
+      height: auto;
+    }
 
     figcaption {
       display: block;
+      position: fixed;
+      bottom: -0.4em;
+      left: 1em;
+      right: 1em;
+      text-align: center;
     }
   }
 
@@ -255,12 +240,35 @@
   }
 }
 
+.video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+  max-height: 40vh;
+
+  &::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+  }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
 a.btn.picto {
   position: relative;
   padding: 0;
+  border-color: transparent;
 
   &::after {
-    background-color: $shade;
     content: "";
     position: absolute;
     top: 0;
@@ -268,6 +276,7 @@ a.btn.picto {
     right: 0;
     bottom: 0;
     border-radius: 1em;
+    background-color: $shadow;
   }
 
   img {

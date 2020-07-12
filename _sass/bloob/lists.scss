@@ -74,16 +74,11 @@ ul.pills li {
   border-radius: 0.25em;
   padding: 0.25em 0.5em;
   margin: 0.25em 0.5em;
-  border: 2px solid inherit;
   color: $well;
   background: $green-new;
+  border-width: 2px;
+  border-style: solid;
   border-color: $green;
-
-  @include light-mode {
-    color: $black;
-    background: $pink-new;
-    border-color: $pink;
-  }
 }
 
 .identity-list > li:first-child {

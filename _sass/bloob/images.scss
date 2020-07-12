@@ -30,12 +30,11 @@ svg:not(:root) {
 
 .zoomed img {
   margin: auto;
-  max-width: 90vw;
-  max-height: 90vh;
-  box-shadow: 0 0 100vw 100vw $shade;
 
-  @include light-mode {
-    box-shadow: 0 0 100vw 100vw $glass;
+  @include media-min($pad) {
+    max-width: 90vw;
+    max-height: 90vh;
+    box-shadow: 0 0 100vw 100vw $shade;
   }
 }
 
