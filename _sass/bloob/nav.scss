@@ -2,10 +2,7 @@
   position: sticky;
   top: 1rem;
   margin-bottom: 1rem;
-
-  nav {
-    padding: 0.5rem 1rem;
-  }
+  z-index: 4;
 
   a.site-title {
     color: $fore;
@@ -17,9 +14,10 @@
 .site-header,
 .site-footer {
   nav {
+    background-color: $well;
+    padding: 0.5rem 1rem;
     transition: all 250ms;
     border-radius: 1em;
-    background-color: $well;
 
     &:hover {
       background-color: $well-ful;

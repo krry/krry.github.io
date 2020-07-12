@@ -25,10 +25,23 @@ ul.details {
 
 ul.links,
 ul.pros,
+ul.header-nav,
 ul.pills {
   @extend ul, .reset;
 
   text-align: center;
+}
+
+.header-nav {
+  display: inline-block;
+  a {
+    display: block;
+    padding: 0.25em 0.5em;
+
+    &:hover {
+      background: $well;
+    }
+  }
 }
 
 .work-list {

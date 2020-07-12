@@ -13,6 +13,11 @@
     padding-bottom: 1.5em;
   }
 
+  @include media-min-width($lap) {
+    padding-top: 2.5em;
+    padding-bottom: 1em;
+  }
+
   #work > & {
     margin-bottom: 0;
   }
@@ -70,9 +75,9 @@
     opacity: 0.25;
     animation: haunt 45s linear infinite;
     pointer-events: none;
-  }
 
-  &.dangler {
-    bottom: -20vh;
+    svg {
+      fill: white;
+    }
   }
 }

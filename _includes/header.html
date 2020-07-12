@@ -1,7 +1,15 @@
 <header class="site-header" role="banner" id="header">
   <nav>
-    <img class="bloob ghost" src="{{ "/assets/img/bloobs/whoo.png" | relative_url }}" alt="Atmanaut" />
-    <a class="site-title" rel="author" href="/">{{
-      site.title  | escape }}</a>
+    <img class="bloob ghost" src="{{ "/assets/img/bloobs/whoo.svg" | relative_url }}" alt="Atmanaut" />
+    <ul class="header-nav">
+      <li><a class="site-title" href="/">{{ site.title | escape }}</a></li>
+      {% assign pages = site.html_pages | sort: 'order' %}
+      {% for p in pages %}
+      {% if p.nav == "header" %}
+      <li><a href="{{ p.url }}" {% if p.url == page.url %}class="active"{%
+             endif %}>{{ p.title | capitalize }}</a></li>
+      {% endif %}
+      {% endfor %}
+    </ul>
   </nav>
 </header>
