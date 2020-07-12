@@ -64,20 +64,18 @@
 
   &.ghost {
     position: absolute;
-    top: -0.75em;
+    bottom: -1.5em;
     left: 0;
     right: 0;
-    margin: auto;
-    z-index: 3;
-    height: 3em;
-    padding: 0;
+    z-index: 1;
     font-size: 100%;
-    opacity: 0.25;
+    width: 4em;
+    height: 4em;
+    padding: 0;
     animation: haunt 45s linear infinite;
-    pointer-events: none;
 
-    svg {
-      fill: white;
+    path {
+      fill: $green;
     }
   }
 }
