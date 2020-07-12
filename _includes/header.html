@@ -1,11 +1,11 @@
 <header class="site-header" role="banner" id="header">
   <nav>
-    {%- include svg/bloob.svg class="bloob ghost" -%}
+    {%- include svg/bloob.svg class='bloob ghost' -%}
     <ul class="header-nav">
       <li><a class="site-title" href="/">{{ site.title | escape }}</a></li>
       {%- assign pages = site.html_pages | sort: 'order' -%}
       {%- for p in pages -%}
-      {%- if p.nav == "header" -%}
+      {%- if p.nav == 'header' -%}
       <li><a href="{{ p.url }}"{%- if p.url == page.url -%}
                class="active"{%- endif -%}>
         {{ p.title | capitalize }}
