@@ -12,8 +12,10 @@ document.addEventListener(("DOMContentLoaded"), function() {
 
   var elevator = new Elevator({
     element: eb,
-    mainAudio: '/assets/files/elevator-music.m4a',
-    endAudio: '/assets/files/Gong-sound.mp3',
+    // mainAudio: '/assets/files/elevator-music.m4a',
+    // endAudio: '/assets/files/Gong-sound.mp3',
+    // mainAudio: '/assets/files/Elevatron.m4a',
+    // endAudio: '/assets/files/Fairy.m4a',
   });
 
   elEl.addEventListener('click', scrollSwitchThenElevator)

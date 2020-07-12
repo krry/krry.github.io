@@ -66,3 +66,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     dresser.classList.remove('hidden');
     dresser.classList.add('bob-in');
 })
+
+// zome zpare zound fx
+// zzfx(...[,.2,440,.4,.3,2,3,1.2,1,.4,-69,.06,.01,.3,-0.1,,.15,.59,.8]); // Elevatron
+// zzfx(...[,.123,815,.874,.97,.72,,.1,.2,.17,217,.04,.03,,,,,,.44]); // Fairy
+// zzfx(...[,,69,.06,.21,.39,2,,4.2,,,,.01,,-1.6,,.15,2.7,.47]); // Jump 34
