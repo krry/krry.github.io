@@ -94,16 +94,22 @@
 .elevator-button {
   display: block;
   margin: 2rem auto;
-  width: 7rem;
-  padding: 1rem 0;
+  width: 3rem;
+  height: 3rem;
+  cursor: n-resize;
+  background: $well;
+  border-radius: 1em;
 
   svg.icon {
     margin: 0 auto;
-    transition: all 250ms;
+    width: 2rem;
+    height: 3rem;
+    transition: all 150ms;
   }
 
   &:hover {
     color: $blue;
+    background: $well-ful;
 
     svg.icon {
       fill: $blue;

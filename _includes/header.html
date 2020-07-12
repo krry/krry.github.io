@@ -1,6 +1,6 @@
 <header class="site-header" role="banner" id="header">
   <nav>
-    <img class="bloob ghost" src="{{ "/assets/img/bloobs/whoo.svg" | relative_url }}" alt="Atmanaut" />
+    {% include svg/bloob.svg class="ghost" %}
     <ul class="header-nav">
       <li><a class="site-title" href="/">{{ site.title | escape }}</a></li>
       {% assign pages = site.html_pages | sort: 'order' %}
