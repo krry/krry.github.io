@@ -20,18 +20,19 @@
 
 title: Atmanautica
 email: kerry@atmanaut.me
-description: >- # this means to ignore newlines until "baseurl:"
+description: >- # >- means to ignore newlines until "baseurl:"
   We design and develop handcrafted heart-first experiences
   from the well of being for our world wide web.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://atmanautica.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://atmanautica.com" # the base hostname & protocol
 twitter_username: anatmanaut
 github_username:  krry
 google_analytics: UA-170088360-2
-#
+
 # Build settings
 # theme: minima
-# sourcemap: development
+sourcemap: development
+
 plugins:
 - jekyll-feed
 - jekyll-seo-tag
