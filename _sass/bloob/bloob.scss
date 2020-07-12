@@ -64,18 +64,18 @@
 
   &.ghost {
     position: absolute;
-    bottom: -1.5em;
+    bottom: 0;
     left: 0;
     right: 0;
     z-index: 1;
     font-size: 100%;
-    width: 4em;
-    height: 4em;
+    width: 2em;
+    height: 2em;
     padding: 0;
     animation: haunt 45s linear infinite;
 
     path {
-      fill: $pink;
+      fill: $blue;
     }
   }
 }
