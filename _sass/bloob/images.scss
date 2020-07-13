@@ -54,25 +54,29 @@ svg.icon path {
   cursor: pointer;
 }
 
-.foot > span,
-.closer > span {
+.foot span,
+.closer span {
   position: absolute;
   z-index: 1;
 }
 
-.foot > span {
+.foot svg.icon,
+.foot span {
   width: 2rem;
   height: 2rem;
+}
+
+.foot span {
   margin: 0.25rem;
 }
 
 .closer,
-.closer > span {
+.closer span {
   width: 2rem;
   height: 2rem;
 }
 
-.closer > span {
+.closer span {
   top: 0;
   left: 0;
 }

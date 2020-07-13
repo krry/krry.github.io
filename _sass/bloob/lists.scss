@@ -81,11 +81,6 @@ ul.pills li {
   border-color: $green;
 }
 
-.identity-list > li:first-child {
-  color: $muted;
-  border-right: 2px dotted $muted;
-}
-
 .work-lists {
   display: flex;
   flex-flow: row wrap;
