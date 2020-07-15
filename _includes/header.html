@@ -11,9 +11,10 @@
       {%- assign pages = site.html_pages | sort: 'order' -%}
       {%- for p in pages -%}
       {%- if p.nav == 'header' -%}
-      <li><a href="{{ p.url }}"{%- if p.url == page.url -%}
-               class="active"{%- endif -%}>
-        {{ p.title | capitalize }}
+      <li>
+        <a href="{{ p.url }}"
+           class="nav-link {%- if p.url == page.url -%} active{%- endif -%}">
+          {{ p.title | capitalize }}
         </a>
       </li>
       {%- endif -%}
