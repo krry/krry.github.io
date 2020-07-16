@@ -80,7 +80,8 @@ main {
   outline-offset: 3px;
 }
 
-::highlight {
+::selection {
   color: $white;
   background-color: $green;
 }
+
