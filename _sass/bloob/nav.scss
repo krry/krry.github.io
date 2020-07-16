@@ -1,47 +1,7 @@
-.site-header {
-  position: sticky;
-  top: 1rem;
-  margin-bottom: 1rem;
-  z-index: 4;
-
-  .home-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 0;
-  }
-
-  .home-link,
-  .nav-link {
-    border-radius: 0.5em;
-  }
-
-  .site-title,
-  .site-logo {
-    flex: 1;
-  }
-
-  .site-title {
-    color: $fore;
-    font-family: $heading-font;
-    font-weight: bolder;
-  }
-
-  .site-logo {
-
-    svg.icon,
-    span {
-      height: 2.22em;
-      width: 2.22em;
-    }
-  }
-}
-
 .site-header,
 .site-footer {
   nav {
     background-color: $well;
-    padding: 0.5rem 1rem;
     transition: all 150ms;
     border-radius: 1em;
 
@@ -66,6 +26,57 @@
   }
 }
 
+.site-header {
+  position: sticky;
+  top: -3rem;
+  margin-top: 1em;
+  z-index: 3;
+
+  nav {
+    padding: 0.5em 1em 1em;
+  }
+
+  .home-node {
+    flex-basis: 100%;
+  }
+
+  @include media-min-width($pad) {
+    top: 0;
+
+    nav {
+      padding: 0.5em 1em;
+    }
+
+    .home-node {
+      flex-basis: auto;
+    }
+  }
+
+  .home-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .home-link,
+  .nav-link {
+    border-radius: 0.5em;
+  }
+
+  .site-title {
+    font-family: $heading-font;
+  }
+
+  .site-logo {
+    svg.icon,
+    span {
+      height: 2.22em;
+      width: 2.22em;
+    }
+  }
+}
+
 .site-footer {
   position: relative;
   color: $fore;
@@ -74,6 +85,10 @@
   z-index: 1;
   bottom: 1rem;
   margin: 2em 0 0;
+
+  nav {
+    padding: 0.5em 1em;
+  }
 
   svg,
   img {
