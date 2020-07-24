@@ -68,11 +68,18 @@ svg.icon path {
 
 .closer,
 .closer span {
-  width: 2rem;
-  height: 2rem;
+  width: 40px;
+  height: 40px;
+}
+
+.closer svg.icon {
+  width: 20px;
+  height: 20px;
+  margin: 7px;
 }
 
 .closer span {
+  pointer-events: none;
   top: 0;
   left: 0;
 }
@@ -85,8 +92,12 @@ svg.icon path {
   &.corner {
     position: fixed;
     z-index: 24;
-    top: 1.5rem;
-    right: 1rem;
+    top: 5px;
+    right: 10px;
+    @include media-min($pad) {
+      top: 1.5rem;
+      right: 1rem;
+    }
   }
 
   &:hover {

@@ -1,23 +1,21 @@
 <li id="scty" class="work-fold split fold-scty">
-  <a class="trigger">
+  <a class="trigger" data-trigger="scty">
     <div class="work-logo logo-scty"></div>
   </a>
-  <dialog class="work-zoom">
-    {%- include closer.html content='scty-closer' -%}
+  <dialog class="work-zoom" data-modal="scty">
+    {%- include closer.html content='scty' -%}
     <div class="work-logo logo-scty"></div>
     <h3>The Sun provides enough energy in 8 minutes to power humanity for an entire year.</h3>
     <div class="gallery">{%- include closer.html content='scty-thumb-closer' -%}
-      {%- include image.html file='scty-power-back.jpg' caption='Before the Sales Kickoff where we launched Green Ops'
-      link='https://loanpal.com/green-energy' -%}
       {%- include image.html file='scty-today.jpg' caption='Once the homepage of SolarCity.com' link='https://solarcity.com' -%}
       {%- include image.html file='scty-leadgen.jpg' caption='The launch screen of Leadgen, our field sales lead entry app. This was a solo project, built from scratch in Node.js' link='https://leadgen.solarcity.com' -%}
-      {%- include image.html file='scty-team.jpg' caption='Our Creative and
-      Marketing teams circa 2013' link='' -%}
       {%- include image.html file='scty-go-quote.jpg' caption='SolarCity Go provided DIY quotes to prospective customers.'
       link='https://go.solarcity.com' -%}
       {%- include image.html file='scty-go-bill.jpg' caption='The crux and boon of SolarCity Go was the live power bill calculator.'
       link='https://go.solarcity.com' -%}
-      {%- include image.html file='scty-creative.jpg' caption='The Creative Team being… creative.' link='' -%}
+      {%- include image.html file='scty-team.jpg' caption='Our Creative and Marketing teams circa 2013' link='' -%}
+      {%- include image.html file='scty-power-back.jpg' caption='Before the Sales Kickoff where we launched Green Ops' link='https://loanpal.com/green-energy' -%}
+      {% comment %} {%- include image.html file='scty-creative.jpg' caption='The Creative Team being… creative.' link='' -%} {% endcomment %}
     </div>
     <p>For SolarCity we designed, prototyped, and developed a slew of digital
       experiences for customers and employees. We were able to drastically

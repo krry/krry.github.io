@@ -3,7 +3,6 @@
   nav {
     background-color: $well;
     transition: all 150ms;
-    border-radius: 1em;
 
     &:hover {
       background-color: $well-ful;
@@ -27,13 +26,23 @@
 }
 
 .site-header {
-  position: sticky;
-  top: -3rem;
-  margin-top: 1em;
+  // position: -webkit-sticky;
+  // position: sticky;
+  // top: -2.5rem;
+  margin: 0 -0.8em;
   z-index: 3;
 
   nav {
-    padding: 0.5em 1em 1em;
+    padding: 0 0.4em 0.4em;
+  }
+
+  @include media-min-width($palm) {
+    margin: 1em 0 0;
+
+    nav {
+      padding: 0.5em 1em 1em;
+      border-radius: 1em;
+    }
   }
 
   .home-node {
@@ -85,9 +94,18 @@
   z-index: 1;
   bottom: 1rem;
   margin: 2em 0 0;
+  width: 100vw;
 
   nav {
-    padding: 0.5em 1em;
+    padding: 1em 0;
+  }
+
+  @include media-min-width($palm) {
+    width: auto;
+    nav {
+      border-radius: 1em;
+      padding: 0.5em 1em;
+    }
   }
 
   svg,
@@ -96,10 +114,14 @@
     width: 2rem;
   }
 
-  a:link {
+  a {
     height: 100%;
     width: 100%;
-    padding: 0 0.75rem;
+    padding: 0 1em;
+  }
+
+  .legalese a {
+    padding: 0 0.5em;
   }
 }
 
@@ -160,4 +182,3 @@
     }
   }
 }
-

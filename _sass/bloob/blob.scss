@@ -6,11 +6,14 @@
   align-items: center;
   margin: 1rem 0;
   padding: 1rem;
-  width: calc(100vw - 1.5rem);
+  width: 100vw;
+  @include media-min-width($palm) {
+    width: calc(100vw - 1.5rem);
+    border-radius: 3em;
+  }
   color: $fore;
   background-color: $well;
   text-align: center;
-  border-radius: 3em;
 
   h1,
   h2,
