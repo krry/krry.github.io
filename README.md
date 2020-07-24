@@ -1,57 +1,22 @@
 # Atmanautica.com
 
-## Tech stack
-- Jekyll on Github Pages for easy publishing
-  - Sass styles & Liquid templates
-- [Vanta](https://www.vantajs.com/?effect=waves) animated background
-- [Zzfx](https://killedbyapixel.github.io/ZzFX/) Zuper Zmall Zound Fx
-- vanilla handrolls
-- minimal af
+The homebase and folio of Atmanautica
 
-## To explore
-- [ ] using DevTools to optimize page loads with speed and grace
-- [ ] static site frameworks: Jekyll vs. Gatsby vs. Next
-- [ ] dynamic SPA frameworks: React vs. Angular vs. Vue
+🍦 mostly Vanilla
+🦹 built with Jekyll
+🐙 deployed with Github Pages
+💧 hosted at Atmanautica.com
 
-## The Flow
+## Dev Setup
 
-### Entry points
-- we met you
-- we emailed you
-- someone who knows us referred you
-- you Googled for devsign
-- you saw our IG/FB ad???
+Dependencies to install:
+- [Ruby](https://www.ruby-lang.org/en/about/) and [Bundler](https://bundler.io/)
+- [Jekyll for Github Pages](https://docs.github.com/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll)
 
-### Guest Needs
-- you need something built
-- you are hiring
-- you need web devsign
-- you like us and want our time
-- you need direction
-- you need to pivot
-- you don't know what you need
-
-### Our offerings
-- hourly devsign consulting
-- project-based contracting
-- strategic vision sessions
-- tactical topography mapping
-- concept prototyping & MVP vetting
-- customer success stories
-- listening
-- some blend of these on retainer
-
-### What we need
-- current work ($/time rates)
-  - $10000-$25000 per month
-  - $2500-$10000 per week
-  - $500-$2500 per day
-  - $125-$300 per hour
-- future work (less time per new gig)
-  - access to more clients
-  - enthusiastic referrals
-  - work product to show
-- steady velocity (low lag in communication)
-  - tight feedback loops
-- accumulating potential
-  - equity in your efforts
+How to run locally:
+```sh
+git clone git@github.com:Atmanautica/atmanautica.github.io.git
+cd atmanautica.github.io
+bundle install
+bundle exec jekyll serve --livereload --incremental --host 0.0.0.0
+```
