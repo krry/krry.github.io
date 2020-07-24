@@ -4,6 +4,7 @@ html {
   line-height: 1.25;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
