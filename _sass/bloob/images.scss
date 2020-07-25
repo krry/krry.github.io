@@ -146,66 +146,78 @@ ul.tool-list {
     background-position: center center;
     transition: all 150ms ease-in;
 
+    transform: scale(0.9);
+    &:hover {
+      transform: scale(1);
+    }
+
+    &.wordmark {
+      transform: scale(1);
+      &:hover {
+        transform: scale(1.1);
+      }
+      a {
+        color: transparent;
+      }
+    }
+
+    &.spacey {
+      background-size: 150%;
+    }
+
+    &.lightmark {
+      a {
+        color: $black;
+      }
+    }
+
     &.logo-figma {
       background-image: url("/assets/img/tools/logo-figma.svg");
     }
     &.logo-vscode {
       background-image: url("/assets/img/tools/logo-vscode.svg");
     }
-    &.logo-neovim {
-      background-image: url("/assets/img/tools/logo-neovim.svg");
-      &:hover { transform: scale(1.1); }
-      a { color: transparent; }
-    }
     &.logo-github {
       background-image: url("/assets/img/tools/logo-github.svg");
-    }
-    &.logo-asana {
-      background-image: url("/assets/img/tools/logo-asana.svg");
-      &:hover { transform: scale(1.1); }
-      a { color: transparent; }
     }
     &.logo-graphql {
       background-image: url("/assets/img/tools/logo-graphql.svg");
     }
-    &.logo-sanity {
-      background-image: url("/assets/img/tools/logo-sanity.svg");
-      &:hover { transform: scale(1.1); }
-      a { color: transparent; }
-    }
-    &.logo-node {
-      background-image: url("/assets/img/tools/logo-node.svg");
-      &:hover { transform: scale(1.1); }
-      a { color: transparent; }
-    }
     &.logo-react {
-      background-size: 150%;
       background-image: url("/assets/img/tools/logo-react.svg");
     }
     &.logo-slack {
-      background-size: 150%;
       background-image: url("/assets/img/tools/logo-slack.svg");
     }
     &.logo-meet {
       background-image: url("/assets/img/tools/logo-meet.svg");
-      a { color: $black; }
     }
     &.logo-trello {
       background-image: url("/assets/img/tools/logo-trello.svg");
-      a { color: $black; }
     }
     &.logo-gatsby {
       background-image: url("/assets/img/tools/logo-gatsby.svg");
-      a { color: $black; }
     }
     &.logo-apollo {
       background-image: url("/assets/img/tools/logo-apollo.svg");
-      a { color: $link-new; }
+      a {
+        color: $link-new;
+      }
+    }
+    &.logo-sanity {
+      background-image: url("/assets/img/tools/logo-sanity.svg");
+    }
+    &.logo-node {
+      background-image: url("/assets/img/tools/logo-node.svg");
     }
     &.logo-codepen {
       background-image: url("/assets/img/tools/logo-codepen.svg");
-      &:hover { transform: scale(1.1); }
-      a { color: transparent; }
+    }
+    &.logo-neovim {
+      background-image: url("/assets/img/tools/logo-neovim.svg");
+    }
+    &.logo-asana {
+      background-image: url("/assets/img/tools/logo-asana.svg");
     }
 
     &:hover,
