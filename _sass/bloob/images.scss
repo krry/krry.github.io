@@ -127,3 +127,113 @@ svg.icon path {
 .looper {
   max-width: 80vw;
 }
+
+ul.tool-list {
+  @extend .reset;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+
+  li.tool-logo {
+    position: relative;
+    width: 6em;
+    height: 6em;
+    margin: 1em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    transition: all 150ms ease-in;
+
+    &.logo-figma {
+      background-image: url("/assets/img/tools/logo-figma.svg");
+    }
+    &.logo-vscode {
+      background-image: url("/assets/img/tools/logo-vscode.svg");
+    }
+    &.logo-neovim {
+      background-image: url("/assets/img/tools/logo-neovim.svg");
+      &:hover { transform: scale(1.1); }
+      a { color: transparent; }
+    }
+    &.logo-github {
+      background-image: url("/assets/img/tools/logo-github.svg");
+    }
+    &.logo-asana {
+      background-image: url("/assets/img/tools/logo-asana.svg");
+      &:hover { transform: scale(1.1); }
+      a { color: transparent; }
+    }
+    &.logo-graphql {
+      background-image: url("/assets/img/tools/logo-graphql.svg");
+    }
+    &.logo-sanity {
+      background-image: url("/assets/img/tools/logo-sanity.svg");
+      &:hover { transform: scale(1.1); }
+      a { color: transparent; }
+    }
+    &.logo-node {
+      background-image: url("/assets/img/tools/logo-node.svg");
+      &:hover { transform: scale(1.1); }
+      a { color: transparent; }
+    }
+    &.logo-react {
+      background-size: 150%;
+      background-image: url("/assets/img/tools/logo-react.svg");
+    }
+    &.logo-slack {
+      background-size: 150%;
+      background-image: url("/assets/img/tools/logo-slack.svg");
+    }
+    &.logo-meet {
+      background-image: url("/assets/img/tools/logo-meet.svg");
+      a { color: $black; }
+    }
+    &.logo-trello {
+      background-image: url("/assets/img/tools/logo-trello.svg");
+      a { color: $black; }
+    }
+    &.logo-gatsby {
+      background-image: url("/assets/img/tools/logo-gatsby.svg");
+      a { color: $black; }
+    }
+    &.logo-apollo {
+      background-image: url("/assets/img/tools/logo-apollo.svg");
+      a { color: $link-new; }
+    }
+    &.logo-codepen {
+      background-image: url("/assets/img/tools/logo-codepen.svg");
+      &:hover { transform: scale(1.1); }
+      a { color: transparent; }
+    }
+
+    &:hover,
+    &:focus {
+      a {
+        opacity: 1;
+        transform: translate3d(0, 0, 0) scale(1);
+      }
+    }
+
+    a {
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      text-decoration: none;
+      font-size: 125%;
+      line-height: 4.5em;
+      opacity: 0;
+      color: $fore;
+      font-weight: bolder;
+      text-transform: uppercase;
+      transition: all 150ms ease-in;
+      transform: translate3d(0, 1em, 0) scale(0.75);
+    }
+  }
+}

@@ -86,3 +86,8 @@ main {
   background-color: $green;
 }
 
+hr {
+  width: 80%;
+  border-bottom: 1px dashed $fore;
+  background: none;
+}
