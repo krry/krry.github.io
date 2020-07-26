@@ -2,13 +2,13 @@ table {
   margin-bottom: $spacing-unit;
   width: 100%;
   text-align: $table-text-align;
-  color: lighten($text-color, 18%);
+  color: $text-color;
   border-collapse: collapse;
-  border: 1px solid $grey-color-light;
+  border: 1px solid $purp;
 
   tr {
     &:nth-child(even) {
-      background-color: lighten($grey-color-light, 6%);
+      background-color: lighten($purp-old, 6%);
     }
   }
 
@@ -18,12 +18,12 @@ table {
   }
 
   th {
-    background-color: lighten($grey-color-light, 3%);
-    border: 1px solid darken($grey-color-light, 4%);
-    border-bottom-color: darken($grey-color-light, 12%);
+    background-color: $purp-old;
+    border: 1px solid $purp-new;
+    border-bottom: 3px solid $purp;
   }
 
   td {
-    border: 1px solid $grey-color-light;
+    border: 1px solid $purp;
   }
 }
