@@ -43,6 +43,6 @@ console.log(anotherNewDate); // 2020-07-31
 
 This conundrum is one React seeks to help us avoid. By preferring and enforcing [strict, deep immutability, (as scary as that sounds)](https://alistapart.com/article/why-mutation-can-be-scary/) of data objects, React allows us to jump forward and back among states of the application as though time has more than one-dimension and moves in more than one-direction. And, I mean, it does, obviously.
 
-To fix this crazy clock, we had to become more comfortable with dating mutations. We now create a few instances of the Date object, and the awkwardness is all but gone. Now the the old Passage clock is humming along like a hummingbird in a humvee with Humphrey Bogart.
+To fix the Passage Clock, we had to give up dating mutations and embrace immutability for our Date objects. We now create a few instances of the Date object, and the awkwardness is all but gone, and the old clock is humming along like a hummingbird in a humvee with Humphrey Bogart.
 
 Thanks for showing up. Showing up is key. Oh dear, [look at the time…](https://passage.atmanaut.us)
