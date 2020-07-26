@@ -28,6 +28,8 @@ url: "https://atmanautica.com" # the base hostname & protocol
 twitter_username: anatmanaut
 github_username:  krry
 google_analytics: UA-170088360-2
+disqus:
+  shortname: atmanautica
 
 # Build settings
 # theme: minima
