@@ -61,6 +61,19 @@
     }
   }
 
+  @include media-min-width($lap) {
+    .home-node,
+    .nav-node {
+      margin: 0 0.35em;
+    }
+    .home-node {
+      margin-left: auto;
+    }
+    .nav-node:last-of-type {
+      margin-right: auto;
+    }
+  }
+
   .home-link {
     display: flex;
     justify-content: center;
