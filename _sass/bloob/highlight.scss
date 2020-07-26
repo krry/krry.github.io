@@ -4,6 +4,7 @@
 .highlight {
   @extend %vertical-rhythm;
 
+  text-align: left;
   pre { background: #272822; }
   .hll { background-color: #272822; }
 

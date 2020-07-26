@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 layout: post
 title: "Dating with Mutations"
@@ -14,6 +15,20 @@ wrastling with some seriously strange output, we reached the taproot of the
 issue: [the ECMAScript Date object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) or a rather rudimentary misunderstanding of said object.
 
 ### Cloning is the Key to Dating Mutations
+=======
+I noticed while revisiting [this dusty marvel](https://passage.atmanaut.us/) that the date being displayed was obscenely wrong. The month was two months off, the hours were several time zones away, and the date was always less than seven. And here I thought we had left it stable, at least worthy of v1.
+
+Time for some ungloving and debugging. All you need is *glove*, doo duh dooda doo 🎺 💘 🧤
+
+---
+
+Thankfully we left ourselves some treats, like debug logging switches, and a
+clever cross-module emitter that reports its behavior dutifully. After
+wrestling with some seriously strange output, I tapped the root of the
+issue: [the ECMAScript Date object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) or rather my rudimentary misunderstanding of said object.
+
+## The Key to Dating Mutations is Cloning
+>>>>>>> 2e5cf4f... post about wrestling with mutants on dates
 
 You see, I don't have a lot experience with dating mutations. If you would
 have asked me a year ago what I thought about mutating dates, I would have
@@ -36,7 +51,11 @@ Isn't it funny-not-funny how the Universe seems to contain only enough to keep
 us engaged, just enough novelty to keep us believing the world of forms and
 images is real?
 
+<<<<<<< HEAD
 Metaphysics aside, [the Date object in JavaScript is a tricky little mink](https://css-tricks.com/everything-you-need-to-know-about-date-in-javascript/).
+=======
+Metaphysics aside, [the Date object in JavaScript is a tricky little mink])(https://css-tricks.com/everything-you-need-to-know-about-date-in-javascript/).
+>>>>>>> 2e5cf4f... post about wrestling with mutants on dates
 If you ask the browser to generate a Date object and assign it to a variable
 name, then assign that to any other variable, the same Date object underlies
 both. So then if you were to `set` the Date object in any fashion,
@@ -53,13 +72,22 @@ anotherNewDate.getDate() !== 22; // 2020-07-31
 This conundrum is one React seeks to help us avoid. By preferring and enforcing [strict, deep
 immutability, (as scary as that sounds)](https://alistapart.com/article/why-mutation-can-be-scary/)
 of data objects, React allows us to jump forward and back among
+<<<<<<< HEAD
 states of the application as though time has more than one-dimension and moves
 in more than one-direction. And, I mean, it does, obviously.
+=======
+states of the application as though time is more than one-dimensional and more
+than one-directional. Pro tip: it is.
+>>>>>>> 2e5cf4f... post about wrestling with mutants on dates
 
 To fix this crazy clock, we had to become more comfortable with dating mutations.
 We now create a few instances of the Date object, and the awkwardness is all
 but gone. Now the the old Passage clock is humming along like a hummingbird in
 a humvee with Humphrey Bogart.
 
+<<<<<<< HEAD
 Thanks for showing up. Showing up is key. Oh dear, [look at the
 time…](https://passage.atmanaut.us)
+=======
+Thanks for showing up. Showing up is key. Oh dear, look at the time…
+>>>>>>> 2e5cf4f... post about wrestling with mutants on dates
