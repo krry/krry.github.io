@@ -1,0 +1,167 @@
+ul.tool-list {
+  @extend .reset;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+
+  li.tool-logo {
+    position: relative;
+    width: 4em;
+    height: 4em;
+
+    @include media-min-width($pad) {
+      width: 6em;
+      height: 6em;
+    }
+
+    @include media-min-wide() {
+      width: 8em;
+      height: 8em;
+    }
+
+    margin: 1em;
+    margin-bottom: 3em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    transition: all 150ms ease-in;
+
+    transform: scale(0.9);
+
+    &:hover {
+      transform: scale(1);
+    }
+
+    &:hover,
+    &:focus {
+      > a {
+        opacity: 1;
+      }
+    }
+
+    > a {
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      text-decoration: none;
+      font-size: 125%;
+      line-height: 3em;
+
+      @include media-min-width($pad) {
+        line-height: 4.5em;
+      }
+      @include media-min-wide() {
+        line-height: 6em;
+      }
+
+      opacity: 0;
+      color: $fore;
+      font-weight: bolder;
+      text-transform: uppercase;
+      transition: all 150ms ease-in;
+    }
+
+    .helpers {
+      margin: 0.5em auto;
+      position: absolute;
+      bottom: -3em;
+      left: 0;
+      right: 0;
+      height: 2em;
+
+      a {
+        display: inline;
+        font-size: 87%;
+        padding: 0.25em 0.5em;
+        &:hover {
+          text-decoration: dashed underline;
+        }
+      }
+    }
+
+    &.wordmark {
+      transform: scale(1);
+      &:hover {
+        transform: scale(1.1);
+      }
+      > a {
+        color: transparent;
+      }
+    }
+
+    &.spacey {
+      background-size: 150%;
+    }
+
+    &.lightmark {
+      > a {
+        color: $black;
+      }
+    }
+
+    &.logo-figma {
+      background-image: url("/assets/img/tools/logo-figma.svg");
+    }
+    &.logo-vscode {
+      background-image: url("/assets/img/tools/logo-vscode.svg");
+    }
+    &.logo-github {
+      background-image: url("/assets/img/tools/logo-github.svg");
+    }
+    &.logo-graphql {
+      background-image: url("/assets/img/tools/logo-graphql.svg");
+    }
+    &.logo-react {
+      background-image: url("/assets/img/tools/logo-react.svg");
+    }
+    &.logo-slack {
+      background-image: url("/assets/img/tools/logo-slack.svg");
+    }
+    &.logo-meet {
+      background-image: url("/assets/img/tools/logo-meet.svg");
+    }
+    &.logo-trello {
+      background-image: url("/assets/img/tools/logo-trello.svg");
+    }
+    &.logo-gatsby {
+      background-image: url("/assets/img/tools/logo-gatsby.svg");
+    }
+    &.logo-apollo {
+      background-image: url("/assets/img/tools/logo-apollo.svg");
+    }
+    &.logo-sanity {
+      background-image: url("/assets/img/tools/logo-sanity.svg");
+    }
+    &.logo-node {
+      background-image: url("/assets/img/tools/logo-node.svg");
+    }
+    &.logo-codepen {
+      background-image: url("/assets/img/tools/logo-codepen.svg");
+    }
+    &.logo-neovim {
+      background-image: url("/assets/img/tools/logo-neovim.svg");
+    }
+    &.logo-asana {
+      background-image: url("/assets/img/tools/logo-asana.svg");
+    }
+    &.logo-nextjs {
+      background-image: url("/assets/img/tools/logo-nextjs.svg");
+    }
+    &.logo-vercel {
+      background-image: url("/assets/img/tools/logo-vercel.svg");
+    }
+    &.logo-vuejs {
+      background-image: url("/assets/img/tools/logo-vuejs.svg");
+    }
+    &.logo-hugo {
+      background-image: url("/assets/img/tools/logo-hugo.svg");
+    }
+  }
+}
