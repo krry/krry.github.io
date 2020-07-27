@@ -42,6 +42,17 @@ body {
   -o-font-feature-settings: "kern" 1;
   font-feature-settings: "kern" 1;
   font-kerning: normal;
+  background-image: url("/assets/img/waves.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@include media-min-width($pad) {
+  body {
+    background-image: url("/assets/img/waves-pad.jpg");
+  }
 }
 
 @include media-min($pad) {
@@ -73,6 +84,13 @@ main {
 
 .hidden {
   display: none;
+}
+
+.paused {
+  animation-play-state: paused;
+  #waves {
+    display: none;
+  }
 }
 
 :focus {

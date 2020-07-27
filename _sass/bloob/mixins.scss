@@ -24,6 +24,18 @@
   }
 }
 
+@mixin media-min-tall() {
+  @media screen and (min-height: $lap) and (min-width: $pad) {
+    @content;
+  }
+}
+
+@mixin media-min-wide() {
+  @media screen and (min-height: $pad) and (min-width: $lap) {
+    @content;
+  }
+}
+
 @mixin relative-font-size($ratio) {
   font-size: $base-font-size * $ratio;
 }
