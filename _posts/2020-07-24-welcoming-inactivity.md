@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Welcoming Inactivity and Taking a Seat
-date: 2020-07-26 05:28:34 -07000
+date: 2020-07-24 05:28:34 -07000
 comments: true
 ---
 
