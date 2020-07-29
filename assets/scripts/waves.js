@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
     var dTime = timestamp - last;
-    if (dTime > 33) {
+    if (dTime > 50) {
       // If more than 33ms since last frame (i.e. below 30fps)
       document.getElementsByTagName("body")[0].className = "paused";
     }
