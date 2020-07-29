@@ -1,12 +1,17 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     let knob = document.getElementById("knob");
-    let drawer = document.getElementById("drawer");
     let dresser = document.getElementById("dresser");
     let cello = document.getElementById("cello");
 
     knob.addEventListener("click", function(){
-        dresser.classList.toggle("open");
-        zzfx(...[,,315,.14,.03,.24,,.63,.8,,200,,.04,,,,.13,.62,.09]); // Powerup 57
+      dresser.classList.toggle("open");
+      if (dresser.classList.contains("open")) {
+        // play Powerup 57 open sound
+        zzfx(...[,,315,.14,.03,.24,,.63,.8,,200,,.04,,,,.13,.62,.09]);
+      } else {
+        // play Powerup 57 close sound
+        zzfx(...[,,115,.04,.02,.24,,.63,.8,,200,,.04,,,,.13,.62,.05]);
+      }
     });
     let mentality = document.getElementById("mentality");
     let tone = mentality.value/10;
