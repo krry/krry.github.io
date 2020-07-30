@@ -4,12 +4,12 @@
   flex-flow: column nowrap;
   justify-content: space-evenly;
   align-items: center;
-  margin: 1rem 0;
   padding: 1rem;
   width: 100vw;
   @include media-min-width($palm) {
     width: calc(100vw - 1.5rem);
     border-radius: 3em;
+    margin: 1rem 0;
   }
   color: $fore;
   background-color: $well;
@@ -56,17 +56,17 @@
   }
 }
 
-.blob.home {
+.blob.Home {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   h1.headline {
-    margin-top: 1.5rem;
+    margin: 1.5rem 0;
 
     @include media-min($pad) {
-      margin-top: 2rem;
+      margin: 2rem 0;
     }
   }
 
@@ -97,11 +97,21 @@
   }
 }
 
-@include media-min-width($pad) {
+@media screen and (orientation: landscape) {
   .blob {
-    max-width: 87vw;
     padding-left: 2em;
     padding-right: 2em;
+  }
+}
+
+@media screen and (min-width: $pad) and (min-height: $palm) {
+  .blob {
+    max-width: 87vw;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
   }
 
   .blob:nth-of-type(2n) {
@@ -111,11 +121,3 @@
   }
 }
 
-@include media-min-height($pad) {
-  .blob {
-    margin-top: 2em;
-    margin-bottom: 2em;
-    padding-top: 2em;
-    padding-bottom: 2em;
-  }
-}
