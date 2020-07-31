@@ -1,16 +1,26 @@
 document.addEventListener("DOMContentLoaded", () => {
-  var start = null;
-  var last = null;
-  window.requestAnimationFrame(fpsMeasureLoop);
+
+  let start, last, dTime, demerits;
   function fpsMeasureLoop(timestamp) {
     if (start == null) {
       last = start = timestamp;
-      return;
+      demerits = 0;
     }
-    var dTime = timestamp - last;
-    if (dTime > 50) {
-      // If more than 33ms since last frame (i.e. below 30fps)
-      document.getElementsByTagName("body")[0].className = "paused";
+    dTime = timestamp - last;
+    last = timestamp;
+
+    // If more than 33ms since last frame (i.e. below 30fps)
+    if (dTime > 200) {
+      demerits += 1;
+
+      if (demerits > 2) {
+        console.log('two second timeout');
+        document.body.classList.add('paused');
+        setTimeout(window.requestAnimationFrame(fpsMeasureLoop), 2000);
+        demerits = 0;
+      }
+    } else {
+      document.body.classList.remove('paused');
     }
     window.requestAnimationFrame(fpsMeasureLoop);
   }
@@ -26,4 +36,5 @@ document.addEventListener("DOMContentLoaded", () => {
     zoom: 1,
   });
   document.getElementById("waves").classList.add("on");
+  // window.requestAnimationFrame(fpsMeasureLoop);
 });

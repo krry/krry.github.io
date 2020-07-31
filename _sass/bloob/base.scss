@@ -14,98 +14,99 @@ html {
 }
 
 *,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-body {
-  margin: 0;
-  padding: 0 0.75rem;
-  background-color: $bkgd;
-  color: $fore;
-  overflow-x: hidden;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 100vh;
-  height: 100%;
-  width: 100%;
-  font-family: $body-font;
-  font-weight: $base-font-weight;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern" 1;
-  -moz-font-feature-settings: "kern" 1;
-  -o-font-feature-settings: "kern" 1;
-  font-feature-settings: "kern" 1;
-  font-kerning: normal;
-  background-image: url("/assets/img/waves.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-@include media-min-width($pad) {
-  body {
-    background-image: url("/assets/img/waves-pad.jpg");
+  *::before,
+  *::after {
+    box-sizing: inherit;
   }
-}
-
-@include media-min($pad) {
-  body {
-    padding: 0;
-    font-size: 125%;
-  }
-}
-
-@include media-min($lap) {
-  body {
-    font-size: 150%;
-  }
-}
-
-html.modal-open {
-  scroll-behavior: auto;
 
   body {
-    height: 100vh;
-    overflow: hidden;
-    padding-right: 15px; /* Avoid width reflow */
+    margin: 0;
+    padding: 0 0.75rem;
+    background: $bkgd;
+    background: radial-gradient(circle, rgba(46,105,204,1) 0%, rgba(61,4,158,1) 46%, rgba(24,5,57,1) 100%);
+    color: $fore;
+    overflow-x: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    font-family: $body-font;
+    font-weight: $base-font-weight;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    -o-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    // background-image: url("/assets/img/waves.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
   }
-}
 
-main {
-  display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
-}
+  @include media-min-width($pad) {
+    body {
+      // background-image: url("/assets/img/waves-pad.jpg");
+    }
+  }
 
-.hidden {
-  display: none;
-}
+  @include media-min($pad) {
+    body {
+      padding: 0;
+      font-size: 125%;
+    }
+  }
 
-.paused {
-  animation-play-state: paused;
-  #waves {
+  @include media-min($lap) {
+    body {
+      font-size: 150%;
+    }
+  }
+
+  html.modal-open {
+    scroll-behavior: auto;
+
+    body {
+      height: 100vh;
+      overflow: hidden;
+      padding-right: 15px; /* Avoid width reflow */
+    }
+  }
+
+  main {
+    display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
+  }
+
+  .hidden {
     display: none;
   }
-}
 
-:focus {
-  outline-style: dashed;
-  outline-color: $link-new;
-  outline-offset: 3px;
-}
+  .paused {
+    animation-play-state: paused;
+    #waves {
+      display: none;
+    }
+  }
 
-::selection {
-  color: $white;
-  background-color: $green;
-}
+  :focus {
+    outline-style: dashed;
+    outline-color: $link-new;
+    outline-offset: 3px;
+  }
 
-hr {
-  width: 80%;
-  border-bottom: 1px dashed $fore;
-  background: none;
-}
+  ::selection {
+    color: $white;
+    background-color: $green;
+  }
+
+  hr {
+    width: 80%;
+    border-bottom: 1px dashed $fore;
+    background: none;
+  }
