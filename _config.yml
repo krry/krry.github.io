@@ -57,10 +57,10 @@ exclude:
   - CNAME
   - Gemfile
   - Gemfile.lock
-  - node_modules
-  - package.json
+  # - node_modules
+  # - package.json
   - .eslintrc
-  - yarn.lock
+  # - yarn.lock
   - .tags
 #   - .sass-cache/
 #   - .jekyll-cache/

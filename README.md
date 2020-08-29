@@ -11,9 +11,14 @@ The homebase and folio of Atmanautica
 
 ## Dev Setup
 
-Dependencies to install:
+👇 Dependencies to install
 - [Ruby](https://www.ruby-lang.org/en/about/) and [Bundler](https://bundler.io/)
 - [Jekyll for Github Pages](https://docs.github.com/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll)
+
+❓ Optional global utilities
+```sh
+npm i -g eslint prettier eslint-plugin-prettier eslint-plugin-react eslint-config-prettier
+```
 
 ### How to run locally:
 ```sh
