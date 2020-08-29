@@ -14,7 +14,4 @@
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <script src="/assets/scripts/prefix-free.min.js"></script>
   {%- feed_meta -%}
-  {%- if jekyll.environment == 'production' and site.google_analytics -%}
-  {%- include gtag.html -%}
-  {%- endif -%}
 </head>
