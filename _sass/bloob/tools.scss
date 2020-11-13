@@ -2,37 +2,40 @@ ul.tool-list {
   @extend .reset;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 
   li.tool-logo {
     position: relative;
-    width: 4em;
-    height: 4em;
-    margin: 0.5em;
+    // width: 5em;
+    height: 5em;
+    margin: 1em 1em 5em;
+
+    &.no-helpers {
+      margin-bottom: 1em;
+    }
 
     @include media-min-width($pad) {
-      width: 6em;
+      // width: 6em;
       height: 6em;
-      margin: 0.75em;
+      // margin: 0.75em;
     }
 
     @include media-min-wide() {
-      width: 8em;
+      // width: 8em;
       height: 8em;
-      margin: 1em;
+      // margin: 1em;
     }
 
-    margin-bottom: 3em;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
     transition: all 150ms ease-in;
 
-    transform: scale(0.9);
+    transform: scale(0.975) translate3d(0, -0.25em, -1em);
 
     &:hover {
-      transform: scale(1);
+      transform: scale(1) translate3d(0, 0, 0);
     }
 
     &:hover,
@@ -43,45 +46,35 @@ ul.tool-list {
     }
 
     > a {
+      color: $fore;
       display: block;
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      text-decoration: none;
       font-size: 125%;
+      font-weight: bolder;
       line-height: 3em;
+      opacity: 1;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all 150ms ease-in;
+      text-shadow: 0 0 0.75em $shade, 1px 1px 1px $shade;
 
       @include media-min-width($pad) {
+        opacity: 0;
         line-height: 4.5em;
       }
       @include media-min-wide() {
         line-height: 6em;
       }
-
-      opacity: 0;
-      color: $fore;
-      font-weight: bolder;
-      text-transform: uppercase;
-      transition: all 150ms ease-in;
     }
 
     .helpers {
-      margin: 0.5em auto;
-      position: absolute;
-      bottom: -3em;
-      left: 0;
-      right: 0;
-      height: 2em;
+      margin: 1em auto;
 
       a {
-        display: inline;
-        font-size: 87%;
-        padding: 0.25em 0.5em;
+        display: inline-block;
+        font-size: 75%;
+        padding: 0 0.5em;
         line-height: 1.375;
+        text-decoration: none;
 
         &:hover {
           text-decoration: dashed underline;
@@ -89,14 +82,8 @@ ul.tool-list {
       }
     }
 
-    &.wordmark {
-      transform: scale(1);
-      &:hover {
-        transform: scale(1.1);
-      }
-      > a {
-        color: transparent;
-      }
+    &.wordmark > a {
+      opacity: 0;
     }
 
     &.spacey {
@@ -144,6 +131,9 @@ ul.tool-list {
     }
     &.logo-node {
       background-image: url("/assets/img/tools/logo-node.svg");
+    }
+    &.logo-daily {
+      background-image: url("/assets/img/tools/logo-daily.svg");
     }
     &.logo-codepen {
       background-image: url("/assets/img/tools/logo-codepen.svg");
