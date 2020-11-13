@@ -16,7 +16,7 @@ a.btn,
   font-weight: bolder;
   cursor: pointer;
   text-align: center;
-  transition: all 150ms ease;
+  transition: 222ms;
   -webkit-appearance: none;
   -moz-appearance: none;
   box-shadow: inset 0 0 1em 1em rgba(0, 0, 0, 0.25);
@@ -80,7 +80,7 @@ a.btn,
   &:focus {
     color: $link-on;
     border-color: $link-on;
-    background: transparent;
+    background: transparentize($pink, 0.5);
   }
 
   &:active {
