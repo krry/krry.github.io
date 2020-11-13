@@ -5,11 +5,11 @@
 The homebase and folio of Atmanautica
 
 ## Gratitudes
-🧞 [Vanta](https://www.vantajs.com/?effect=waves) animated background
-📢 [Zzfx](https://killedbyapixel.github.io/ZzFX/) Zuper Zmall Zound Fx
-🦹 Jekyll on Github Pages for easy publishing 🐙 and Sass & Liquid
-🍦 and plenty of hand-dipped vanilla ECMAScript 🍕
-💧 hosted at [Atmanautica.com](https://atmanautica.com)
+- 🧞 [Vanta](https://www.vantajs.com/?effect=waves) animated background
+- 📢 [Zzfx](https://killedbyapixel.github.io/ZzFX/) Zuper Zmall Zound Fx
+- 🦹 Jekyll on Github Pages for easy publishing 🐙 and Sass & Liquid
+- 🍦 and plenty of hand-dipped vanilla ECMAScript 🍕
+- 💧 hosted at [Atmanautica.com](https://atmanautica.com)
 
 ## Dev Setup
 
@@ -19,7 +19,7 @@ The homebase and folio of Atmanautica
 
 ❓ Optional global utilities
 ```sh
-npm i -g eslint prettier eslint-plugin-prettier eslint-plugin-react eslint-config-prettier
+npm i eslint prettier eslint-plugin-prettier eslint-plugin-react eslint-config-prettier
 ```
 
 ### How to run locally:

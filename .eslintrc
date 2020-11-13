@@ -1,19 +1,15 @@
 {
   "extends": [
     "eslint:recommended",
-    "plugin:react/recommended",
     "plugin:prettier/recommended",
-    "prettier",
-    "prettier/react"
+    "prettier"
   ],
   "env": {
-    "node": true,
-    "es6": true,
     "browser": true
   },
   "plugins": ["prettier"],
   "rules": {
     "prettier/prettier": "error",
-    "no-console": "off",
+    "no-console": "off"
   }
 }

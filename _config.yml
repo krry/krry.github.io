@@ -57,11 +57,14 @@ exclude:
   - CNAME
   - Gemfile
   - Gemfile.lock
+  - .editorconfig
+  - .eslintrc
+  - .prettierrc
+  - .ruby-version
+  - .tags
   # - node_modules
   # - package.json
-  - .eslintrc
   # - yarn.lock
-  - .tags
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
