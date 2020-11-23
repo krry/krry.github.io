@@ -15,12 +15,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (demerits > 2) {
         console.log('two second timeout');
-        document.body.classList.add('paused');
+        document.getElementById("waves").classList.remove('on');
         setTimeout(window.requestAnimationFrame(fpsMeasureLoop), 2000);
         demerits = 0;
       }
     } else {
-      document.body.classList.remove('paused');
+      document.getElementById("waves").classList.add('on');
     }
     window.requestAnimationFrame(fpsMeasureLoop);
   }
