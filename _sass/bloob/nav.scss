@@ -139,10 +139,18 @@
 }
 
 .legalese,
-.blob p.legalese {
+.blob .legalese {
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 0;
+}
+
+.gracias {
+  text-align: center;
+  font-weight: 400;
+  a {
+    padding: 0;
+  }
 }
 
 .copyleft {
