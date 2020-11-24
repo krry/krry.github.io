@@ -10,14 +10,14 @@
   }
 
   ul {
-    list-style: none;
-    padding-inline-start: 0;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
-    padding: 0;
+    list-style: none;
     margin: 0;
+    padding: 0;
+    padding-inline-start: 0;
   }
 
   a {
@@ -26,9 +26,6 @@
 }
 
 .site-header {
-  // position: -webkit-sticky;
-  // position: sticky;
-  // top: -2.5rem;
   margin: 0 -0.8em;
   z-index: 3;
 
@@ -36,48 +33,14 @@
     padding: 0 0.4em 0.4em;
   }
 
-  @include media-min-width($palm) {
-    margin: 1em 0 0;
-
-    nav {
-      padding: 0.5em 1em 1em;
-      border-radius: 1em;
-    }
-  }
-
   .home-node {
     flex-basis: 100%;
   }
 
-  @include media-min-width($pad) {
-    top: 0;
-
-    nav {
-      padding: 0.5em 1em;
-    }
-
-    .home-node {
-      flex-basis: auto;
-    }
-  }
-
-  @include media-min-width($lap) {
-    .home-node,
-    .nav-node {
-      margin: 0 0.35em;
-    }
-    .home-node {
-      margin-left: auto;
-    }
-    .nav-node:last-of-type {
-      margin-right: auto;
-    }
-  }
-
   .home-link {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
     padding-left: 0;
   }
 
@@ -91,7 +54,7 @@
   }
 
   .site-logo {
-    svg.icon,
+    .icon,
     span {
       height: 2.22em;
       width: 2.22em;
@@ -99,26 +62,72 @@
   }
 }
 
+@include media-min-width($palm) {
+  .site-header {
+    margin: 1em 0 0;
+    
+    nav {
+      border-radius: 1em;
+      padding: 0.5em 1em 1em;
+    }
+  }
+}
+
+
+@include media-min-width($pad) {
+  .site-header {
+    top: 0;
+    
+    nav {
+      padding: 0.5em 1em;
+    }
+    
+    .home-node {
+      flex-basis: auto;
+    }
+  }
+}
+
+@include media-min-width($lap) {
+  .site-header {
+    .home-node,
+    .nav-node {
+      margin: 0 0.35em;
+    }
+
+    .home-node {
+      margin-left: unset;
+    }
+
+    .nav-node:last-of-type {
+      margin-right: unset;
+    }
+  }
+}
+
+
+
 .site-footer {
-  position: relative;
+  bottom: 1rem;
   color: $fore;
   font-size: 67%;
   font-weight: bolder;
-  z-index: 1;
-  bottom: 1rem;
   margin: 2em 0 0;
+  position: relative;
   width: 100vw;
-
-  nav {
-    padding: 1em 0;
-  }
+  z-index: 1;
 
   @include media-min-width($palm) {
     width: auto;
+
     nav {
       border-radius: 1em;
       padding: 0.5em 1em;
     }
+  }
+
+  nav {
+    padding: 1em 0;
   }
 
   svg,
@@ -129,8 +138,8 @@
 
   a {
     height: 100%;
-    width: 100%;
     padding: 0 1em;
+    width: 100%;
   }
 
   .legalese a {
@@ -140,14 +149,15 @@
 
 .legalese,
 .blob .legalese {
-  text-align: center;
-  margin-top: 3rem;
   margin-bottom: 0;
+  margin-top: 3rem;
+  text-align: center;
 }
 
 .gracias {
-  text-align: center;
   font-weight: 400;
+  text-align: center;
+
   a {
     padding: 0;
   }
@@ -164,41 +174,41 @@
 }
 
 .elevator-button {
-  position: relative;
-  display: block;
-  margin: 2rem auto;
-  width: 3rem;
-  height: 3rem;
-  cursor: n-resize;
   background: $well;
   border-radius: 1em;
+  cursor: n-resize;
+  display: block;
+  height: 3rem;
+  margin: 2rem auto;
   padding: 0.5rem;
+  position: relative;
+  width: 3rem;
 
-  svg.icon,
-  & > span {
-    width: 2rem;
+  .icon,
+  > span {
     height: 2rem;
+    width: 2rem;
   }
 
-  & > span {
+  > span {
+    height: 2rem;
+    left: 0;
+    margin: 0.5rem;
     position: absolute;
     top: 0;
-    left: 0;
     width: 2rem;
-    height: 2rem;
-    margin: 0.5rem;
   }
 
-  svg.icon {
-    transition: all 150ms;
+  .icon {
     margin: 0 auto;
+    transition: all 150ms;
   }
 
   &:hover {
-    color: $blue;
     background: $well-ful;
+    color: $blue;
 
-    svg.icon path {
+    .icon path {
       fill: $blue;
     }
   }

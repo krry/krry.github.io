@@ -58,20 +58,20 @@ h2,
 h3 {
   font-family: $heading-font;
   font-weight: 300;
+  letter-spacing: 2px;
   // text-align: center;
   line-height: 1.375;
   margin-bottom: 1em;
   margin-top: 1em;
-  letter-spacing: 2px;
 }
 
 p {
   font-family: $text-font;
+  hyphens: auto;
   line-height: 1.4;
-  text-align: justify;
   margin: 1em auto;
   overflow-wrap: break-word;
-  hyphens: auto;
+  text-align: justify;
 }
 
 label {
@@ -79,14 +79,14 @@ label {
 }
 
 blockquote {
-  color: $grey-color;
-  border-left: 4px solid $grey-color-light;
-  padding-left: $spacing-unit / 2;
 
   @include relative-font-size(1.125);
+  border-left: 4px solid $grey-color-light;
+  color: $grey-color;
+  font-style: italic;
 
   letter-spacing: -1px;
-  font-style: italic;
+  padding-left: $spacing-unit / 2;
 
   > :last-child {
     margin-bottom: 0;
@@ -94,18 +94,18 @@ blockquote {
 }
 
 hr {
-  margin: 2em auto;
   color: $fore;
+  margin: 2em auto;
   opacity: 0.5;
+}
 
-  &.bloobies {
-    background-image: url("img/bloobs/purp025.png");
-    background-size: contain;
-    height: 3em;
-    width: 87%;
-    border: 0;
-    opacity: 1;
-  }
+.bloobies {
+  background-image: url('img/bloobs/purp025.png');
+  background-size: contain;
+  border: 0;
+  height: 3em;
+  opacity: 1;
+  width: 87%;
 }
 
 .work-zoom hr {

@@ -1,22 +1,22 @@
 @font-face {
-  font-family: "dejavu_sansbold";
-  font-weight: normal;
+  font-family: 'dejavu_sansbold';
   font-style: normal;
+  font-weight: normal;
   src:
-    url("dejavusans-bold-webfont.eot?#iefix") format("embedded-opentype"),
-    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/358203/dejavusans-bold-webfont.woff") format("woff"),
-    url("dejavusans-bold-webfont.ttf") format("truetype"),
-    url("dejavusans-bold-webfont.svg#svgFontName") format("svg");
+    url('dejavusans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/358203/dejavusans-bold-webfont.woff') format('woff'),
+    url('dejavusans-bold-webfont.ttf') format('truetype'),
+    url('dejavusans-bold-webfont.svg#svgFontName') format('svg');
 }
 
-ol.hexagram {
-  margin-left: 1ex;
-  margin-top: 0;
-  padding-top: 0;
+.hexagram {
   font-size: 1em;
   list-style:
     decimal
-    url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
+    url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7');
+  margin-left: 1ex;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .hexagram li:nth-child(1n)::before {
@@ -40,73 +40,73 @@ ol.hexagram {
 }
 
 .hexagram li:nth-child(1n)::before {
-  position: absolute;
   font-size: 3em;
   left: -1.25em;
+  position: absolute;
   transform: rotateZ(-90deg);
 }
 
-.hexagram li:nth-child(1)::before { content: "\4dc0"; }
-.hexagram li:nth-child(2)::before { content: "\4dc1"; }
-.hexagram li:nth-child(3)::before { content: "\4dc2"; }
-.hexagram li:nth-child(4)::before { content: "\4dc3"; }
-.hexagram li:nth-child(5)::before { content: "\4dc4"; }
-.hexagram li:nth-child(6)::before { content: "\4dc5"; }
-.hexagram li:nth-child(7)::before { content: "\4dc6"; }
-.hexagram li:nth-child(8)::before { content: "\4dc7"; }
-.hexagram li:nth-child(9)::before { content: "\4dc8"; }
-.hexagram li:nth-child(10)::before { content: "\4dc9"; }
-.hexagram li:nth-child(11)::before { content: "\4dca"; }
-.hexagram li:nth-child(12)::before { content: "\4dcb"; }
-.hexagram li:nth-child(13)::before { content: "\4dcc"; }
-.hexagram li:nth-child(14)::before { content: "\4dcd"; }
-.hexagram li:nth-child(15)::before { content: "\4dce"; }
-.hexagram li:nth-child(16)::before { content: "\4dcf"; }
-.hexagram li:nth-child(17)::before { content: "\4dd0"; }
-.hexagram li:nth-child(18)::before { content: "\4dd1"; }
-.hexagram li:nth-child(19)::before { content: "\4dd2"; }
-.hexagram li:nth-child(20)::before { content: "\4dd3"; }
-.hexagram li:nth-child(21)::before { content: "\4dd4"; }
-.hexagram li:nth-child(22)::before { content: "\4dd5"; }
-.hexagram li:nth-child(23)::before { content: "\4dd6"; }
-.hexagram li:nth-child(24)::before { content: "\4dd7"; }
-.hexagram li:nth-child(25)::before { content: "\4dd8"; }
-.hexagram li:nth-child(26)::before { content: "\4dd9"; }
-.hexagram li:nth-child(27)::before { content: "\4dda"; }
-.hexagram li:nth-child(28)::before { content: "\4ddb"; }
-.hexagram li:nth-child(29)::before { content: "\4ddc"; }
-.hexagram li:nth-child(30)::before { content: "\4ddd"; }
-.hexagram li:nth-child(31)::before { content: "\4dde"; }
-.hexagram li:nth-child(32)::before { content: "\4ddf"; }
-.hexagram li:nth-child(33)::before { content: "\4de0"; }
-.hexagram li:nth-child(34)::before { content: "\4de1"; }
-.hexagram li:nth-child(35)::before { content: "\4de2"; }
-.hexagram li:nth-child(36)::before { content: "\4de3"; }
-.hexagram li:nth-child(37)::before { content: "\4de4"; }
-.hexagram li:nth-child(38)::before { content: "\4de5"; }
-.hexagram li:nth-child(39)::before { content: "\4de6"; }
-.hexagram li:nth-child(40)::before { content: "\4de7"; }
-.hexagram li:nth-child(41)::before { content: "\4de8"; }
-.hexagram li:nth-child(42)::before { content: "\4de9"; }
-.hexagram li:nth-child(43)::before { content: "\4dea"; }
-.hexagram li:nth-child(44)::before { content: "\4deb"; }
-.hexagram li:nth-child(45)::before { content: "\4dec"; }
-.hexagram li:nth-child(46)::before { content: "\4ded"; }
-.hexagram li:nth-child(47)::before { content: "\4dee"; }
-.hexagram li:nth-child(48)::before { content: "\4def"; }
-.hexagram li:nth-child(49)::before { content: "\4df0"; }
-.hexagram li:nth-child(50)::before { content: "\4df1"; }
-.hexagram li:nth-child(51)::before { content: "\4df2"; }
-.hexagram li:nth-child(52)::before { content: "\4df3"; }
-.hexagram li:nth-child(53)::before { content: "\4df4"; }
-.hexagram li:nth-child(54)::before { content: "\4df5"; }
-.hexagram li:nth-child(55)::before { content: "\4df6"; }
-.hexagram li:nth-child(56)::before { content: "\4df7"; }
-.hexagram li:nth-child(57)::before { content: "\4df8"; }
-.hexagram li:nth-child(58)::before { content: "\4df9"; }
-.hexagram li:nth-child(59)::before { content: "\4dfa"; }
-.hexagram li:nth-child(60)::before { content: "\4dfb"; }
-.hexagram li:nth-child(61)::before { content: "\4dfc"; }
-.hexagram li:nth-child(62)::before { content: "\4dfd"; }
-.hexagram li:nth-child(63)::before { content: "\4dfe"; }
-.hexagram li:nth-child(64)::before { content: "\4dff"; }
+.hexagram li:nth-child(1)::before { content: '\4dc0'; }
+.hexagram li:nth-child(2)::before { content: '\4dc1'; }
+.hexagram li:nth-child(3)::before { content: '\4dc2'; }
+.hexagram li:nth-child(4)::before { content: '\4dc3'; }
+.hexagram li:nth-child(5)::before { content: '\4dc4'; }
+.hexagram li:nth-child(6)::before { content: '\4dc5'; }
+.hexagram li:nth-child(7)::before { content: '\4dc6'; }
+.hexagram li:nth-child(8)::before { content: '\4dc7'; }
+.hexagram li:nth-child(9)::before { content: '\4dc8'; }
+.hexagram li:nth-child(10)::before { content: '\4dc9'; }
+.hexagram li:nth-child(11)::before { content: '\4dca'; }
+.hexagram li:nth-child(12)::before { content: '\4dcb'; }
+.hexagram li:nth-child(13)::before { content: '\4dcc'; }
+.hexagram li:nth-child(14)::before { content: '\4dcd'; }
+.hexagram li:nth-child(15)::before { content: '\4dce'; }
+.hexagram li:nth-child(16)::before { content: '\4dcf'; }
+.hexagram li:nth-child(17)::before { content: '\4dd0'; }
+.hexagram li:nth-child(18)::before { content: '\4dd1'; }
+.hexagram li:nth-child(19)::before { content: '\4dd2'; }
+.hexagram li:nth-child(20)::before { content: '\4dd3'; }
+.hexagram li:nth-child(21)::before { content: '\4dd4'; }
+.hexagram li:nth-child(22)::before { content: '\4dd5'; }
+.hexagram li:nth-child(23)::before { content: '\4dd6'; }
+.hexagram li:nth-child(24)::before { content: '\4dd7'; }
+.hexagram li:nth-child(25)::before { content: '\4dd8'; }
+.hexagram li:nth-child(26)::before { content: '\4dd9'; }
+.hexagram li:nth-child(27)::before { content: '\4dda'; }
+.hexagram li:nth-child(28)::before { content: '\4ddb'; }
+.hexagram li:nth-child(29)::before { content: '\4ddc'; }
+.hexagram li:nth-child(30)::before { content: '\4ddd'; }
+.hexagram li:nth-child(31)::before { content: '\4dde'; }
+.hexagram li:nth-child(32)::before { content: '\4ddf'; }
+.hexagram li:nth-child(33)::before { content: '\4de0'; }
+.hexagram li:nth-child(34)::before { content: '\4de1'; }
+.hexagram li:nth-child(35)::before { content: '\4de2'; }
+.hexagram li:nth-child(36)::before { content: '\4de3'; }
+.hexagram li:nth-child(37)::before { content: '\4de4'; }
+.hexagram li:nth-child(38)::before { content: '\4de5'; }
+.hexagram li:nth-child(39)::before { content: '\4de6'; }
+.hexagram li:nth-child(40)::before { content: '\4de7'; }
+.hexagram li:nth-child(41)::before { content: '\4de8'; }
+.hexagram li:nth-child(42)::before { content: '\4de9'; }
+.hexagram li:nth-child(43)::before { content: '\4dea'; }
+.hexagram li:nth-child(44)::before { content: '\4deb'; }
+.hexagram li:nth-child(45)::before { content: '\4dec'; }
+.hexagram li:nth-child(46)::before { content: '\4ded'; }
+.hexagram li:nth-child(47)::before { content: '\4dee'; }
+.hexagram li:nth-child(48)::before { content: '\4def'; }
+.hexagram li:nth-child(49)::before { content: '\4df0'; }
+.hexagram li:nth-child(50)::before { content: '\4df1'; }
+.hexagram li:nth-child(51)::before { content: '\4df2'; }
+.hexagram li:nth-child(52)::before { content: '\4df3'; }
+.hexagram li:nth-child(53)::before { content: '\4df4'; }
+.hexagram li:nth-child(54)::before { content: '\4df5'; }
+.hexagram li:nth-child(55)::before { content: '\4df6'; }
+.hexagram li:nth-child(56)::before { content: '\4df7'; }
+.hexagram li:nth-child(57)::before { content: '\4df8'; }
+.hexagram li:nth-child(58)::before { content: '\4df9'; }
+.hexagram li:nth-child(59)::before { content: '\4dfa'; }
+.hexagram li:nth-child(60)::before { content: '\4dfb'; }
+.hexagram li:nth-child(61)::before { content: '\4dfc'; }
+.hexagram li:nth-child(62)::before { content: '\4dfd'; }
+.hexagram li:nth-child(63)::before { content: '\4dfe'; }
+.hexagram li:nth-child(64)::before { content: '\4dff'; }

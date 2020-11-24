@@ -62,9 +62,9 @@ exclude:
   - .prettierrc
   - .ruby-version
   - .tags
-  # - node_modules
-  # - package.json
-  # - yarn.lock
+  - node_modules
+  - package.json
+  - package-lock.json
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/

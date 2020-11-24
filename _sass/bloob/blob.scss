@@ -1,19 +1,19 @@
 .blob {
-  position: relative;
+  align-items: center;
+  background-color: $well;
+  color: $fore;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-evenly;
-  align-items: center;
   padding: 1rem;
+  position: relative;
+  text-align: center;
   width: 100vw;
   @include media-min-width($palm) {
-    width: calc(100vw - 1.5rem);
     border-radius: 3em;
     margin: 1rem 0;
+    width: calc(100vw - 1.5rem);
   }
-  color: $fore;
-  background-color: $well;
-  text-align: center;
 
   h1,
   h2,
@@ -28,15 +28,15 @@
   h1,
   h2,
   h3 {
-    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
     max-width: 90%;
+    width: 100%;
 
     @include media-min-width($pad) {
       max-width: none;
     }
-
-    margin-left: auto;
-    margin-right: auto;
 
     &:not(.bloob) {
       margin-bottom: 1em;
@@ -51,20 +51,20 @@
 
   p,
   .post p {
-    text-align: justify;
     font-weight: lighter;
+    text-align: justify;
   }
 }
 
-.blob.Home {
+.blob.home {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 
-  h1.headline {
-    margin-top: 1.5rem;
+  .headline {
     margin-bottom: 0.25em;
+    margin-top: 1.5rem;
 
     @include media-min($pad) {
       margin: 2rem 0;
@@ -107,18 +107,18 @@
 
 @media screen and (min-width: $pad) and (min-height: $palm) {
   .blob {
-    max-width: 87vw;
-    margin-top: 2em;
     margin-bottom: 2em;
+    margin-top: 2em;
+    max-width: 87vw;
+    padding-bottom: 2em;
     padding-left: 2em;
     padding-right: 2em;
-    padding-bottom: 2em;
   }
 
   .blob:nth-of-type(2n) {
+    animation-delay: -4s;
     animation-direction: reverse;
     animation-duration: 30s;
-    animation-delay: -4s;
   }
 }
 

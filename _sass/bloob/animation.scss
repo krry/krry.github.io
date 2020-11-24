@@ -1,11 +1,11 @@
 @keyframes Blob {
   0%,
   100% {
+
+    background-color: hsla(336, 22%, 59%, 0.325);
     @include media-min-width($pad) {
       border-radius: 24vw 12vw 6vw 12vw / 12vw 6vw 12vw 24vw;
     }
-
-    background-color: hsla(336, 22%, 59%, 0.325);
   }
 
   25% {
@@ -15,11 +15,11 @@
   }
 
   50% {
+
+    background-color: hsla(196, 82%, 49%, 0.325);
     @include media-min-width($pad) {
       border-radius: 6vw 12vw 24vw 12vw / 12vw 24vw 12vw 6vw;
     }
-
-    background-color: hsla(196, 82%, 49%, 0.325);
   }
 
   75% {
@@ -49,8 +49,8 @@
   }
 
   100% {
-    transform: scale(0.9);
     box-shadow: 0 0 0 0 hsla(332, 86%, 75%, 0);
+    transform: scale(0.9);
   }
 }
 

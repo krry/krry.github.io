@@ -2,77 +2,77 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
-  margin-top: 0.25em;
   margin-bottom: 0.25em;
-  padding-top: 3.25em;
-  padding-bottom: 1.75em;
+  margin-top: 0.25em;
   overflow-wrap: break-word;
+  padding-bottom: 1.75em;
+  padding-top: 3.25em;
 
   @include media-min($pad) {
-    padding-top: 2em;
     padding-bottom: 1.5em;
+    padding-top: 2em;
   }
 
   @include media-min-width($lap) {
-    padding-top: 2.5em;
     padding-bottom: 1em;
+    padding-top: 2.5em;
   }
 
-  #work > & {
+  .work > & {
     margin-bottom: 0;
   }
 
   &.purp00 {
-    background-image: url("img/bloobs/purp000.png");
+    background-image: url('img/bloobs/purp000.png');
   }
 
   &.purp25 {
-    background-image: url("img/bloobs/purp025.png");
+    background-image: url('img/bloobs/purp025.png');
   }
 
   &.purp33 {
-    background-image: url("img/bloobs/purp033.png");
+    background-image: url('img/bloobs/purp033.png');
   }
 
   &.purp50 {
-    background-image: url("img/bloobs/purp050.png");
+    background-image: url('img/bloobs/purp050.png');
   }
 
   &.bloor00 {
-    background-image: url("img/bloobs/bloor000.png");
+    background-image: url('img/bloobs/bloor000.png');
   }
 
   &.bloor25 {
-    background-image: url("img/bloobs/bloor025.png");
+    background-image: url('img/bloobs/bloor025.png');
   }
 
   &.bloor33 {
-    background-image: url("img/bloobs/bloor033.png");
+    background-image: url('img/bloobs/bloor033.png');
   }
 
   &.bloor50 {
-    background-image: url("img/bloobs/bloor050.png");
+    background-image: url('img/bloobs/bloor050.png');
   }
 
   &.bloor75 {
-    background-image: url("img/bloobs/bloor075.png");
+    background-image: url('img/bloobs/bloor075.png');
   }
 
   &.bloor100 {
-    background-image: url("img/bloobs/bloor100.png");
+    background-image: url('img/bloobs/bloor100.png');
   }
 
   &.ghost {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    font-size: 100%;
-    width: 2em;
-    height: 2em;
-    padding: 0;
     animation: haunt 45s linear infinite;
+    bottom: 0;
+    font-size: 100%;
+    height: 2em;
+    left: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    width: 2em;
+    z-index: 1;
 
     path {
       fill: $blue;

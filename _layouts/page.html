@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section id="{{ page.title }}" class="blob {{ page.title }}">
+<section id="{{ page.title | downcase }}" class="blob {{ page.title | downcase }}">
   {%- if page.headline -%}
   <h1 class="bloob {{page.bloob}}">{{ page.headline }}</h1>
   {%- endif -%}

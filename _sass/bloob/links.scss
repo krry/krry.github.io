@@ -1,43 +1,43 @@
 a {
   color: inherit;
   transition: background-color 150ms ease-in;
-
+  
   p > & {
     font-weight: normal;
   }
-
+  
   &:link {
     color: $link-new;
+  }
 
-    &:hover {
-      color: $link-on;
+  &:link:hover {
+    color: $link-on;
 
-      svg.icon path {
-        fill: $link-new;
-      }
+    .icon path {
+      fill: $link-new;
     }
   }
 
   &:visited {
     color: $blue;
 
-    svg.icon path {
+    .icon path {
       fill: $blue;
     }
+  }
 
-    &:hover {
-      color: $link-on;
+  &:visited:hover {
+    color: $link-on;
 
-      svg.icon path {
-        fill: $link-old;
-      }
+    .icon path {
+      fill: $link-old;
     }
   }
 
   &:active {
     color: $pink;
 
-    svg.icon path {
+    .icon path {
       fill: $pink;
     }
   }

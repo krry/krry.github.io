@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "lint": "eslint --fix .",
+    "format": "stylelint _sass/**/*.scss --fix"
+  },
+  "husky": {
+    "pre-commit": "npm run lint && npm run format"
+  },
+  "devDependencies": {
+    "husky": "^4.3.0",
+    "stylelint": "^13.8.0",
+    "stylelint-config-sass-guidelines": "^7.1.0"
+  }
+}

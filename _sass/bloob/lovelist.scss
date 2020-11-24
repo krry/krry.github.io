@@ -1,79 +1,79 @@
 @font-face {
-  font-family: "dejavu_sansbold";
-  font-weight: normal;
+  font-family: 'dejavu_sansbold';
   font-style: normal;
+  font-weight: normal;
   src:
-    url("dejavusans-bold-webfont.eot?#iefix")
-    format("embedded-opentype"),
-    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/358203/dejavusans-bold-webfont.woff")
-    format("woff"),
-    url("dejavusans-bold-webfont.ttf")
-    format("truetype"),
-    url("dejavusans-bold-webfont.svg#svgFontName")
-    format("svg");
+    url('dejavusans-bold-webfont.eot?#iefix')
+    format('embedded-opentype'),
+    url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/358203/dejavusans-bold-webfont.woff')
+    format('woff'),
+    url('dejavusans-bold-webfont.ttf')
+    format('truetype'),
+    url('dejavusans-bold-webfont.svg#svgFontName')
+    format('svg');
 }
 
 .lovelist h2 {
   text-align: left;
 }
 
-ol.lovelist {
+.lovelist {
+  list-style: decimal url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7');
   margin-top: 0;
   padding-top: 0;
-  list-style: decimal url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
 }
 
 .lovelist li {
-  margin-bottom: 0.25em;
-  position: relative;
   font-family: Aleo, serif;
   font-weight: lighter;
+  margin-bottom: 0.25em;
+  position: relative;
 }
 
 .lovelist li::before {
-  position: absolute;
-  left: -1.25em;
   font-family: dejavu_sansbold, serif;
   font-size: 1.25em;
   font-weight: normal;
+  left: -1.25em;
+  position: absolute;
 }
 
 .lovelist li:nth-child(8n-1)::before {
-  content: "\2661";
+  content: '\2661';
 }
 
 .lovelist li:nth-child(8n)::before {
-  content: "\2665";
+  content: '\2665';
 }
 
 .lovelist li:nth-child(8n-4)::before {
-  content: "\2764";
+  content: '\2764';
 }
 
 .lovelist li:nth-child(8n-5)::before {
-  content: "\2763";
+  content: '\2763';
   left: -1.1em;
 }
 
 .lovelist li:nth-child(8n-6)::before {
-  content: "\2765";
+  content: '\2765';
   left: -1.125em;
 }
 
 .lovelist li:nth-child(8n-3)::before {
-  content: "\2766";
+  content: '\2766';
 }
 
 .lovelist li:nth-child(8n-2)::before {
-  content: "\2767";
-  left: -1.125em;
   bottom: -0.075em;
+  content: '\2767';
   font-size: 110%;
+  left: -1.125em;
 }
 
 .lovelist li:nth-child(8n-7)::before {
-  content: "\2619";
-  left: -1.125em;
   bottom: -0.075em;
+  content: '\2619';
   font-size: 120%;
+  left: -1.125em;
 }
