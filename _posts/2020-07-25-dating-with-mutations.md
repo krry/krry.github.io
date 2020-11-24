@@ -6,17 +6,17 @@ author: Kerry
 comments: true
 ---
 
-I noticed while revisiting [this dusty marvel](https://passage.atmanaut.us/) that the date being displayed was obscenely wrong. The month was two months off, the hours were several time zones away, and the date was always less than seven. And here I thought we had left it stable, at least worthy of v1.
+I noticed while revisiting [this dusty marvel](https://passage.atmanaut.us/) that the date being displayed was obscenely wrong. The month was two months off, the hours were several time zones away, and the date was always less than seven. And here I thought I had left it stable, at least worthy of v1.
 
 ## All you need is 🧤
 
-Doo doo dooda doo 🎺  time for some debugging. Thankfully we left ourselves some dev treats, like debug logging switches, and a clever cross-module emitter that reports its behavior dutifully. And after wrastling with some seriously strange output, we reached the taproot of the issue: [the ECMAScript Date object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) or a rather rudimentary misunderstanding of said object.
+Doo doo dooda doo 🎺  time for some debugging. Thankfully I left myself some dev treats, like debug logging switches, and a clever cross-module emitter that reports its behavior dutifully. And after wrastling with some seriously strange output, I reached the taproot of the issue: [the ECMAScript Date object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) or a rather rudimentary misunderstanding of said object.
 
 ### Proper Cloning is the Key to Dating Mutations
 
 You see, I don't have a lot experience with dating mutations. If you would have asked me a year ago what I thought about mutating dates, I would have laughed in your face. Date mutants?! That'll get messy on the quick.
 
-But with a little spritz of immutability, I was able to hack through the underbrush, and escape from this barekly tolerable quagmire. And now look. I get to write about it too! Here's what we learned. Hope it helps someone.
+But with a little spritz of immutability, I was able to hack through the underbrush, and escape from this barekly tolerable quagmire. And now look. I get to write about it too! Here's what I learned. Hope it helps someone.
 
 Simply put, when we ask the browser for a JavaScript Date (object), it will graciously oblige. But unless we are very clear about our boundaries, that date will go on and on. You may find yourself days, months, years later still on the same Date. Or you may discover that what you thought was a second or third Date was STILL THE SAME DATE!
 
@@ -43,6 +43,8 @@ console.log(anotherNewDate); // 2020-07-31
 
 This conundrum is one React seeks to help us avoid. By preferring and enforcing [strict, deep immutability, (as scary as that sounds)](https://alistapart.com/article/why-mutation-can-be-scary/) of data objects, React allows us to jump forward and back among states of the application as though time has more than one-dimension and moves in more than one-direction. And, I mean, it does, obviously.
 
-To fix the Passage Clock, we had to give up dating mutations and embrace immutability for our Date objects. We now create a few instances of the Date object, and the awkwardness is all but gone, and the old clock is humming along like a hummingbird in a humvee with Humphrey Bogart.
+To fix the Passage Clock, I had to give up dating mutations and embrace immutability for our Date objects. I now create a few instances of the Date object, and the awkwardness is all but gone, and the old clock is humming along like a hummingbird in a humvee with Humphrey Bogart.
 
-Thanks for showing up. Showing up is key. Oh dear, [look at the time…](https://passage.atmanaut.us)
+Thanks for showing up. Showing up is key.
+
+Oh dear, [look at the time…](https://passage.atmanaut.us)

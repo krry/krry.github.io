@@ -10,7 +10,7 @@
   z-index: 1;
 }
 
-.work-logo {
+.folio-logo {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -22,7 +22,7 @@
   width: 70vw;
 }
 
-.work-zoom {
+.folio-zoom {
   background-color: $bkgd;
   border: 0.25rem solid $bkgd;
   border-radius: 4px;
@@ -102,7 +102,7 @@
   justify-content: space-evenly;
 }
 
-.work-fold {
+.folio-fold {
   align-items: center;
   background-position: center center;
   background-repeat: no-repeat;
@@ -121,12 +121,12 @@
   max-width: 37rem;
 }
 
-.work-fold,
-.work-fold::after {
+.folio-fold,
+.folio-fold::after {
   border-radius: 1.5rem;
 }
 
-.work-fold::after {
+.folio-fold::after {
   background-color: $shade;
   bottom: 0;
   content: '';
@@ -175,7 +175,7 @@
   }
 }
 
-.work-zoom .thumb {
+.folio-zoom .thumb {
   cursor: pointer;
   flex: 1;
 
@@ -320,7 +320,7 @@
 /* JOB-SPECIFIC STYLES */
 
 .fold-atmanaut {
-  background-image: url('img/work/full/atmanautus.jpg');
+  background-image: url('img/folio/full/atmanautus.jpg');
   background-position: top right;
 }
 
@@ -329,7 +329,7 @@
 }
 
 .fold-passage {
-  background-image: url('img/work/full/passage-3d.jpg');
+  background-image: url('img/folio/full/passage-3d.jpg');
   background-position: bottom center;
 }
 
@@ -338,7 +338,7 @@
 }
 
 .fold-mandarin9 {
-  background-image: url('img/work/full/mandarin9.jpg');
+  background-image: url('img/folio/full/mandarin9.jpg');
 }
 
 .logo-mandarin9 {
@@ -346,7 +346,7 @@
 }
 
 .fold-arrivo {
-  background-image: url('img/work/full/arrivo-rail.jpg');
+  background-image: url('img/folio/full/arrivo-rail.jpg');
 }
 
 .logo-arrivo {
@@ -354,7 +354,7 @@
 }
 
 .fold-scty {
-  background-image: url('img/work/full/scty-roof.jpg');
+  background-image: url('img/folio/full/scty-roof.jpg');
 }
 
 .logo-scty {
@@ -362,7 +362,7 @@
 }
 
 .fold-disney {
-  background-image: url('img/work/full/disney-bands.jpg');
+  background-image: url('img/folio/full/disney-bands.jpg');
 
   .trigger {
     padding: 2rem 1.5rem 1.5rem;
@@ -374,7 +374,7 @@
 }
 
 .fold-tville {
-  background-image: url('img/work/full/tville-trumpet.jpg');
+  background-image: url('img/folio/full/tville-trumpet.jpg');
   background-position: right center;
 }
 
@@ -383,7 +383,7 @@
 }
 
 .fold-thirdprime {
-  background-image: url('img/work/full/3p-carts.jpg');
+  background-image: url('img/folio/full/3p-carts.jpg');
 
   .trigger {
     padding: 2rem 1.5rem 1.5rem;

@@ -80,17 +80,17 @@ ol {
   }
 }
 
-.work-list {
+.folio-list {
   margin: auto;
   max-width: 75%;
 }
 
-.work-lists {
+.folio-lists {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
 
-  .work-list {
+  .folio-list {
     max-width: 22rem;
   }
 }

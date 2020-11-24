@@ -59,9 +59,9 @@ $lap: 60rem !default;
 // $accent-color: #fbbc04;
 
 // :root {
-//   // WRONG, will not work in recent Sass versions.
+//   // WRONG, will not folio in recent Sass versions.
 //   // --accent-color-wrong: $accent-color;
-//   // RIGHT, will work in all Sass versions.
+//   // RIGHT, will folio in all Sass versions.
 //   // --accent-color-right: #{$accent-color};
 //   color-scheme: light dark; /* both supported */
 // }

@@ -1,4 +1,4 @@
 ## Our business models easiness
 
-Sovereignty rising, we step into the light offering our gifts.
+Sovereignty rising, I step into the light offering what gifts I have at hand.
 
