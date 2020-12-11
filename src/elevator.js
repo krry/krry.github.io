@@ -1,4 +1,6 @@
-document.addEventListener(("DOMContentLoaded"), function() {
+import * as Elevator from './vendor/elevator.min.js';
+
+const elevator = () => {
   var elEl = document.querySelector('.elevator-button');
   var eb = document.getElementById('eb');
 
@@ -7,8 +9,8 @@ document.addEventListener(("DOMContentLoaded"), function() {
     eb.click();
     setTimeout(function() {
       document.documentElement.style.scrollBehavior = "smooth";
-    }, 15000)
-  }
+    }, 15000);
+  };
 
   var elevator = new Elevator({
     element: eb,
@@ -18,5 +20,9 @@ document.addEventListener(("DOMContentLoaded"), function() {
     // endAudio: '/assets/files/Fairy.m4a',
   });
 
-  elEl.addEventListener('click', scrollSwitchThenElevator)
-})
+  elEl.addEventListener('click', scrollSwitchThenElevator);
+
+  elevator.elevate();
+};
+
+export default elevator;

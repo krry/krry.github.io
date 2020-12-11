@@ -77,7 +77,7 @@
 }
 
 .knob:hover {
-  transform: rotateZ(180deg) translateX(-0.5em);
+  transform: rotateZ(180deg);
 }
 
 .dresser.open .knob {
@@ -127,7 +127,7 @@
   text-align: left;
 }
 
-.spectrum-name {
+.spectrum .spectrum-name {
   display: block;
   flex-basis: 100%;
   font-size: 80%;

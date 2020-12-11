@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+const lenses = () => {
     document
         .getElementById("filter_ctrl")
         .addEventListener("change", applyFilter);
@@ -19,4 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
-})
+};
+
+export default lenses;

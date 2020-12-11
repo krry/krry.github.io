@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+const folds = function () {
   // provide hideJob wiring function
   const hideJob = function hideJob(e) {
     let closeTarget = e.target.dataset.closer;
@@ -29,10 +29,11 @@ document.addEventListener("DOMContentLoaded", () => {
       // let the <html> know to cushion for modality
       document.documentElement.classList.add("modal-open");
       // set <ESC> key to hide modal
-      document.body.addEventListener("keydown", (e) => {
-        if (e.keyCode === 27) {
+      document.body.addEventListener("keydown", function escapeTheModal(e) {
+        if (e.key === "Escape") {
           document.documentElement.classList.remove("modal-open");
         }
+        document.body.removeEventListener("keydown", escapeTheModal);
       });
       // if showing openingModal, wire hider
       openingModal.querySelector(".closer").addEventListener("click", hideJob);
@@ -47,4 +48,6 @@ document.addEventListener("DOMContentLoaded", () => {
   for (const trigger of triggers) {
     trigger.addEventListener("click", showJob);
   }
-});
+};
+
+export default folds;

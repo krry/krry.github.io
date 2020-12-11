@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+const waves = () => {
 
   let start, last, dTime, demerits;
   function fpsMeasureLoop(timestamp) {
@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.requestAnimationFrame(fpsMeasureLoop);
   }
 
+  // eslint-disable-next-line
   VANTA.WAVES({
     el: "#waves",
     color: 0x280664,
@@ -36,5 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     zoom: 1,
   });
   document.getElementById("waves").classList.add("on");
-  // window.requestAnimationFrame(fpsMeasureLoop);
-});
+  window.requestAnimationFrame(fpsMeasureLoop);
+};
+
+export default waves;

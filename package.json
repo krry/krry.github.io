@@ -1,14 +1,27 @@
 {
   "scripts": {
-    "lint": "eslint --fix .",
-    "format": "stylelint _sass/**/*.scss --fix"
+    "start": "bundle exec jekyll server --ssl-cert ./cert.pem --ssl-key ./key.pem -H 0.0.0.0 --livereload-port 8081 -P 8080 --incremental",
+    "watch": "rollup -c -w",
+    "dev": "npm run start & npm run watch"
   },
   "husky": {
-    "pre-commit": "npm run lint && npm run format"
+    "hooks": {
+      "pre-commit": "rg -s TODO -g '*.{html,scss,js}' > .todo"
+    }
   },
   "devDependencies": {
-    "husky": "^4.3.0",
+    "@babel/core": "^7.12.10",
+    "@babel/eslint-plugin": "^7.12.1",
+    "@babel/preset-env": "^7.12.10",
+    "@rbnlffl/rollup-plugin-eslint": "^1.1.4",
+    "@rollup/plugin-babel": "^5.2.2",
+    "eslint": "^7.15.0",
+    "eslint-config-prettier": "^7.0.0",
+    "husky": "^4.3.5",
+    "prettier": "^2.2.1",
     "stylelint": "^13.8.0",
+    "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-sass-guidelines": "^7.1.0"
-  }
+  },
+  "dependencies": {}
 }

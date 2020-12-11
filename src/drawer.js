@@ -1,4 +1,5 @@
-document.addEventListener('DOMContentLoaded', (_) => {
+/* eslint-disable no-sparse-arrays */
+const drawer = () => {
   let knob = document.getElementById("knob");
   let dresser = document.getElementById("dresser");
   // let cello = document.getElementById("cello");
@@ -25,16 +26,40 @@ document.addEventListener('DOMContentLoaded', (_) => {
 
   knob.addEventListener("click", function(){
     dresser.classList.toggle("open");
-    if (dresser.classList.contains("open")) {
-      // play Powerup 57 open sound
-      zzfx(...[,,315,.14,.03,.24,,.63,.8,,200,,.04,,,,.13,.62,.09]);
-      wireSliders()
-    } else {
-      // play Powerup 57 close sound
-      zzfx(...[,,115,.04,.02,.24,,.63,.8,,200,,.04,,,,.13,.62,.05]);
-      unwireSliders()
-    }
+    if (dresser.classList.contains("open")) {openDrawer();}
+    else {closeDrawer();}
+    return;
   });
+
+  function openDrawer() {
+    // play Powerup 57 open sound
+    zzfx(...[,,315,.14,.03,.24,,.63,.8,,200,,.04,,,,.13,.62,.09]);
+    wireSliders();
+    hideOnClickOutside(dresser);
+  }
+
+  function closeDrawer() {
+    // play Powerup 57 close sound
+    zzfx(...[,,115,.04,.02,.24,,.63,.8,,200,,.04,,,,.13,.62,.05]);
+    unwireSliders();
+  }
+
+  function hideOnClickOutside(element) {
+    const outsideClickListener = event => {
+        if (!element.contains(event.target) && isVisible(element)) { // or use: event.target.closest(selector) === null
+          dresser.classList.remove("open");
+          removeClickListener();
+        }
+    };
+
+    const removeClickListener = () => {
+        document.removeEventListener('click', outsideClickListener);
+    };
+
+    document.addEventListener('click', outsideClickListener);
+  }
+
+  const isVisible = (elem) => !!elem && !!( elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length ); // source (2018-03-11): https://github.com/jquery/jquery/blob/master/src/css/hiddenVisibleSelectors.js
 
   function wireSliders() {
     mentality.addEventListener("input", playMentalitySound);
@@ -44,7 +69,7 @@ document.addEventListener('DOMContentLoaded', (_) => {
     rhythm.addEventListener("input", playRhythmSound);
     causality.addEventListener("input", playCausalitySound);
     chirality.addEventListener("input", playChiralitySound);
-    play.addEventListener("click", playAllSounds)
+    play.addEventListener("click", playAllSounds);
   }
 
   function unwireSliders() {
@@ -55,7 +80,7 @@ document.addEventListener('DOMContentLoaded', (_) => {
     rhythm.removeEventListener("input", playRhythmSound);
     causality.removeEventListener("input", playCausalitySound);
     chirality.removeEventListener("input", playChiralitySound);
-    play.removeEventListener("click", playAllSounds)
+    play.removeEventListener("click", playAllSounds);
   }
 
   function playMentalitySound() {
@@ -92,17 +117,19 @@ document.addEventListener('DOMContentLoaded', (_) => {
   }
 
   function playAllSounds(){
-    playCausalitySound()
-    playChiralitySound()
-    playCorrespondenceSound()
-    playMentalitySound()
-    playPolaritySound()
-    playRhythmSound()
-    playVibrationSound()
+    playCausalitySound();
+    playChiralitySound();
+    playCorrespondenceSound();
+    playMentalitySound();
+    playPolaritySound();
+    playRhythmSound();
+    playVibrationSound();
   }
-})
+};
 
 // zome zpare zound fx
 // zzfx(...[,.2,440,.4,.3,2,3,1.2,1,.4,-69,.06,.01,.3,-0.1,,.15,.59,.8]); // Elevatron
 // zzfx(...[,.123,815,.874,.97,.72,,.1,.2,.17,217,.04,.03,,,,,,.44]); // Fairy
 // zzfx(...[,,69,.06,.21,.39,2,,4.2,,,,.01,,-1.6,,.15,2.7,.47]); // Jump 34
+
+export default drawer;

@@ -1,15 +1,31 @@
 {
   "extends": [
     "eslint:recommended",
-    "plugin:prettier/recommended",
     "prettier"
   ],
   "env": {
-    "browser": true
+    "browser": true,
+    "es2020": true
   },
-  "plugins": ["prettier"],
+  "plugins": [
+    "@babel"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
   "rules": {
-    "prettier/prettier": "error",
-    "no-console": "off"
+    "no-console": "off",
+    "@babel/new-cap": "error",
+    "@babel/no-invalid-this": "error",
+    "@babel/no-unused-expressions": "error",
+    "@babel/object-curly-spacing": "error",
+    "@babel/semi": "off",
+    "no-unused-vars": "warn"
+  },
+  "globals": {
+    "VANTA": "readonly",
+    "Elevator": "readonly",
+    "zzfx": "readonly"
   }
 }
