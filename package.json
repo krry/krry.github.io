@@ -6,7 +6,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "rg -s TODO --heading -g '*.{html,scss,js}' > .todo"
+      "pre-commit": "rg -s TODO --heading --iglob '!assets/**' -g '*.{html,scss,js}' > .todo"
     }
   },
   "devDependencies": {

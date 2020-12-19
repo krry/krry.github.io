@@ -1,13 +1,5 @@
 src/thumbs.js
-        // TODO: determine whether other listeners are overwired
     // TODO: do we need to remove these listeners under some conditions?
-
-assets/scripts/dialog-polyfill.js
-    // TODO(samthor): tabindex values that are not numeric are not focusable.
-
-assets/scripts/index.js
-      // TODO: determine whether other listeners are overwired
-    }; // TODO: do we need to remove these listeners under some conditions?
 
 _includes/_folio.html
 <!-- TODO: preserve scrollTop of window while showing dialogs -->

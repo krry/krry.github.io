@@ -182,7 +182,6 @@
     var zoomThumbs = function zoomThumbs(e) {
       var thumb = e.target;
       var closer = thumb.closest('.gallery').querySelector('.closer'); // wire closest closer to close this zoomed thumb
-      // TODO: determine whether other listeners are overwired
 
       closer.addEventListener('click', closeThumb.bind(null, e, closer));
       closer.classList.add('shown'); // wire <ESC> key to close this thumb
