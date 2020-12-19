@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "bundle exec jekyll server --ssl-cert ./cert.pem --ssl-key ./key.pem -H 0.0.0.0 --livereload-port 8081 -P 8080 --incremental",
+    "start": "bundle exec jekyll server --ssl-cert ./cert.pem --ssl-key ./key.pem -H 0.0.0.0 --livereload-port 6281 -P 6280 --incremental",
     "watch": "rollup -c -w",
     "dev": "npm run start & npm run watch"
   },

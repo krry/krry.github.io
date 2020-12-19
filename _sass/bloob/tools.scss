@@ -13,8 +13,8 @@
   height: 5em;
   margin: 1em 1em 5em;
   position: relative;
-  transform: scale(0.975) translate3d(0, -0.25em, -1em);
-  transition: all 150ms ease-in;
+  transform: translate3d(0, 0.5em, 0);
+  transition: 500ms ease-out;
 
   @include media-min-width($pad) {
     height: 6em;
@@ -29,7 +29,7 @@
   }
 
   &:hover {
-    transform: scale(1) translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 
   &:hover,
@@ -58,6 +58,10 @@
     }
     @include media-min-wide() {
       line-height: 6em;
+    }
+
+    &:focus {
+
     }
   }
 
