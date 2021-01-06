@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: $body-font;
+  font-family: $sans;
   font-size: 20px;
   line-height: 1.375;
   overflow-x: hidden;
@@ -31,7 +31,7 @@ body {
   color: $fore;
   display: flex;
   flex-flow: column nowrap;
-  font-family: $body-font;
+  font-family: $sans;
   font-feature-settings: 'kern' 1;
   font-kerning: normal;
   font-size: $base-font-size;
