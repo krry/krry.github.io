@@ -1,4 +1,4 @@
-import * as Elevator from './vendor/elevator.min.js';
+import * as init from './vendor/elevator.min.js';
 
 const elevator = () => {
   var elEl = document.querySelector('.elevator-button');
@@ -12,17 +12,12 @@ const elevator = () => {
     }, 15000);
   };
 
-  var elevator = new Elevator({
+  init({
     element: eb,
-    // mainAudio: '/assets/files/elevator-music.m4a',
-    // endAudio: '/assets/files/Gong-sound.mp3',
-    // mainAudio: '/assets/files/Elevatron.m4a',
-    // endAudio: '/assets/files/Fairy.m4a',
-  });
+  }).elevate();
 
   elEl.addEventListener('click', scrollSwitchThenElevator);
 
-  elevator.elevate();
 };
 
 export default elevator;
