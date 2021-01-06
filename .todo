@@ -3,3 +3,4 @@ src/thumbs.js
 
 _includes/_folio.html
 <!-- TODO: preserve scrollTop of window while showing dialogs -->
+  <!-- TODO: add project profiles for easeness, iching, goodguild -->

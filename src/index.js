@@ -1,17 +1,17 @@
-import folds from './folds';
-import thumbs from './thumbs';
-import lazyloads from './lazyloads';
-import waves from './waves';
-import drawer from './drawer';
-import elevator from './elevator';
-import lenses from './lenses';
+import useFolds from './folds';
+import useThumbs from './thumbs';
+import useLazyloads from './lazyloads';
+import useWaves from './waves';
+import useDrawer from './drawer';
+import useElevator from './elevator';
+import useLenses from './lenses';
 
 document.addEventListener("DOMContentLoaded", () => {
-  folds();
-  thumbs();
-  lazyloads();
-  waves();
-  drawer();
-  elevator();
-  lenses();
+  useFolds();
+  useThumbs();
+  useLazyloads();
+  useWaves();
+  useDrawer();
+  useElevator();
+  useLenses();
 });
