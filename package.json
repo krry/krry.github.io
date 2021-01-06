@@ -1,4 +1,7 @@
 {
+  "name": "atmanautica",
+  "license": "CC-SA-BY-NA-4.0",
+  "private": true,
   "scripts": {
     "start": "bundle exec jekyll server --ssl-cert ./cert.pem --ssl-key ./key.pem -H 0.0.0.0 --livereload-port 6281 -P 6280 --incremental",
     "watch": "rollup -c -w",
