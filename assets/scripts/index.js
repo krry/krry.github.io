@@ -128,11 +128,11 @@
 
 
   function showJob(e) {
-    var triggerTarget = e.target.dataset.trigger;
-    console.log("triggerTarget is", triggerTarget); // find the openingModal matching this trigger's data
+    var triggerTarget = e.target.dataset.trigger; // console.log("triggerTarget is", triggerTarget);
+    // find the openingModal matching this trigger's data
 
-    var openingModal = document.body.querySelector("[data-modal=" + triggerTarget + "]");
-    console.log("openingModal is", openingModal);
+    var openingModal = document.body.querySelector("[data-modal=" + triggerTarget + "]"); // console.log("openingModal is", openingModal);
+
     document.body.appendChild(openingModal);
 
     if (typeof openingModal.showModal === "function") {
@@ -173,14 +173,12 @@
       _iterator.f();
     }
 
-    var usp = new URLSearchParams(window.location.search);
-    console.log('// collect the search params from the URL', usp);
-    var client = usp.get('client');
-    console.log('// if a client is mentioned', client);
+    var usp = new URLSearchParams(window.location.search); // console.log('// collect the search params from the URL', usp);
+
+    var client = usp.get('client'); // console.log('// if a client is mentioned', client);
 
     if (typeof client !== "undefined") {
-      console.log('// and there is a client dialog in the DOM');
-
+      // console.log('// and there is a client dialog in the DOM');
       if (document.getElementById(client)) {
         var triggerEvent = {
           target: {
@@ -188,41 +186,41 @@
               trigger: client
             }
           }
-        };
-        console.log('// show the dialog corresponding to the client', triggerEvent);
+        }; // console.log('// show the dialog corresponding to the client', triggerEvent);
+
         showJob(triggerEvent);
       }
     }
   }
 
-  var thumbs = function thumbs() {
-    var closeThumb = function closeThumb(e, closer) {
-      var thumb = e.target;
+  function closeThumb(e, closer) {
+    var thumb = e.target;
 
-      if (_typeof(thumb) === 'object') {
-        thumb.classList.remove('zoomed');
-        closer.classList.remove('shown');
-        closer.removeEventListener('click', closeThumb.bind(null, e, closer));
+    if (_typeof(thumb) === 'object') {
+      thumb.classList.remove('zoomed');
+      closer.classList.remove('shown');
+      closer.removeEventListener('click', closeThumb.bind(null, e, closer));
+    }
+  }
+
+  function zoomThumbs(e) {
+    var thumb = e.target;
+    var closer = thumb.closest('.gallery').querySelector('.closer'); // wire closest closer to close this zoomed thumb
+
+    closer.addEventListener('click', closeThumb.bind(null, e, closer));
+    closer.classList.add('shown'); // wire <ESC> key to close this thumb
+
+    document.body.addEventListener("keydown", function (e) {
+      if (e.keyCode === 27) {
+        closeThumb(e);
       }
-    };
+    }); // zoom this thumb
 
-    var zoomThumbs = function zoomThumbs(e) {
-      var thumb = e.target;
-      var closer = thumb.closest('.gallery').querySelector('.closer'); // wire closest closer to close this zoomed thumb
+    thumb.classList.add('zoomed');
+  }
 
-      closer.addEventListener('click', closeThumb.bind(null, e, closer));
-      closer.classList.add('shown'); // wire <ESC> key to close this thumb
-
-      document.body.addEventListener("keydown", function (e) {
-        if (e.keyCode === 27) {
-          closeThumb(e);
-        }
-      }); // zoom this thumb
-
-      thumb.classList.add('zoomed');
-    }; // TODO: do we need to remove these listeners under some conditions?
-
-
+  var useThumbs = function useThumbs() {
+    // TODO: do we need to remove these listeners under some conditions?
     var thumbs = document.querySelectorAll('.thumb');
 
     var _iterator = _createForOfIteratorHelper(thumbs),
@@ -708,7 +706,7 @@
     module.exports = Elevator;
   }
 
-  var initElevator = /*#__PURE__*/Object.freeze({
+  var Elevator$1 = /*#__PURE__*/Object.freeze({
     __proto__: null
   });
 
@@ -724,46 +722,49 @@
       }, 15000);
     };
 
-    var elevator = initElevator({
+    var elevatorObj = new Elevator$1({
       element: eb
-    });
+    }).elevate();
     elEl.addEventListener('click', scrollSwitchThenElevator);
-    elevator.elevate();
+    return {
+      elevatorObj: elevatorObj
+    };
   };
 
-  var lenses = function lenses() {
-    document.getElementById("filter_ctrl").addEventListener("change", applyFilter);
+  function applyFilter(e) {
+    var fltr = e.target.value;
+    if (!fltr) return;
+    console.log('// applying filter', e.target.value);
+    var celloEl = document.getElementById('cello');
+    var appliedFilters = celloEl.classList; // make sure it's a new filter
 
-    function applyFilter(e) {
-      var fltr = e.target.value;
-      if (!fltr) return false;
-      var celloEl = document.getElementById("cello");
-      var appliedFilters = celloEl.classList; // make sure it's a new filter
+    if (appliedFilters.contains(fltr)) return true;
+    var filterCtrl = document.getElementById('filter_ctrl');
+    filterCtrl.value = fltr; // keep select in sync
 
-      if (appliedFilters.contains(fltr)) return true;
-      var filterCtrl = document.getElementById("filter_ctrl");
-      filterCtrl.value = fltr; // keep select in sync
+    celloEl.classList.add(fltr); // apply the new filter
 
-      celloEl.classList.add(fltr); // apply the new filter
+    for (var _i = 0, _arr = _toConsumableArray(celloEl.classList); _i < _arr.length; _i++) {
+      var x = _arr[_i];
 
-      for (var _i = 0, _arr = _toConsumableArray(celloEl.classList); _i < _arr.length; _i++) {
-        var x = _arr[_i];
-
-        if (x !== "cello" && x !== fltr) {
-          celloEl.classList.remove(x); // apply the new filter
-        }
+      if (x !== 'cello' && x !== fltr) {
+        celloEl.classList.remove(x); // apply the new filter
       }
     }
+  }
+
+  var useLenses = function useLenses() {
+    document.getElementById('filter_ctrl').addEventListener('change', applyFilter);
   };
 
   document.addEventListener("DOMContentLoaded", function () {
     useFolds();
-    thumbs();
+    useThumbs();
     lazyloads();
     waves();
     drawer();
     elevator();
-    lenses();
+    useLenses();
   });
 
 }());

@@ -1,4 +1,4 @@
-import * as init from './vendor/elevator.min.js';
+import * as Elevator from './vendor/elevator.min.js';
 
 const elevator = () => {
   var elEl = document.querySelector('.elevator-button');
@@ -12,12 +12,15 @@ const elevator = () => {
     }, 15000);
   };
 
-  init({
+  const elevatorObj = new Elevator({
     element: eb,
   }).elevate();
 
   elEl.addEventListener('click', scrollSwitchThenElevator);
 
+  return {
+    elevatorObj
+  };
 };
 
 export default elevator;

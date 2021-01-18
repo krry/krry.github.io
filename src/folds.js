@@ -21,11 +21,11 @@ function hideJob (e) {
 // provide showJob wiring function
 function showJob (e) {
   let triggerTarget = e.target.dataset.trigger;
-  console.log("triggerTarget is", triggerTarget);
+  // console.log("triggerTarget is", triggerTarget);
 
   // find the openingModal matching this trigger's data
   let openingModal = document.body.querySelector("[data-modal=" + triggerTarget + "]");
-  console.log("openingModal is", openingModal);
+  // console.log("openingModal is", openingModal);
   document.body.appendChild(openingModal);
 
   if (typeof openingModal.showModal === "function") {
@@ -57,14 +57,14 @@ function useFolds () {
   }
 
   const usp = new URLSearchParams(window.location.search);
-  console.log('// collect the search params from the URL', usp);
+  // console.log('// collect the search params from the URL', usp);
   const client = usp.get('client');
-  console.log('// if a client is mentioned', client);
+  // console.log('// if a client is mentioned', client);
   if (typeof client !== "undefined") {
-    console.log('// and there is a client dialog in the DOM');
+    // console.log('// and there is a client dialog in the DOM');
     if (document.getElementById(client)) {
       const triggerEvent = {target: {dataset: {trigger: client}}}
-      console.log('// show the dialog corresponding to the client', triggerEvent);
+      // console.log('// show the dialog corresponding to the client', triggerEvent);
       showJob(triggerEvent);
     }
   }
