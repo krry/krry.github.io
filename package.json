@@ -1,5 +1,6 @@
 {
   "name": "atmanautica",
+  "version": "1.0.0",
   "license": "CC-SA-BY-NA-4.0",
   "private": true,
   "scripts": {
