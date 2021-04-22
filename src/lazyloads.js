@@ -1,5 +1,5 @@
 // Run after the HTML document has finished loading
-const lazyloads = function() {
+const useLazyloads = () => {
     // Get our lazy-loaded images
     let lazyImages = [].slice.call(document.querySelectorAll(".lazy"));
     // Do this only if IntersectionObserver is supported
@@ -34,4 +34,4 @@ const lazyloads = function() {
     }
 };
 
-export default lazyloads;
+export default useLazyloads;

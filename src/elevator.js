@@ -1,6 +1,6 @@
-import * as Elevator from './vendor/elevator.min.js';
+import Elevator from './vendor/elevator.min.js';
 
-const elevator = () => {
+const useElevator = () => {
   var elEl = document.querySelector('.elevator-button');
   var eb = document.getElementById('eb');
 
@@ -12,6 +12,7 @@ const elevator = () => {
     }, 15000);
   };
 
+  /* eslint-disable @babel/new-cap */
   const elevatorObj = new Elevator({
     element: eb,
   }).elevate();
@@ -23,4 +24,4 @@ const elevator = () => {
   };
 };
 
-export default elevator;
+export default useElevator;

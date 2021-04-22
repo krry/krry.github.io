@@ -1,3 +1,15 @@
 {
-	"gitdoc.enabled": false
+	"gitdoc.enabled": false,
+	"cSpell.words": [
+		"closer",
+		"darkmode",
+		"easeness",
+		"easenesses",
+		"lazyloads",
+		"leadgen",
+		"scty",
+		"thumb",
+		"use",
+		"vercel"
+	]
 }

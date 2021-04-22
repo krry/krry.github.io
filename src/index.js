@@ -5,13 +5,15 @@ import useWaves from './waves';
 import useDrawer from './drawer';
 import useElevator from './elevator';
 import useLenses from './lenses';
+import useCohere from './cohere';
 
 document.addEventListener("DOMContentLoaded", () => {
   useFolds();
   useThumbs();
+  useLenses();
   useLazyloads();
   useWaves();
   useDrawer();
   useElevator();
-  useLenses();
+  useCohere();
 });

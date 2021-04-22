@@ -1,5 +1,5 @@
 /* eslint-disable no-sparse-arrays */
-const drawer = () => {
+const useDrawer = () => {
   let knob = document.getElementById("knob");
   let dresser = document.getElementById("dresser");
   // let cello = document.getElementById("cello");
@@ -132,4 +132,4 @@ const drawer = () => {
 // zzfx(...[,.123,815,.874,.97,.72,,.1,.2,.17,217,.04,.03,,,,,,.44]); // Fairy
 // zzfx(...[,,69,.06,.21,.39,2,,4.2,,,,.01,,-1.6,,.15,2.7,.47]); // Jump 34
 
-export default drawer;
+export default useDrawer;

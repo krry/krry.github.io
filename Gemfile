@@ -1,4 +1,5 @@
 source "https://rubygems.org"
+ruby RUBY_VERSION
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
 # file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
@@ -19,7 +20,7 @@ gem "github-pages", "~> 212", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   # gem "jekyll-feed", "~> 0.15.1"
-  # gem "jekyll-seo-tag", "~> 2.6.1"
+  gem "jekyll-seo-tag", "~> 2.7.1"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -34,3 +35,5 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
 # upgrade kramdown for security reasons
 # gem "kramdown", ">= 2.3.0"
+
+gem "webrick", "~> 1.7"

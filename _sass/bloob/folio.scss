@@ -22,6 +22,12 @@
   width: 70vw;
 }
 
+.folio-name {
+  line-height: 0em;
+  margin-top: 2rem;
+  text-align: center;
+}
+
 .folio-zoom {
   background-color: $bkgd;
   border: 0.25rem solid $bkgd;
@@ -318,6 +324,35 @@
 }
 
 /* JOB-SPECIFIC STYLES */
+
+.fold-nameless {
+  background-image: url('img/folio/full/nameless-lake.jpg');
+  background-position: top right;
+}
+
+.logo-nameless {
+  background-image: url('img/logos/bagua.png');
+}
+
+
+.fold-cmnplc {
+  background-image: url('img/folio/full/cmnplc-sea.jpg');
+  background-position: top right;
+}
+
+.logo-cmnplc {
+  background-image: url('img/logos/logo-commonplace-dark.png');
+}
+
+
+.fold-easeness {
+  background-image: url('img/folio/full/easeness-light-pad.jpg');
+  background-position: top right;
+}
+
+.logo-easeness {
+  background-image: url('img/logos/logo-easeness-light.png');
+}
 
 .fold-atmanaut {
   background-image: url('img/folio/full/atmanautus.jpg');

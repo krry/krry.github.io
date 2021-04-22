@@ -1,4 +1,4 @@
-const waves = () => {
+const useWaves = () => {
 
   let start, last, dTime, demerits;
   function fpsMeasureLoop(timestamp) {
@@ -40,4 +40,4 @@ const waves = () => {
   window.requestAnimationFrame(fpsMeasureLoop);
 };
 
-export default waves;
+export default useWaves;

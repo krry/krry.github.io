@@ -1,6 +1,6 @@
 {
   "name": "atmanautica",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "license": "CC-SA-BY-NA-4.0",
   "private": true,
   "scripts": {
@@ -19,13 +19,18 @@
     "@babel/preset-env": "^7.12.10",
     "@rbnlffl/rollup-plugin-eslint": "^1.1.4",
     "@rollup/plugin-babel": "^5.2.2",
+    "cohere-js": "^1.0.10",
     "eslint": "^7.15.0",
     "eslint-config-prettier": "^7.0.0",
     "husky": "^4.3.5",
     "prettier": "^2.2.1",
+    "rollup": "^2.45.2",
     "stylelint": "^13.8.0",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-sass-guidelines": "^7.1.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@babel/eslint-parser": "^7.13.14",
+    "@rollup/plugin-node-resolve": "^11.2.1"
+  }
 }

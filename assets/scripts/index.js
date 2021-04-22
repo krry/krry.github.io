@@ -239,7 +239,7 @@
   };
 
   // Run after the HTML document has finished loading
-  var lazyloads = function lazyloads() {
+  var useLazyloads = function useLazyloads() {
     // Get our lazy-loaded images
     var lazyImages = [].slice.call(document.querySelectorAll(".lazy")); // Do this only if IntersectionObserver is supported
 
@@ -273,7 +273,7 @@
     }
   };
 
-  var waves = function waves() {
+  var useWaves = function useWaves() {
     var start, last, dTime, demerits;
 
     function fpsMeasureLoop(timestamp) {
@@ -317,7 +317,7 @@
   };
 
   /* eslint-disable no-sparse-arrays */
-  var drawer = function drawer() {
+  var useDrawer = function useDrawer() {
     var knob = document.getElementById("knob");
     var dresser = document.getElementById("dresser"); // let cello = document.getElementById("cello");
 
@@ -456,7 +456,7 @@
   /*********************************************
    * Elevator.js
    *********************************************/
-  var Elevator = function Elevator(options) {
+  function Elevator(options) {
 
     var body = null; // Scroll vars
 
@@ -700,17 +700,9 @@
     }
 
     init(options);
-  };
-
-  if (typeof module !== "undefined" && module.exports) {
-    module.exports = Elevator;
   }
 
-  var Elevator$1 = /*#__PURE__*/Object.freeze({
-    __proto__: null
-  });
-
-  var elevator = function elevator() {
+  var useElevator = function useElevator() {
     var elEl = document.querySelector('.elevator-button');
     var eb = document.getElementById('eb');
 
@@ -721,8 +713,10 @@
         document.documentElement.style.scrollBehavior = "smooth";
       }, 15000);
     };
+    /* eslint-disable @babel/new-cap */
 
-    var elevatorObj = new Elevator$1({
+
+    var elevatorObj = new Elevator({
       element: eb
     }).elevate();
     elEl.addEventListener('click', scrollSwitchThenElevator);
@@ -757,14 +751,86 @@
     document.getElementById('filter_ctrl').addEventListener('change', applyFilter);
   };
 
+  var hookInputSetter = function hookInputSetter(target, key) {
+    var orig = Object.getOwnPropertyDescriptor(target, key);
+    Object.defineProperty(target, key, {
+      set: function set(value) {
+        this.dispatchEvent(new Event("coherevalueupdate"));
+
+        if (orig && orig.set) {
+          orig.set.call(this, value);
+        }
+      }
+    });
+  };
+
+  var disableLoad = typeof window === "undefined" || !window.document || window.document.documentMode;
+
+  if (!disableLoad) {
+    hookInputSetter(HTMLInputElement.prototype, "value");
+    hookInputSetter(HTMLInputElement.prototype, "checked");
+    hookInputSetter(HTMLTextAreaElement.prototype, "value");
+    hookInputSetter(HTMLSelectElement.prototype, "value");
+    hookInputSetter(HTMLSelectElement.prototype, "selectedIndex");
+  }
+
+  var bridgedMethods = ["init", "identify", "stop", "showCode"];
+
+  var noop = function noop() {};
+
+  var noopModule = {
+    init: noop,
+    identify: noop,
+    stop: noop,
+    showCode: noop
+  }; // Create cohere or pass in previous args to init/initialize
+  //  if script is not created
+
+  var Cohere = disableLoad ? noopModule : window.Cohere = [];
+
+  if (!disableLoad) {
+    Cohere.invoked = true;
+    Cohere.snippet = "0.4";
+    Cohere.valhook = true;
+    Cohere.methods = bridgedMethods;
+    Cohere.methods.forEach(function (method) {
+      Cohere[method] = function () {
+        for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+          args[_key] = arguments[_key];
+        }
+
+        args.unshift(method);
+        Cohere.push(args);
+      };
+    }); // Create an async script element based on your key
+
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.async = true;
+    script.src = "https://static.cohere.so/main.js"; // Insert our script before the first script element
+
+    var first = document.getElementsByTagName("script")[0];
+
+    if (first && first.parentNode) {
+      first.parentNode.insertBefore(script, first);
+    }
+  }
+
+  var exportedModule = Cohere;
+
+  var useCohere = function useCohere() {
+    exportedModule.init("lUCsR9BYS7tcTYru1bB_3Qb_");
+  };
+
   document.addEventListener("DOMContentLoaded", function () {
     useFolds();
     useThumbs();
-    lazyloads();
-    waves();
-    drawer();
-    elevator();
     useLenses();
+    useLazyloads();
+    useWaves();
+    useDrawer();
+    useElevator();
+    useCohere();
   });
 
 }());
