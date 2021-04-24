@@ -1,8 +1,7 @@
 @charset "utf-8";
 
 // Import partials.
-@import
-  'bloob/vars',
+@import 'bloob/vars',
   'bloob/mixins',
   'normalize',
   'bloob/highlight',
@@ -27,5 +26,4 @@
   'bloob/folio',
   'bloob/poem',
   'bloob/post',
-  'dialog-polyfill'
-;
+  'dialog-polyfill';

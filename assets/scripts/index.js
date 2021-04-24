@@ -107,23 +107,42 @@
     };
   }
 
-  // provide hideJob wiring function
+  var scrollPosition;
+
+  function jumpBackToPrevPos() {
+    document.documentElement.style.scrollBehavior = "auto"; // return the document to its previous scroll point
+
+    console.log('resuming scrollPosition', scrollPosition);
+    document.documentElement.scrollTop = scrollPosition;
+    document.documentElement.style.scrollBehavior = "smooth";
+  }
+
+  function adjustUrlWithModal() {
+    // after removing the dialog from the DOM
+    var uri = window.location.toString(); // adjust the URL params to disinclude the client param
+
+    window.history.replaceState({}, document.title, uri.substring(0, uri.indexOf("?")));
+  } // provide hideJob wiring function
+
+
   function hideJob(e) {
     var closeTarget = e.target.dataset.closer; // find the modal to close matching this data attr
 
     var closingModal = document.body.querySelector('[data-modal=' + closeTarget + ']');
 
     if (typeof closingModal.close === "function") {
-      closingModal.close();
-      document.documentElement.classList.remove("modal-open");
-      e.target.removeEventListener("click", hideJob); // after removing the dialog from the DOM
-
-      var uri = window.location.toString(); // adjust the URL params to disinclude the client param
-
-      window.history.replaceState({}, document.title, uri.substring(0, uri.indexOf("?")));
+      e.target.removeEventListener("click", hideJob);
+      closeModal(closingModal);
     } else {
       console.error("No modal to hide. Maybe your browser doesn't support the Dialog API.");
     }
+  }
+
+  function closeModal(target) {
+    target.close();
+    document.documentElement.classList.remove("modal-open");
+    jumpBackToPrevPos();
+    adjustUrlWithModal();
   } // provide showJob wiring function
 
 
@@ -134,15 +153,19 @@
     var openingModal = document.body.querySelector("[data-modal=" + triggerTarget + "]"); // console.log("openingModal is", openingModal);
 
     document.body.appendChild(openingModal);
+    scrollPosition = document.documentElement.scrollTop;
+    console.log('preserving scrollPosition', scrollPosition);
 
     if (typeof openingModal.showModal === "function") {
       openingModal.showModal(); // let the <html> know to cushion for modality
 
-      document.documentElement.classList.add("modal-open"); // set <ESC> key to hide modal
+      document.documentElement.classList.add("modal-open"); // start at the top of the job modal
+
+      document.getElementById(triggerTarget).scrollTop = 0; // set <ESC> key to hide modal
 
       document.body.addEventListener("keydown", function escapeTheModal(e) {
         if (e.key === "Escape") {
-          document.documentElement.classList.remove("modal-open");
+          closeModal(openingModal);
         }
 
         document.body.removeEventListener("keydown", escapeTheModal);
@@ -446,283 +469,27 @@
     }
   }; // zome zpare zound fx
 
-  /*!
-   * Elevator.js
-   *
-   * MIT licensed
-   * Copyright (C) 2015 Tim Holman, http://tholman.com
-   */
-
-  /*********************************************
-   * Elevator.js
-   *********************************************/
-  function Elevator(options) {
-
-    var body = null; // Scroll vars
-
-    var animation = null;
-    var duration = null; // ms
-
-    var customDuration = false;
-    var startTime = null;
-    var startPosition = null;
-    var endPosition = 0;
-    var targetElement = null;
-    var verticalPadding = null;
-    var elevating = false;
-    var startCallback;
-    var mainAudio;
-    var endAudio;
-    var endCallback;
-    var that = this;
-    /**
-     * Utils
-     */
-    // Thanks Mr Penner - http://robertpenner.com/easing/
-
-    function easeInOutQuad(t, b, c, d) {
-      t /= d / 2;
-      if (t < 1) return c / 2 * t * t + b;
-      t--;
-      return -c / 2 * (t * (t - 2) - 1) + b;
-    }
-
-    function extendParameters(options, defaults) {
-      for (var option in defaults) {
-        var t = options[option] === undefined && typeof option !== "function";
-
-        if (t) {
-          options[option] = defaults[option];
-        }
-      }
-
-      return options;
-    }
-
-    function getVerticalOffset(element) {
-      var verticalOffset = 0;
-
-      while (element) {
-        verticalOffset += element.offsetTop || 0;
-        element = element.offsetParent;
-      }
-
-      if (verticalPadding) {
-        verticalOffset = verticalOffset - verticalPadding;
-      }
-
-      return verticalOffset;
-    }
-    /**
-     * Main
-     */
-    // Time is passed through requestAnimationFrame, what a world!
-
-
-    function animateLoop(time) {
-      if (!startTime) {
-        startTime = time;
-      }
-
-      var timeSoFar = time - startTime;
-      var easedPosition = easeInOutQuad(timeSoFar, startPosition, endPosition - startPosition, duration);
-      window.scrollTo(0, easedPosition);
-
-      if (timeSoFar < duration) {
-        animation = requestAnimationFrame(animateLoop);
-      } else {
-        animationFinished();
-      }
-    } //            ELEVATE!
-    //              /
-    //         ____
-    //       .'    '=====<0
-    //       |======|
-    //       |======|
-    //       [IIIIII[\--()
-    //       |_______|
-    //       C O O O D
-    //      C O  O  O D
-    //     C  O  O  O  D
-    //     C__O__O__O__D
-    //    [_____________]
-
-
-    this.elevate = function () {
-      if (elevating) {
-        return;
-      }
-
-      elevating = true;
-      startPosition = document.documentElement.scrollTop || body.scrollTop;
-      updateEndPosition(); // No custom duration set, so we travel at pixels per millisecond. (0.75px per ms)
-
-      if (!customDuration) {
-        duration = Math.abs(endPosition - startPosition) * 1.5;
-      }
-
-      requestAnimationFrame(animateLoop); // Start music!
-
-      if (mainAudio) {
-        mainAudio.play();
-      } // play Elevatron Zounds
-
-
-      zzfx.apply(void 0, [, .2, 440, .4, .3, 2, 3, 1.2, 1, .4, -69, .06, .01, .3, -0.1,, .15, .59, .8]); // Elevatron
-
-      if (startCallback) {
-        startCallback();
-      }
-    };
-
-    function browserMeetsRequirements() {
-      return window.requestAnimationFrame && window.Audio && window.addEventListener;
-    }
-
-    function resetPositions() {
-      startTime = null;
-      startPosition = null;
-      elevating = false;
-    }
-
-    function updateEndPosition() {
-      if (targetElement) {
-        endPosition = getVerticalOffset(targetElement);
-      }
-    }
-
-    function animationFinished() {
-      resetPositions(); // Stop music!
-
-      if (mainAudio) {
-        mainAudio.pause();
-        mainAudio.currentTime = 0;
-      }
-
-      if (endAudio) {
-        endAudio.play();
-      } // play Fairy Zoundz
-
-
-      zzfx.apply(void 0, [, .123, 815, .874, .97, .72,, .1, .2, .17, 217, .04, .03,,,,,, .44]); // Fairy
-
-      if (endCallback) {
-        endCallback();
-      }
-    }
-
-    function onWindowBlur() {
-      // If animating, go straight to the top. And play no more music.
-      if (elevating) {
-        cancelAnimationFrame(animation);
-        resetPositions();
-
-        if (mainAudio) {
-          mainAudio.pause();
-          mainAudio.currentTime = 0;
-        }
-
-        updateEndPosition();
-        window.scrollTo(0, endPosition);
-      }
-    }
-
-    function bindElevateToElement(element) {
-      if (element.addEventListener) {
-        element.addEventListener("click", that.elevate, false);
-      } else {
-        // Older browsers
-        element.attachEvent("onclick", function () {
-          updateEndPosition();
-          document.documentElement.scrollTop = endPosition;
-          document.body.scrollTop = endPosition;
-          window.scroll(0, endPosition);
-        });
-      }
-    }
-
-    function init(_options) {
-      // Take the stairs instead
-      if (!browserMeetsRequirements()) {
-        return;
-      } // Bind to element click event.
-
-
-      body = document.body;
-      var defaults = {
-        duration: undefined,
-        mainAudio: false,
-        endAudio: false,
-        preloadAudio: true,
-        loopAudio: true,
-        startCallback: null,
-        endCallback: null
-      };
-      _options = extendParameters(_options, defaults);
-
-      if (_options.element) {
-        bindElevateToElement(_options.element);
-      }
-
-      if (_options.duration) {
-        customDuration = true;
-        duration = _options.duration;
-      }
-
-      if (_options.targetElement) {
-        targetElement = _options.targetElement;
-      }
-
-      if (_options.verticalPadding) {
-        verticalPadding = _options.verticalPadding;
-      }
-
-      window.addEventListener("blur", onWindowBlur, false);
-
-      if (_options.mainAudio) {
-        mainAudio = new Audio(_options.mainAudio);
-        mainAudio.setAttribute("preload", _options.preloadAudio);
-        mainAudio.setAttribute("loop", _options.loopAudio);
-      }
-
-      if (_options.endAudio) {
-        endAudio = new Audio(_options.endAudio);
-        endAudio.setAttribute("preload", "true");
-      }
-
-      if (_options.endCallback) {
-        endCallback = _options.endCallback;
-      }
-
-      if (_options.startCallback) {
-        startCallback = _options.startCallback;
-      }
-    }
-
-    init(options);
-  }
-
+  // import Elevator from './vendor/elevator.min.js';
   var useElevator = function useElevator() {
-    var elEl = document.querySelector('.elevator-button');
-    var eb = document.getElementById('eb');
+    var elEl = document.querySelector('.elevator-button'); // var eb = document.getElementById('eb');
 
     var scrollSwitchThenElevator = function scrollSwitchThenElevator() {
-      document.documentElement.style.scrollBehavior = "auto";
-      eb.click();
-      setTimeout(function () {
-        document.documentElement.style.scrollBehavior = "smooth";
-      }, 15000);
+      // document.documentElement.style.scrollBehavior = "auto";
+      // eb.click();
+      // setTimeout(function() {
+      //   document.documentElement.style.scrollBehavior = "smooth";
+      // }, 15000);
+      document.documentElement.scrollTop = 0;
     };
     /* eslint-disable @babel/new-cap */
+    // const elevatorObj = new Elevator({
+    //   element: eb,
+    // }).elevate();
 
 
-    var elevatorObj = new Elevator({
-      element: eb
-    }).elevate();
-    elEl.addEventListener('click', scrollSwitchThenElevator);
-    return {
-      elevatorObj: elevatorObj
-    };
+    elEl.addEventListener('click', scrollSwitchThenElevator); // return {
+    //   elevatorObj
+    // };
   };
 
   function applyFilter(e) {
