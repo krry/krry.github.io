@@ -233,7 +233,7 @@
     closer.addEventListener('click', closeThumb.bind(null, e, closer));
     closer.classList.add('shown'); // wire <ESC> key to close this thumb
 
-    document.body.addEventListener("keydown", function (e) {
+    document.body.addEventListener('keydown', function (e) {
       if (e.keyCode === 27) {
         closeThumb(e);
       }
