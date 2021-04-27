@@ -1,11 +1,8 @@
 src/thumbs.js
-  // TODO: do we need to remove these listeners under some conditions?
-
-assets/scripts/dialog-polyfill.js
-    // TODO(samthor): tabindex values that are not numeric are not focusable.
+	// TODO: do we need to remove these listeners under some conditions?
 
 assets/scripts/index.js
     // TODO: do we need to remove these listeners under some conditions?
 
-_includes/_folio.html
-<!-- TODO: preserve scrollTop of window while showing dialogs -->
+assets/scripts/dialog-polyfill.js
+    // TODO(samthor): tabindex values that are not numeric are not focusable.
