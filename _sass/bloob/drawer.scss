@@ -1,143 +1,143 @@
 .dresser {
-  bottom: 0;
-  height: 100vh;
-  left: 0;
-  overflow: visible;
-  position: fixed;
-  top: 0;
-  transform: translate3d(-100%, 0, 0);
-  transition: transform 150ms ease-in-out;
-  width: auto;
-  z-index: 5;
+	bottom: 0;
+	height: 100vh;
+	left: 0;
+	overflow: visible;
+	position: fixed;
+	top: 0;
+	transform: translate3d(-100%, 0, 0);
+	transition: transform 150ms ease-in-out;
+	width: auto;
+	z-index: 16;
 }
 
 .dresser.open {
-  transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
 }
 
 .drawer h3 {
-  margin-top: 1em;
-  text-align: center;
+	margin-top: 1em;
+	text-align: center;
 }
 
 @include media-min-height($pad) {
-  .drawer h3 {
-    margin-top: 2em;
-  }
+	.drawer h3 {
+		margin-top: 2em;
+	}
 }
 
 .drawer {
-  background-color: $well-ful;
-  border-radius: 0 0.5rem 0.5rem 0;
-  color: $fore;
-  height: 100%;
-  max-width: 24rem;
-  min-width: 16.5rem;
-  overflow-y: scroll;
-  padding: 0 1.5rem;
-  position: relative;
-  width: 60vw;
+	background-color: $well-ful;
+	border-radius: 0 0.5rem 0.5rem 0;
+	color: $fore;
+	height: 100%;
+	max-width: 24rem;
+	min-width: 16.5rem;
+	overflow-y: scroll;
+	padding: 0 1.5rem;
+	position: relative;
+	width: 60vw;
 
-  .button-row {
-    align-items: center;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    margin: 0.5rem 0;
-  }
+	.button-row {
+		align-items: center;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-evenly;
+		margin: 0.5rem 0;
+	}
 
-  .btn {
-    font-size: 0.8rem;
+	.btn {
+		font-size: 0.8rem;
 
-    @include media-min-width($pad) {
-      font-size: 1rem;
-    }
-  }
+		@include media-min-width($pad) {
+			font-size: 1rem;
+		}
+	}
 }
 
 .knob {
-  background-color: $well-ful;
-  border-radius: 1.5em;
-  bottom: 3em;
-  cursor: pointer;
-  position: absolute;
-  right: -1.5em;
-  transition: all 150ms ease-in-out;
-  z-index: 20;
+	background-color: $well-ful;
+	border-radius: 1.5em;
+	bottom: 3em;
+	cursor: pointer;
+	position: absolute;
+	right: -1.5em;
+	transition: all 150ms ease-in-out;
+	z-index: 20;
 }
 
 .knob::before {
-  animation: whirl 5s infinite linear alternate;
-  content: '🤓';
-  display: block;
-  font-size: 2em;
-  height: 1.5em;
-  text-align: center;
-  width: 1.5em;
+	animation: whirl 5s infinite linear alternate;
+	content: '🤓';
+	display: block;
+	font-size: 2em;
+	height: 1.5em;
+	text-align: center;
+	width: 1.5em;
 }
 
 .knob:hover {
-  transform: rotateZ(180deg);
+	transform: rotateZ(180deg);
 }
 
 .dresser.open .knob {
-  border-radius: 2.25rem;
+	border-radius: 2.25rem;
 }
 
 .ctrls {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .spectrum {
-  /* vertical alignment */
-  align-items: center;
-  display: flex;
-  flex-flow: row wrap;
-  /* horiz spacing */
-  justify-content: space-between;
-  position: relative;
-  text-align: right;
+	/* vertical alignment */
+	align-items: center;
+	display: flex;
+	flex-flow: row wrap;
+	/* horiz spacing */
+	justify-content: space-between;
+	position: relative;
+	text-align: right;
 }
 
 .spectrum + .spectrum {
-  margin-top: 0.5rem;
+	margin-top: 0.5rem;
 }
 
 .spectrum [type='range'] {
-  flex: 3;
-  height: 1.5rem;
-  margin: 0 0.5rem;
+	flex: 3;
+	height: 1.5rem;
+	margin: 0 0.5rem;
 }
 
 .spectrum label {
-  display: block;
-  flex: 1 0 10%;
-  font-size: 80%;
-  left: 1rem;
-  position: absolute;
-  right: auto;
-  text-align: right;
+	display: block;
+	flex: 1 0 10%;
+	font-size: 80%;
+	left: 1rem;
+	position: absolute;
+	right: auto;
+	text-align: right;
 }
 
 .spectrum input + label {
-  left: auto;
-  right: 1rem;
-  text-align: left;
+	left: auto;
+	right: 1rem;
+	text-align: left;
 }
 
 .spectrum .spectrum-name {
-  display: block;
-  flex-basis: 100%;
-  font-size: 80%;
-  left: 0;
-  position: relative;
-  text-align: center;
+	display: block;
+	flex-basis: 100%;
+	font-size: 80%;
+	left: 0;
+	position: relative;
+	text-align: center;
 }
 
 .drawer footer {
-  font-size: 1rem;
-  padding: 2rem 0;
-  text-align: center;
+	font-size: 1rem;
+	padding: 2rem 0;
+	text-align: center;
 }

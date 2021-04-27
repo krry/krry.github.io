@@ -1,48 +1,55 @@
 <li class="folio-fold split fold-cmnplc">
-  <a class="trigger" data-trigger="cmnplc">
-    <h3 class="folio-name">Commonplace</h3>
-    <!-- <div class="folio-logo logo-cmnplc"></div> -->
-  </a>
-  <dialog id="cmnplc" class="folio-zoom" data-modal="cmnplc">
-    {%- include closer.html content='cmnplc' -%}
-    <div class="folio-logo logo-cmnplc"></div>
-    <h3>Commonplace is my digital garden, zettelkasten, and second brain all rolled into one.</h3>
-    <div class="gallery">
-      {%- include closer.html content='cmnplc-thumb-closer' -%}
-      {%-
-        include image.html
-        file='cmnplc-land.jpg'
-        caption='Commonplace is a catch-all for partial concepts.'
-        link='https://commonplace.atmanaut.me'
-      -%}
-      {%-
-        include image.html
-        file='cmnplc-night.jpg'
-        caption='Day or night, land or sea, Commonplace is ready to serve.'
-        link='https://commonplace.atmanaut.me'
-      -%}
-      {%-
-        include image.html
-        file='cmnplc-sea.jpg'
-        caption='Mobile-friendly for on-the-go knowledge graphing.'
-        link='https://commonplace.atmanaut.me'
-      -%}
-      {%-
-        include image.html
-        file='cmnplc-day.jpg'
-        caption='Day mode, champion of the sun'
-        link='https://commonplace.atmanaut.me'
-      -%}
-    </div>
-    <p>Learning in public, and sharing my notes, was scary at first, but now I can't imagine doing it any other way. I'm working to make a white label version of this site so anyone can stand up an instance and keep their notes in public with me.</p>
-    <div class="folio-list">
-      <h4>Stack</h4>
-      <ul class="pills">
-        <li>Next.js</li>
-        <li>MDX</li>
-        <li>React</li>
-        <li>Netlify</li>
-      </ul>
-    </div>
-  </dialog>
+	<a class="trigger" data-trigger="cmnplc">
+		<!-- <h3 class="folio-name">Commonplace</h3> -->
+		<div class="folio-logo logo-cmnplc"></div>
+	</a>
+	<dialog id="cmnplc" class="folio-zoom" data-modal="cmnplc">
+		{%- include closer.html content='cmnplc' -%}
+		<div class="folio-logo logo-cmnplc"></div>
+		<h3>
+			Commonplace is my digital garden, zettelkasten, and second brain all
+			rolled into one.
+		</h3>
+		<div class="gallery">
+			<!-- prettier-ignore -->
+			{%- include closer.html
+          content='cmnplc-thumb-closer' -%}
+      {%- include	image.html file='cmnplc-land.jpg'
+          caption='Commonplace is a catch-all for	partial concepts.'
+          link='https://commonplace.atmanaut.me' -%}
+      {%- include	image.html file='cmnplc-fuch.jpg'
+          caption='Some parts of it seem bright, while others are quite dull.'
+          link='https://commonplace.atmanaut.me' -%}
+      {%- include	image.html file='cmnplc-night.jpg'
+          caption='Day or night, land or sea,	Commonplace is ready to serve.'
+          link='https://commonplace.atmanaut.me' -%}
+			{%- include image.html file='cmnplc-sea.jpg'
+          caption='Mobile-friendly for on-the-go knowledge graphing.'
+          link='https://commonplace.atmanaut.me' -%}
+			{%- include image.html file='cmnplc-day.jpg'
+          caption='Day mode, champion	of the sun'
+          link='https://commonplace.atmanaut.me' -%}
+		</div>
+		<p>
+			That means that the notes published there are incomplete and unpolished,
+			but interlinked and available to the public for whatever purposes that may
+			arise. This is an effort to learn in public, and a way to keep useful
+			thoughts from getting lost or buried in the archives.
+		</p>
+		<p>
+			Learning in public, and sharing my notes, was scary at first, but now I
+			can't imagine doing it any other way. I'm working to make a white label
+			version of this site so anyone can stand up an instance and keep their
+			notes in public with me.
+		</p>
+		<div class="folio-list">
+			<h4>Stack</h4>
+			<ul class="pills">
+				<li>Next.js</li>
+				<li>MDX</li>
+				<li>React</li>
+				<li>Netlify</li>
+			</ul>
+		</div>
+	</dialog>
 </li>

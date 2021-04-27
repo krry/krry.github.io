@@ -1,81 +1,81 @@
 .bloob {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-bottom: 0.25em;
-  margin-top: 0.25em;
-  overflow-wrap: break-word;
-  padding-bottom: 1.75em;
-  padding-top: 3.25em;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-bottom: 0.25em;
+	margin-top: 0.25em;
+	overflow-wrap: break-word;
+	padding-bottom: 1.75em;
+	padding-top: 3.25em;
 
-  @include media-min($pad) {
-    padding-bottom: 1.5em;
-    padding-top: 2em;
-  }
+	@include media-min($pad) {
+		padding-bottom: 1.5em;
+		padding-top: 2em;
+	}
 
-  @include media-min-width($lap) {
-    padding-bottom: 1em;
-    padding-top: 2.5em;
-  }
+	@include media-min-width($lap) {
+		padding-bottom: 1em;
+		padding-top: 2.5em;
+	}
 
-  .folio > & {
-    margin-bottom: 0;
-  }
+	.folio > & {
+		margin-bottom: 0;
+	}
 
-  &.purp00 {
-    background-image: url('img/bloobs/purp000.png');
-  }
+	&.purp00 {
+		background-image: url('img/bloobs/purp000.png');
+	}
 
-  &.purp25 {
-    background-image: url('img/bloobs/purp025.png');
-  }
+	&.purp25 {
+		background-image: url('img/bloobs/purp025.png');
+	}
 
-  &.purp33 {
-    background-image: url('img/bloobs/purp033.png');
-  }
+	&.purp33 {
+		background-image: url('img/bloobs/purp033.png');
+	}
 
-  &.purp50 {
-    background-image: url('img/bloobs/purp050.png');
-  }
+	&.purp50 {
+		background-image: url('img/bloobs/purp050.png');
+	}
 
-  &.bloor00 {
-    background-image: url('img/bloobs/bloor000.png');
-  }
+	&.bloor00 {
+		background-image: url('img/bloobs/bloor000.png');
+	}
 
-  &.bloor25 {
-    background-image: url('img/bloobs/bloor025.png');
-  }
+	&.bloor25 {
+		background-image: url('img/bloobs/bloor025.png');
+	}
 
-  &.bloor33 {
-    background-image: url('img/bloobs/bloor033.png');
-  }
+	&.bloor33 {
+		background-image: url('img/bloobs/bloor033.png');
+	}
 
-  &.bloor50 {
-    background-image: url('img/bloobs/bloor050.png');
-  }
+	&.bloor50 {
+		background-image: url('img/bloobs/bloor050.png');
+	}
 
-  &.bloor75 {
-    background-image: url('img/bloobs/bloor075.png');
-  }
+	&.bloor75 {
+		background-image: url('img/bloobs/bloor075.png');
+	}
 
-  &.bloor100 {
-    background-image: url('img/bloobs/bloor100.png');
-  }
+	&.bloor100 {
+		background-image: url('img/bloobs/bloor100.png');
+	}
 
-  &.ghost {
-    animation: haunt 45s linear infinite;
-    bottom: 0;
-    font-size: 100%;
-    height: 2em;
-    left: 0;
-    padding: 0;
-    position: absolute;
-    right: 0;
-    width: 2em;
-    z-index: 1;
+	&.ghost {
+		animation: haunt 45s linear infinite;
+		bottom: 0;
+		font-size: 100%;
+		height: 2em;
+		left: 0;
+		padding: 0;
+		position: absolute;
+		right: 0;
+		width: 2em;
+		z-index: 1;
 
-    path {
-      fill: $blue;
-    }
-  }
+		path {
+			fill: $blue;
+		}
+	}
 }
