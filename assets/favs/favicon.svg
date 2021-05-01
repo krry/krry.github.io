@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="720px" height="720px" viewBox="0 0 720 720" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Constellation</title>
+    <title>Atmanautica</title>
     <defs>
-        <radialGradient cx="49.9999523%" cy="83.5994%" fx="49.9999523%" fy="83.5994%" r="133.332827%" gradientTransform="translate(0.500000,0.835994),scale(1.000000,0.638806),rotate(-90.000000),translate(-0.500000,-0.835994)" id="radialGradient-1">
+        <radialGradient cx="49.9999523%" cy="83.5994%" fx="49.9999523%" fy="83.5994%" r="133.266667%" gradientTransform="translate(0.500000,0.835994),scale(1.000000,0.639123),rotate(-90.000000),translate(-0.500000,-0.835994)" id="radialGradient-1">
             <stop stop-color="#000000" stop-opacity="0.8" offset="0%"></stop>
             <stop stop-color="#5C17D9" offset="100%"></stop>
         </radialGradient>
-        <path d="M214,0 C71.3333333,165.151296 0,312.179075 0,441.083334 C0,582.726945 107,670 214,670 C321,670 428,582.726945 428,441.083334 C428,312.179075 356.666667,165.151296 214,0 Z" id="path-2"></path>
+        <path d="M189.5,0 C63.1666666,146.171222 0,276.301778 0,390.391667 C0,515.756834 94.75,593 189.5,593 C284.25,593 379,515.756834 379,390.391667 C379,276.301778 315.833334,146.171222 189.5,0 Z" id="path-2"></path>
         <linearGradient x1="50%" y1="100%" x2="50%" y2="11.2089618%" id="linearGradient-4">
             <stop stop-color="#000000" stop-opacity="0.8" offset="0%"></stop>
             <stop stop-color="#9340FF" stop-opacity="0.465909091" offset="100%"></stop>
         </linearGradient>
-        <radialGradient cx="238.939513%" cy="3.8671807%" fx="238.939513%" fy="3.8671807%" r="222.809787%" gradientTransform="translate(2.389395,0.038672),scale(1.000000,0.919023),rotate(90.000000),translate(-2.389395,-0.038672)" id="radialGradient-5">
+        <radialGradient cx="238.939513%" cy="3.8671807%" fx="238.939513%" fy="3.8671807%" r="222.8686%" gradientTransform="translate(2.389395,0.038672),scale(1.000000,0.918780),rotate(90.000000),translate(-2.389395,-0.038672)" id="radialGradient-5">
             <stop stop-color="#5D17D9" offset="0%"></stop>
             <stop stop-color="#1695C5" offset="100%"></stop>
         </radialGradient>
-        <radialGradient cx="239.372491%" cy="4.67447886%" fx="239.372491%" fy="4.67447886%" r="221.665316%" gradientTransform="translate(2.393725,0.046745),scale(1.000000,0.919023),rotate(90.000000),translate(-2.393725,-0.046745)" id="radialGradient-6">
+        <radialGradient cx="239.372491%" cy="4.67447886%" fx="239.372491%" fy="4.67447886%" r="221.723827%" gradientTransform="translate(2.393725,0.046745),scale(1.000000,0.918780),rotate(90.000000),translate(-2.393725,-0.046745)" id="radialGradient-6">
             <stop stop-color="#5D17D9" offset="0%"></stop>
             <stop stop-color="#1695C5" offset="100%"></stop>
         </radialGradient>
-        <radialGradient cx="-138.10483%" cy="4.56929081%" fx="-138.10483%" fy="4.56929081%" r="221.946795%" gradientTransform="translate(-1.381048,0.045693),scale(1.000000,0.919023),rotate(90.000000),translate(1.381048,-0.045693)" id="radialGradient-7">
+        <radialGradient cx="-138.10483%" cy="4.56929081%" fx="-138.10483%" fy="4.56929081%" r="222.005379%" gradientTransform="translate(-1.381048,0.045693),scale(1.000000,0.918780),rotate(90.000000),translate(1.381048,-0.045693)" id="radialGradient-7">
             <stop stop-color="#5D17D9" offset="0%"></stop>
             <stop stop-color="#1695C5" offset="100%"></stop>
         </radialGradient>
-        <radialGradient cx="-141.3214%" cy="3.1250012e-05%" fx="-141.3214%" fy="3.1250012e-05%" r="226.439301%" gradientTransform="translate(-1.413214,0.000000),scale(1.000000,0.919023),rotate(90.000000),translate(1.413214,-0.000000)" id="radialGradient-8">
+        <radialGradient cx="-141.3214%" cy="3.1250012e-05%" fx="-141.3214%" fy="3.1250012e-05%" r="226.499072%" gradientTransform="translate(-1.413214,0.000000),scale(1.000000,0.918780),rotate(90.000000),translate(1.413214,-0.000000)" id="radialGradient-8">
             <stop stop-color="#5D17D9" offset="0%"></stop>
             <stop stop-color="#1695C5" offset="100%"></stop>
         </radialGradient>
-        <radialGradient cx="50.0000412%" cy="53.4413%" fx="50.0000412%" fy="53.4413%" r="77.4763246%" gradientTransform="translate(0.500000,0.534413),scale(1.000000,0.652415),rotate(90.000000),translate(-0.500000,-0.534413)" id="radialGradient-9">
+        <radialGradient cx="50.0000412%" cy="53.4413%" fx="50.0000412%" fy="53.4413%" r="77.4967751%" gradientTransform="translate(0.500000,0.534413),scale(1.000000,0.652243),rotate(90.000000),translate(-0.500000,-0.534413)" id="radialGradient-9">
             <stop stop-color="#5E17D9" offset="0%"></stop>
             <stop stop-color="#1695C5" offset="100%"></stop>
         </radialGradient>
-        <path d="M221.168614,0 C73.7228711,167.123253 0,315.906586 0,446.35 C0,589.684879 110.584307,678 221.168614,678 C331.752922,678 442.337229,589.684879 442.337229,446.35 C442.337229,315.906586 368.614358,167.123253 221.168614,0 Z" id="path-10"></path>
-        <radialGradient cx="49.9999843%" cy="-13.0121%" fx="49.9999843%" fy="-13.0121%" r="113.012068%" gradientTransform="translate(0.500000,-0.130121),scale(0.485430,1.000000),rotate(90.000000),translate(-0.500000,0.130121)" id="radialGradient-12">
+        <path d="M195.672788,0 C65.2242623,147.896684 0,279.56335 0,395 C0,521.845026 97.836394,600 195.672788,600 C293.509182,600 391.345576,521.845026 391.345576,395 C391.345576,279.56335 326.121314,147.896684 195.672788,0 Z" id="path-10"></path>
+        <radialGradient cx="49.9999843%" cy="-13.0121%" fx="49.9999843%" fy="-13.0121%" r="113.012068%" gradientTransform="translate(0.500000,-0.130121),scale(0.485558,1.000000),rotate(90.000000),translate(-0.500000,0.130121)" id="radialGradient-12">
             <stop stop-color="#5D17D9" offset="0%"></stop>
             <stop stop-color="#1695C5" offset="100%"></stop>
         </radialGradient>
@@ -45,42 +45,42 @@
             <stop stop-color="#551AC0" offset="100%"></stop>
         </radialGradient>
     </defs>
-    <g id="Constellation" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="bloob-blue" transform="translate(0.000000, 21.000000)">
-            <g id="drop" transform="translate(145.000000, 4.000000)">
+    <g id="Atmanautica" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bloob-blue" transform="translate(42.000000, 60.000000)">
+            <g id="drop" transform="translate(128.000000, 4.000000)">
                 <g id="drop-fill" fill="url(#radialGradient-1)" fill-rule="nonzero">
-                    <path d="M214,0 C71.3333333,165.151296 0,312.179075 0,441.083334 C0,582.726945 107,670 214,670 C321,670 428,582.726945 428,441.083334 C428,312.179075 356.666667,165.151296 214,0 Z" id="path-2"></path>
+                    <path d="M189.5,0 C63.1666666,146.171222 0,276.301778 0,390.391667 C0,515.756834 94.75,593 189.5,593 C284.25,593 379,515.756834 379,390.391667 C379,276.301778 315.833334,146.171222 189.5,0 Z" id="path-2"></path>
                 </g>
                 <g id="wave-center-Clipped">
                     <mask id="mask-3" fill="white">
                         <use xlink:href="#path-2"></use>
                     </mask>
                     <g id="path-2"></g>
-                    <path d="M-108.202247,493.11751 C-72.4019975,493.11751 -36.6017478,449.032261 -0.801498128,360.861759 C25.9141101,426.658188 149.559551,625.373262 214,360.861759 C278.440449,625.373262 401.816732,427.321083 428.801499,360.861759 C482.501872,493.11751 536.202247,493.11751 536.202247,493.11751 C536.202247,493.11751 518.311668,679.62298 214,679.62298 C11.1255549,679.62298 -96.2751942,617.45449 -108.202247,493.11751 Z" id="wave-center" fill="url(#linearGradient-4)" fill-rule="nonzero" mask="url(#mask-3)"></path>
+                    <path d="M-95.8146067,436.445796 C-64.1129837,436.445796 -32.4113608,397.427061 -0.709737828,319.389587 C22.9473078,377.624337 132.437079,553.502006 189.5,319.389587 C246.562921,553.502006 355.814349,378.211048 379.709738,319.389587 C427.262172,436.445796 474.814607,436.445796 474.814607,436.445796 C474.814607,436.445796 458.972248,601.517056 189.5,601.517056 C9.85183481,601.517056 -85.2530341,546.493302 -95.8146067,436.445796 Z" id="wave-center" fill="url(#linearGradient-4)" fill-rule="nonzero" mask="url(#mask-3)"></path>
                 </g>
             </g>
-            <g id="case" transform="translate(0.000000, 0.000000)">
-                <g id="wings" transform="translate(0.000000, 360.037234)" fill-rule="nonzero">
-                    <path d="M150.250417,0.0099259831 C56.1953627,36.52505 10.6649613,155.69378 0,159.345747 C45.3404587,184.249111 124.948274,85.8413791 146.64195,155.416508 C133.782976,71.0274993 149.798454,-0.971949533 150.250417,0.0099259831 Z" id="wing-left" stroke="url(#radialGradient-6)" fill="url(#radialGradient-5)"></path>
-                    <path d="M569.749583,0.0099259831 C663.804637,36.52505 709.335039,155.69378 720,159.345747 C674.659541,184.249111 595.051726,85.8413791 573.35805,155.416508 C586.217024,71.0274993 570.201546,-0.971949533 569.749583,0.0099259831 Z" id="wing-right" stroke="url(#radialGradient-8)" fill="url(#radialGradient-7)"></path>
+            <g id="case">
+                <g id="wings" transform="translate(0.000000, 318.617021)" fill-rule="nonzero">
+                    <path d="M132.929883,0.00878405584 C49.7172862,32.3230531 9.43552824,137.782106 0,141.013935 C40.1137114,163.052311 110.544514,75.9658222 129.737392,137.536733 C118.360772,62.856194 132.530022,-0.86013233 132.929883,0.00878405584 Z" id="wing-left" stroke="url(#radialGradient-6)" fill="url(#radialGradient-5)"></path>
+                    <path d="M504.070117,0.00878405584 C587.282714,32.3230531 627.564472,137.782106 637,141.013935 C596.886288,163.052311 526.455486,75.9658222 507.262608,137.536733 C518.639228,62.856194 504.469978,-0.86013233 504.070117,0.00878405584 Z" id="wing-right" stroke="url(#radialGradient-8)" fill="url(#radialGradient-7)"></path>
                 </g>
-                <g id="drop-rim" stroke-linecap="round" transform="translate(138.230384, 0.000000)" stroke="url(#radialGradient-9)" stroke-width="20">
-                    <path d="M221.168614,0 C73.7228711,167.123253 0,315.906586 0,446.35 C0,589.684879 110.584307,678 221.168614,678 C331.752922,678 442.337229,589.684879 442.337229,446.35 C442.337229,315.906586 368.614358,167.123253 221.168614,0 Z" id="path-10"></path>
+                <g id="drop-rim" stroke-linecap="round" transform="translate(122.295492, 0.000000)" stroke="url(#radialGradient-9)" stroke-width="20">
+                    <path d="M195.672788,0 C65.2242623,147.896684 0,279.56335 0,395 C0,521.845026 97.836394,600 195.672788,600 C293.509182,600 391.345576,521.845026 391.345576,395 C391.345576,279.56335 326.121314,147.896684 195.672788,0 Z" id="path-10"></path>
                 </g>
-                <g id="wave-around-Clipped" transform="translate(138.230384, 0.000000)">
+                <g id="wave-around-Clipped" transform="translate(122.295492, 0.000000)">
                     <mask id="mask-11" fill="white">
                         <use xlink:href="#path-10"></use>
                     </mask>
                     <g id="path-10"></g>
-                    <path d="M-88.9482471,507.786112 C20.6744574,578.235719 89.1886477,543.010915 116.594324,402.111702 C157.702838,613.460521 281.028381,613.460521 322.136895,402.111702 C349.542571,543.010915 418.056761,578.235719 527.679466,507.786112 C467.269636,636.889697 364.498351,701.441489 219.365609,701.441489 C74.2328678,701.441489 -28.538418,636.889697 -88.9482471,507.786112 Z" id="wave-around" fill="url(#radialGradient-12)" fill-rule="nonzero" mask="url(#mask-11)"></path>
+                    <path d="M-78.6944908,449.36824 C18.2911519,511.713026 78.9071786,480.540633 103.153589,355.851064 C139.523205,542.885417 248.632053,542.885417 285.001669,355.851064 C309.24808,480.540633 369.864107,511.713026 466.84975,449.36824 C413.403831,563.619201 322.479791,620.744681 194.077629,620.744681 C65.6754678,620.744681 -25.2485726,563.619201 -78.6944908,449.36824 Z" id="wave-around" fill="url(#radialGradient-12)" fill-rule="nonzero" mask="url(#mask-11)"></path>
                 </g>
             </g>
-            <g id="ajnas" transform="translate(276.000000, 172.000000)" fill-rule="nonzero">
+            <g id="ajnas" transform="translate(244.000000, 152.000000)" fill-rule="nonzero">
                 <g id="ajna-1/2">
-                    <circle id="white" fill="url(#radialGradient-13)" cx="83" cy="83" r="83"></circle>
-                    <circle id="iris" fill="url(#radialGradient-14)" cx="83" cy="83" r="55.3333333"></circle>
-                    <circle id="pupil" fill="#000000" cx="83" cy="83" r="28.8695652"></circle>
-                    <circle id="dot" fill="#FFFFFF" cx="83" cy="83" r="7.2173913"></circle>
+                    <circle id="white" fill="url(#radialGradient-13)" cx="73.5" cy="73.5" r="73.5"></circle>
+                    <circle id="iris" fill="url(#radialGradient-14)" cx="73.5" cy="73.5" r="49"></circle>
+                    <circle id="pupil" fill="#000000" cx="73.5" cy="73.5" r="25.5652174"></circle>
+                    <circle id="dot" fill="#FFFFFF" cx="73.5" cy="73.5" r="6.39130435"></circle>
                 </g>
             </g>
         </g>
