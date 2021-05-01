@@ -1,96 +1,107 @@
 .btn {
-  appearance: none;
-  background: $link-new;
-  border-color: $link-new;
-  border-radius: 1em;
-  border-style: solid;
-  border-width: 0.125em;
-  color: $white;
-  cursor: pointer;
-  display: inline-block;
-  font-family: $sans;
-  font-weight: bolder;
-  margin: 0.5em;
-  outline: none;
-  padding: 0.75em 1.5em;
-  text-align: center;
-  text-decoration: none;
-  transition: background-color 222ms;
-  white-space: nowrap;
+	appearance: none;
+	background: $link-new;
+	border-color: $link-new;
+	border-radius: 0.5em;
+	border-style: solid;
+	border-width: 0.0625em;
+	color: $white;
+	cursor: pointer;
+	display: inline-block;
+	--font-casual: 0.5;
+	--font-weight: 666;
+	--font-mono: 0;
+	margin: 0.5em;
+	outline: none;
+	padding: 0.618em 1.618em;
+	text-align: center;
+	text-decoration: none;
+	transition: 333ms ease-out;
+	white-space: nowrap;
 
-  &.pink {
-    background: $pink-new;
-    border-color: $pink-new;
-  }
+	&.pink {
+		background: $pink-new;
+		border-color: $pink-new;
+	}
 
-  &:hover,
-  &:focus {
-    background: $link-on;
+	&.blue {
+		background: $link-new;
+		border-color: $link-new;
+	}
 
-    &.pink {
-      background: $pink-on;
-    }
-  }
+	&:hover,
+	&:focus {
+		background: $link-on;
 
-  &:active {
-    background: $pink-new;
-    transform: scale(0.97);
+		&.pink {
+			background: $pink-on;
+		}
 
-    &.pink {
-      background: $green-new;
-    }
-  }
+		&.blue {
+			background: $pink-on;
+			border-color: $pink-new;
+		}
+	}
 
-  &:link,
-  &:focus,
-  &:hover,
-  &:active,
-  &:visited {
-    color: $white !important;
-  }
+	&:active {
+		background: $pink-new;
+		transform: scale(0.97);
+
+		&.pink {
+			background: $green-new;
+		}
+	}
+
+	&:link,
+	&:focus,
+	&:hover,
+	&:active,
+	&:visited {
+		color: $white !important;
+	}
 }
 
 @include media-min-width($lap) {
-  .btn.lg {
-    font-size: 1.125em;
-  }
+	.btn.lg {
+		font-size: 1.125em;
+	}
 }
 
 .btn.sm {
-  border-radius: 4px;
-  font-size: 0.875em;
-  margin: 0;
-  padding: 0.25em;
+	border-radius: 4px;
+	font-size: 0.875em;
+	margin: 0;
+	padding: 0.25em;
 }
 
 .btn.center {
-  display: block;
-  margin: 1rem auto 0.5rem;
+	display: block;
+	margin: 1rem auto 0.5rem;
 }
 
 .btn.holo {
-  background: transparent;
-  border-color: $white;
+	background: transparent;
+	border-color: $white;
 
-  &:hover,
-  &:focus {
-    background: transparentize($link-on, 0.5);
-    border-color: $link-on;
-    color: $link-on;
-  }
+	&:hover,
+	&:focus {
+		background: transparentize($link-on, 0.5);
+		border-color: $link-on;
+		color: $link-on;
+	}
 
-  &:active {
-    background: transparent;
-    border-color: $pink;
-    color: $pink;
-  }
+	&:active {
+		background: transparent;
+		border-color: $pink;
+		color: $pink;
+	}
 }
 
 .btn.holo.pink {
-  &:hover,
-  &:focus {
-    background: transparentize($pink-on, 0.5);
-    border-color: $pink-on;
-    color: $pink-on;
-  }
+	&:hover,
+	&:focus {
+		background: transparentize($pink-on, 0.5);
+		border-color: $pink-on;
+		color: $pink-on;
+	}
 }

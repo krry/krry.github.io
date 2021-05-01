@@ -1,215 +1,222 @@
 .site-header,
 .site-footer {
-  nav {
-    background-color: $well;
-    transition: all 150ms;
+	nav {
+		background-color: $well;
+		transition: all 150ms;
 
-    &:hover {
-      background-color: $well-ful;
-    }
-  }
+		&:hover {
+			background-color: $well-ful;
+		}
+	}
 
-  ul {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    padding-inline-start: 0;
-  }
+	ul {
+		align-items: center;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		padding-inline-start: 0;
+	}
 
-  a {
-    text-decoration: none;
-  }
+	a {
+		text-decoration: none;
+	}
 }
 
 .site-header {
-  margin: 0 -0.8em;
-  z-index: 3;
+	margin: 0 -0.8em;
+	z-index: 3;
 
-  nav {
-    padding: 0 0.4em 0.4em;
-  }
+	nav {
+		padding: 0 0.4em 0.4em;
+	}
 
-  .home-node {
-    flex-basis: 100%;
-  }
+	.home-node {
+		flex-basis: 100%;
+	}
 
-  .home-link {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    padding-left: 0;
-  }
+	.home-link {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		padding-left: 0;
+	}
 
-  .home-link,
-  .nav-link {
-    border-radius: 0.5em;
-  }
+	.home-link,
+	.nav-link {
+		border-radius: 0.5em;
+		--font-weight: 543;
+		--font-mono: 0;
+	}
 
-  .site-title {
-    font-family: $display-font;
-  }
+	.site-title {
+		--font-casual: 1;
+		--font-mono: 0;
+		--font-weight: 666;
+	}
 
-  .site-logo {
-    .icon,
-    span {
-      height: 2.22em;
-      width: 2.22em;
-    }
-  }
+	.site-logo {
+		.icon,
+		span {
+			height: 2.22em;
+			width: 2.22em;
+		}
+	}
 }
 
 @include media-min-width($palm) {
-  .site-header {
-    margin: 1em 0 0;
-    
-    nav {
-      border-radius: 1em;
-      padding: 0.5em 1em 1em;
-    }
-  }
+	.site-header {
+		margin: 1em 0 0;
+
+		nav {
+			border-radius: 1em;
+			padding: 0.5em 1em 1em;
+		}
+	}
 }
 
-
 @include media-min-width($pad) {
-  .site-header {
-    top: 0;
-    
-    nav {
-      padding: 0.5em 1em;
-    }
-    
-    .home-node {
-      flex-basis: auto;
-    }
-  }
+	.site-header {
+		top: 0;
+
+		nav {
+			padding: 0.5em 1em;
+		}
+
+		.home-node {
+			flex-basis: auto;
+		}
+	}
 }
 
 @include media-min-width($lap) {
-  .site-header {
-    .home-node,
-    .nav-node {
-      margin: 0 0.35em;
-    }
+	.site-header {
+		.home-node,
+		.nav-node {
+			margin: 0 0.35em;
+		}
 
-    .home-node {
-      margin-left: unset;
-    }
+		.home-node {
+			margin-left: unset;
+		}
 
-    .nav-node:last-of-type {
-      margin-right: unset;
-    }
-  }
+		.nav-node:last-of-type {
+			margin-right: unset;
+		}
+	}
 }
 
-
-
 .site-footer {
-  bottom: 1rem;
-  color: $fore;
-  font-size: 67%;
-  font-weight: bolder;
-  margin: 2em 0 0;
-  position: relative;
-  width: 100vw;
-  z-index: 1;
+	bottom: 1rem;
+	color: $fore;
+	font-size: 75%;
+	margin: 2em 0 0;
+	position: relative;
+	width: 100vw;
+	z-index: 1;
+	transition: 333ms ease-out;
 
-  @include media-min-width($palm) {
-    width: auto;
+	@include media-min-width($palm) {
+		width: auto;
 
-    nav {
-      border-radius: 1em;
-      padding: 0.5em 1em;
-    }
-  }
+		nav {
+			border-radius: 1em;
+			padding: 0.5em 1em;
+		}
+	}
 
-  nav {
-    padding: 1em 0;
-  }
+	nav {
+		padding: 1em 0;
+	}
 
-  svg,
-  img {
-    height: 2rem;
-    width: 2rem;
-  }
+	svg,
+	img {
+		height: 2rem;
+		width: 2rem;
+	}
 
-  a {
-    height: 100%;
-    padding: 0 1em;
-    width: 100%;
-  }
+	a {
+		height: 100%;
+		padding: 0 1em;
+		width: 100%;
+		--font-weight: 667;
+	}
 
-  .legalese a {
-    padding: 0 0.5em;
-  }
+	.legalese a {
+		padding: 0 0.5em;
+	}
 }
 
 .legalese,
 .blob .legalese {
-  margin-bottom: 0;
-  margin-top: 3rem;
-  text-align: center;
+	margin-bottom: 0;
+	margin-top: 3rem;
+	text-align: center;
+}
+
+.legalese.left {
+	text-align: left;
 }
 
 .gracias {
-  font-weight: 400;
-  text-align: center;
+	opacity: 0.9;
+	font-size: 75%;
+	text-align: center;
 
-  a {
-    padding: 0;
-  }
+	a {
+		padding: 0;
+	}
 }
 
 .copyleft {
-  display: inline-block;
-  transform: rotateY(180deg);
+	display: inline-block;
+	transform: rotateY(180deg);
 }
 
 .spectre {
-  height: 0;
-  visibility: hidden;
+	height: 0;
+	visibility: hidden;
 }
 
 .elevator-button {
-  background: $well;
-  border-radius: 1em;
-  cursor: n-resize;
-  display: block;
-  height: 3rem;
-  margin: 2rem auto;
-  padding: 0.5rem;
-  position: relative;
-  width: 3rem;
+	background: $well;
+	border-radius: 1em;
+	cursor: n-resize;
+	display: block;
+	height: 3rem;
+	margin: 2rem auto;
+	padding: 0.5rem;
+	position: relative;
+	width: 3rem;
 
-  .icon,
-  > span {
-    height: 2rem;
-    width: 2rem;
-  }
+	.icon,
+	> span {
+		height: 2rem;
+		width: 2rem;
+	}
 
-  > span {
-    height: 2rem;
-    left: 0;
-    margin: 0.5rem;
-    position: absolute;
-    top: 0;
-    width: 2rem;
-  }
+	> span {
+		height: 2rem;
+		left: 0;
+		margin: 0.5rem;
+		position: absolute;
+		top: 0;
+		width: 2rem;
+	}
 
-  .icon {
-    margin: 0 auto;
-    transition: all 150ms;
-  }
+	.icon {
+		margin: 0 auto;
+		transition: all 150ms;
+	}
 
-  &:hover {
-    background: $well-ful;
-    color: $blue;
+	&:hover {
+		background: $well-ful;
+		color: $blue;
 
-    .icon path {
-      fill: $blue;
-    }
-  }
+		.icon path {
+			fill: $blue;
+		}
+	}
 }

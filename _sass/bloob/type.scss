@@ -13,8 +13,8 @@ dd,
 ol,
 ul,
 figure {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 h1,
@@ -31,87 +31,88 @@ ol,
 dl,
 figure,
 %vertical-rhythm {
-  margin-bottom: $spacing-unit / 2;
+	margin-bottom: $spacing-unit / 2;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: $base-font-weight;
+h1 {
+	font-size: 3.052em;
 }
-
-h1 { font-size: 2em; }
-h2 { font-size: 1.5em; }
-h3 { font-size: 1.25em; }
-
-@include media-min($pad) {
-  h1 { font-size: 3em; }
-  h2 { font-size: 2.25em; }
-  h3 { font-size: 1.5em; }
+h2 {
+	font-size: 2.441em;
+}
+h3 {
+	font-size: 1.953em;
+}
+h4 {
+	font-size: 1.563em;
+}
+h5 {
+	font-size: 1.25em;
 }
 
 h1,
 h2,
 h3 {
-  font-family: $display-font;
-  font-weight: 400;
-  letter-spacing: 2px;
-  // text-align: center;
-  line-height: 1.375;
-  margin-bottom: 1em;
-  margin-top: 1em;
+	--font-weight: 777;
+	--font-casual: 0.8;
+	--font-mono: 0.2;
+	--font-slant: -5;
+	margin-bottom: 0.75em;
+	margin-top: 1.5em;
 }
 
 p {
-  font-family: $serif;
-  hyphens: auto;
-  line-height: 1.4;
-  margin: 1em auto;
-  overflow-wrap: break-word;
-  text-align: justify;
+	--font-mono: 0;
+	--font-casual: 0.4;
+	--font-weight: 345;
+	// hyphens: auto;
+	line-height: 1.618;
+	margin: 1em auto;
+	overflow-wrap: break-word;
 }
 
 label {
-  font-family: $sans;
+	--font-slant: 0;
+	--font-weight: 456;
+	--font-mono: 0;
+	--font-casual: 0.5;
 }
 
 blockquote {
+	@include relative-font-size(1.125);
+	border-left: 4px solid $grey-color-light;
+	color: $grey-color;
+	--font-slant: -14;
+	--font-weight: 467;
+	--font-casual: 1;
+	--font-mono: 0.6;
 
-  @include relative-font-size(1.125);
-  border-left: 4px solid $grey-color-light;
-  color: $grey-color;
-  font-style: italic;
+	padding-left: $spacing-unit / 2;
 
-  letter-spacing: -1px;
-  padding-left: $spacing-unit / 2;
-
-  > :last-child {
-    margin-bottom: 0;
-  }
+	> :last-child {
+		margin-bottom: 0;
+	}
 }
 
 hr {
-  color: $fore;
-  margin: 2em auto;
-  opacity: 0.5;
+	color: $fore;
+	margin: 2em auto;
+	opacity: 0.5;
 }
 
 .bloobies {
-  background-image: url('img/bloobs/purp025.png');
-  background-size: contain;
-  border: 0;
-  height: 3em;
-  opacity: 1;
-  width: 87%;
+	background-image: url('img/bloobs/purp025.png');
+	background-size: contain;
+	border: 0;
+	height: 3em;
+	opacity: 1;
+	width: 87%;
 }
 
 .folio-zoom hr {
-  width: 72%;
+	width: 72%;
 }
 
 .center {
-  text-align: center;
+	text-align: center;
 }

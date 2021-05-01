@@ -1,48 +1,36 @@
 pre,
 code {
-  @include relative-font-size(0.9375);
+	@include relative-font-size(0.9375);
+	--font-mono: 1;
+	--font-casual: 0;
+	--font-slant: 0;
 }
 
 p code {
-  background-color: $well;
-  border: 1px solid $well-ful;
-  border-radius: 3px;
-  color: $green-on;
-  padding: 1px 5px;
+	background-color: $well;
+	border: 1px solid $well-ful;
+	border-radius: 3px;
+	color: $green-on;
+	padding: 1px 5px;
 }
 
 pre {
-  overflow-x: auto;
-  padding: 8px 12px;
+	overflow-x: auto;
+	padding: 8px 12px;
 
-  > code {
-    border: 0;
-    padding-left: 0;
-    padding-right: 0;
-  }
+	> code {
+		border: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 .code {
-  background: $muted;
-  padding: 1em;
+	background: $muted;
+	padding: 1em;
 }
 
 .highlighter-rouge {
-  margin: auto;
-  max-width: 60ch;
-}
-
-blockquote {
-
-  @include relative-font-size(1.125);
-  border-left: 4px solid $grey-color-light;
-  color: $grey-color;
-  font-style: italic;
-
-  letter-spacing: -1px;
-  padding-left: $spacing-unit / 2;
-
-  > :last-child {
-    margin-bottom: 0;
-  }
+	margin: auto;
+	max-width: 60ch;
 }

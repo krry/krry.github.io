@@ -1,125 +1,125 @@
 .blob {
-  align-items: center;
-  background-color: $well;
-  color: $fore;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-evenly;
-  padding: 1rem;
-  position: relative;
-  text-align: center;
-  width: 100vw;
-  @include media-min-width($palm) {
-    border-radius: 3em;
-    margin: 1rem 0;
-    width: calc(100vw - 1.5rem);
-  }
+	align-items: center;
+	background-color: $well;
+	color: $fore;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-evenly;
+	padding: 1rem;
+	position: relative;
+	text-align: center;
+	width: 100vw;
+	@include media-min-width($palm) {
+		border-radius: 3em;
+		margin: 1rem 0;
+		width: calc(100vw - 1.5rem);
+	}
 
-  h1,
-  h2,
-  h3,
-  ul,
-  li,
-  p {
-    position: relative;
-    z-index: 2;
-  }
+	h1,
+	h2,
+	h3,
+	ul,
+	li,
+	p {
+		position: relative;
+		z-index: 2;
+	}
 
-  h1,
-  h2,
-  h3 {
+	h1,
+	h2,
+	h3 {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 90%;
+		width: 100%;
 
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 90%;
-    width: 100%;
+		@include media-min-width($pad) {
+			max-width: none;
+		}
 
-    @include media-min-width($pad) {
-      max-width: none;
-    }
+		&:not(.bloob) {
+			margin-bottom: 1em;
+		}
+	}
 
-    &:not(.bloob) {
-      margin-bottom: 1em;
-    }
-  }
+	ul,
+	li,
+	p {
+		max-width: 60ch;
+	}
 
-  ul,
-  li,
-  p {
-    max-width: 60ch;
-  }
-
-  p,
-  li,
-  .post p {
-    font-weight: 400;
-    text-align: justify;
-  }
+	p,
+	li,
+	.post p {
+		--font-weight: 375;
+		text-align: left;
+	}
 }
 
 .blob.home {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 
-  .headline {
-    margin-bottom: 0.25em;
-    margin-top: 1.5rem;
+	.headline {
+		margin-bottom: 0.25em;
+		margin-top: 1.5rem;
+		--font-weight: 833;
+		--font-slant: -8;
 
-    @include media-min($pad) {
-      margin: 2rem 0;
-    }
-  }
+		@include media-min($pad) {
+			margin: 2rem 0;
+		}
+	}
 
-  h2 {
-    margin-top: 0;
-  }
+	h2 {
+		margin-top: 0;
+	}
 
-  .bloob {
-    width: 100%;
-  }
+	.bloob {
+		width: 100%;
+	}
 }
 
 .blob.money {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
 
-  h1 {
-    flex: 1 0 100%;
-  }
+	h1 {
+		flex: 1 0 100%;
+	}
 
-  .fit-phone {
-    max-height: 8rem;
+	.fit-phone {
+		max-height: 8rem;
 
-    @include media-min-width($pad) {
-      max-height: 10rem;
-    }
-  }
+		@include media-min-width($pad) {
+			max-height: 10rem;
+		}
+	}
 }
 
 @media screen and (orientation: landscape) {
-  .blob {
-    padding-left: 2em;
-    padding-right: 2em;
-  }
+	.blob {
+		padding-left: 2em;
+		padding-right: 2em;
+	}
 }
 
 @media screen and (min-width: $pad) and (min-height: $palm) {
-  .blob {
-    margin-bottom: 2em;
-    margin-top: 2em;
-    max-width: 87vw;
-    padding-bottom: 2em;
-    padding-left: 2em;
-    padding-right: 2em;
-  }
+	.blob {
+		margin-bottom: 2em;
+		margin-top: 2em;
+		max-width: 87vw;
+		padding-bottom: 2em;
+		padding-left: 2em;
+		padding-right: 2em;
+	}
 
-  .blob:nth-of-type(2n) {
-    animation-delay: -4s;
-    animation-direction: reverse;
-    animation-duration: 30s;
-  }
+	.blob:nth-of-type(2n) {
+		animation-delay: -4s;
+		animation-direction: reverse;
+		animation-duration: 30s;
+	}
 }
-

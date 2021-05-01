@@ -1,22 +1,25 @@
 {%- if site.posts.size > 0 -%}
 <ul class="post-list reset">
-  {%- for post in site.posts -%}
-  <li>
-    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-    <span class="post-meta">{{ post.date | date: date_format }}</span>
-    <h3>
-      <a class="post-link" href="{{ post.url | relative_url }}">
-        {{ post.title | escape }}
-      </a>
-    </h3>
-    {%- if site.show_excerpts -%}
-    {{ post.excerpt }}
-    {%- endif -%}
-  </li>
-  {%- endfor -%}
+	{%- for post in site.posts -%}
+	<li>
+		{%- assign date_format = site.minima.date_format | default: "%Y %b %d" -%}
+		<span class="post-meta">{{ post.date | date: date_format }}</span>
+		<h3>
+			<a class="post-link" href="{{ post.url | relative_url }}">
+				{{ post.title | escape }}
+			</a>
+		</h3>
+		{%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
+	</li>
+	{%- endfor -%}
 </ul>
 
-<p class="legalese">Take a dive into <a
-   href="https://atmanaut.us">Atmanaut.us</a> for more musing and
- pondering.</p>
+<p class="legalese left">
+	These are the least of what I've written. If you want to get metaphysical,
+	take a dive into <a href="https://atmanaut.me">Atmanaut</a>. For the
+	business-minded, I prescribe a healthy dose of
+	<a href="https://easeness.biz">Easeness</a>. Those truly adventurous wanderers
+	may appreciate a mosey through my digital garden,
+	<a href="https://kerrbear.wtf">Commonplace</a>.
+</p>
 {%- endif -%}

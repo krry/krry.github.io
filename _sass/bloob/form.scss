@@ -1,68 +1,69 @@
 ::placeholder {
-  color: $muted;
+	color: $muted;
 }
 
 form {
-  text-align: center;
+	text-align: center;
 
-  .field {
-    text-align: left;
-  }
+	.field {
+		text-align: left;
+	}
 
-  label {
-    font-size: 87.5%;
-  }
+	label {
+		font-size: 87.5%;
+	}
 
-  [type='text'],
-  [type='password'],
-  [type='email'],
-  textarea {
-    background: $fore;
-    border: 4px solid $purp;
-    border-radius: 0.5rem;
-    color: $bkgd;
-    font-family: $serif;
-    font-size: 1rem;
-    margin-top: 0.25rem;
-    opacity: 0.8;
-    padding: 0.5rem;
-    transition: all 150ms ease-in-out;
+	[type='text'],
+	[type='password'],
+	[type='email'],
+	textarea {
+		background: $fore;
+		border: 4px solid $purp;
+		border-radius: 0.5rem;
+		color: $bkgd;
+		--font-mono: 0.5;
+		--font-casual: 0.5;
+		font-size: 1rem;
+		margin-top: 0.25rem;
+		opacity: 0.8;
+		padding: 0.5rem;
+		transition: all 150ms ease-in-out;
 
-    &:hover {
-      background: $fore;
-      border-color: $purp-on;
-      opacity: 1;
-    }
+		&:hover {
+			background: $fore;
+			border-color: $purp-on;
+			opacity: 1;
+		}
 
-    &:active,
-    &:focus {
-      background: $white;
-      opacity: 1;
-      outline-color: $pink-new;
-    }
-  }
+		&:active,
+		&:focus {
+			background: $white;
+			opacity: 1;
+			outline-color: $pink-new;
+		}
+	}
 }
 
 .contact-form {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 
-  .field {
-    flex: 1;
-    max-width: 80vw;
-    width: 40ch;
+	.field {
+		flex: 1;
+		max-width: 80vw;
+		width: 40ch;
 
-    + .field {
-      margin-top: 1em;
-    }
-  }
+		+ .field {
+			margin-top: 1em;
+		}
+	}
 
-  [type='text'],
-  [type='email'],
-  [type='password'],
-  textarea {
-    width: 100%;
-  }
+	[type='text'],
+	[type='email'],
+	[type='password'],
+	textarea {
+		width: 100%;
+	}
 }

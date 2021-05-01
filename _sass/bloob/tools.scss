@@ -1,175 +1,174 @@
 .tool-list {
-  @extend %reset;
-  align-items: center;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+	@extend %reset;
+	align-items: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
 }
 
 .tool-logo {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 5em;
-  margin: 1em 1em 5em;
-  position: relative;
-  transform: translate3d(0, 0.5em, 0);
-  transition: 500ms ease-out;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 5em;
+	margin: 1em 1em 5em;
+	position: relative;
+	transform: scale(0.9);
+	transition: 333ms ease-out;
 
-  @include media-min-width($pad) {
-    height: 6em;
-  }
+	@include media-min-width($pad) {
+		height: 6em;
+	}
 
-  @include media-min-wide() {
-    height: 8em;
-  }
+	@include media-min-wide() {
+		height: 8em;
+	}
 
-  &.no-helpers {
-    margin-bottom: 1em;
-  }
+	&.no-helpers {
+		margin-bottom: 1em;
+	}
 
-  &:hover {
-    transform: translate3d(0, 0, 0);
-  }
+	&:hover {
+		transform: scale(1);
+	}
 
-  &:hover,
-  &:focus {
-    .tool-link {
-      opacity: 1;
-    }
-  }
+	&:hover,
+	&:focus {
+		.tool-link {
+			opacity: 1;
+		}
+	}
 
-  .tool-link {
-    color: $fore;
-    display: block;
-    font-size: 125%;
-    font-weight: bolder;
-    line-height: 3em;
-    opacity: 1;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: 0 0 0.75em $shade, 1px 1px 1px $shade;
-    text-transform: uppercase;
-    transition: all 150ms ease-in;
+	.tool-link {
+		color: $fore;
+		display: block;
+		font-size: 125%;
+		font-weight: bolder;
+		line-height: 3em;
+		opacity: 1;
+		text-align: center;
+		text-decoration: none;
+		text-shadow: 0 0 0.75em $shade, 1px 1px 1px $shade;
+		text-transform: uppercase;
+		transition: all 150ms ease-in;
 
-    @include media-min-width($pad) {
-      line-height: 4.5em;
-      opacity: 0;
-    }
-    @include media-min-wide() {
-      line-height: 6em;
-    }
+		@include media-min-width($pad) {
+			line-height: 4.5em;
+			opacity: 0;
+		}
+		@include media-min-wide() {
+			line-height: 6em;
+		}
 
-    &:focus {
+		&:focus {
+		}
+	}
 
-    }
-  }
+	.helpers {
+		margin: 1em auto;
 
-  .helpers {
-    margin: 1em auto;
+		a {
+			display: inline-block;
+			font-size: 75%;
+			line-height: 1.618;
+			padding: 0 0.5em;
+			text-decoration: none;
+		}
 
-    a {
-      display: inline-block;
-      font-size: 75%;
-      line-height: 1.375;
-      padding: 0 0.5em;
-      text-decoration: none;
-    }
+		a:hover {
+			text-decoration: dashed underline;
+		}
+	}
 
-    a:hover {
-      text-decoration: dashed underline;
-    }
-  }
+	&.wordmark .tool-link {
+		opacity: 0;
+	}
 
-  &.wordmark .tool-link {
-    opacity: 0;
-  }
+	&.spacey {
+		background-size: 150%;
+	}
 
-  &.spacey {
-    background-size: 150%;
-  }
+	&.lightmark .tool-link {
+		color: $black;
+	}
 
-  &.lightmark .tool-link {
-    color: $black;
-  }
+	&.logo-figma {
+		background-image: url('/assets/img/tools/logo-figma.svg');
+	}
 
-  &.logo-figma {
-    background-image: url('/assets/img/tools/logo-figma.svg');
-  }
+	&.logo-vscode {
+		background-image: url('/assets/img/tools/logo-vscode.svg');
+	}
 
-  &.logo-vscode {
-    background-image: url('/assets/img/tools/logo-vscode.svg');
-  }
+	&.logo-github {
+		background-image: url('/assets/img/tools/logo-github.svg');
+	}
 
-  &.logo-github {
-    background-image: url('/assets/img/tools/logo-github.svg');
-  }
+	&.logo-graphql {
+		background-image: url('/assets/img/tools/logo-graphql.svg');
+	}
 
-  &.logo-graphql {
-    background-image: url('/assets/img/tools/logo-graphql.svg');
-  }
+	&.logo-react {
+		background-image: url('/assets/img/tools/logo-react.svg');
+	}
 
-  &.logo-react {
-    background-image: url('/assets/img/tools/logo-react.svg');
-  }
+	&.logo-slack {
+		background-image: url('/assets/img/tools/logo-slack.svg');
+	}
 
-  &.logo-slack {
-    background-image: url('/assets/img/tools/logo-slack.svg');
-  }
+	&.logo-meet {
+		background-image: url('/assets/img/tools/logo-meet.svg');
+	}
 
-  &.logo-meet {
-    background-image: url('/assets/img/tools/logo-meet.svg');
-  }
+	&.logo-trello {
+		background-image: url('/assets/img/tools/logo-trello.svg');
+	}
 
-  &.logo-trello {
-    background-image: url('/assets/img/tools/logo-trello.svg');
-  }
+	&.logo-gatsby {
+		background-image: url('/assets/img/tools/logo-gatsby.svg');
+	}
 
-  &.logo-gatsby {
-    background-image: url('/assets/img/tools/logo-gatsby.svg');
-  }
+	&.logo-apollo {
+		background-image: url('/assets/img/tools/logo-apollo.svg');
+	}
 
-  &.logo-apollo {
-    background-image: url('/assets/img/tools/logo-apollo.svg');
-  }
+	&.logo-sanity {
+		background-image: url('/assets/img/tools/logo-sanity.svg');
+	}
 
-  &.logo-sanity {
-    background-image: url('/assets/img/tools/logo-sanity.svg');
-  }
+	&.logo-node {
+		background-image: url('/assets/img/tools/logo-node.svg');
+	}
 
-  &.logo-node {
-    background-image: url('/assets/img/tools/logo-node.svg');
-  }
+	&.logo-daily {
+		background-image: url('/assets/img/tools/logo-daily.svg');
+	}
 
-  &.logo-daily {
-    background-image: url('/assets/img/tools/logo-daily.svg');
-  }
+	&.logo-codepen {
+		background-image: url('/assets/img/tools/logo-codepen.svg');
+	}
 
-  &.logo-codepen {
-    background-image: url('/assets/img/tools/logo-codepen.svg');
-  }
+	&.logo-neovim {
+		background-image: url('/assets/img/tools/logo-neovim.svg');
+	}
 
-  &.logo-neovim {
-    background-image: url('/assets/img/tools/logo-neovim.svg');
-  }
+	&.logo-asana {
+		background-image: url('/assets/img/tools/logo-asana.svg');
+	}
 
-  &.logo-asana {
-    background-image: url('/assets/img/tools/logo-asana.svg');
-  }
+	&.logo-nextjs {
+		background-image: url('/assets/img/tools/logo-nextjs.svg');
+	}
 
-  &.logo-nextjs {
-    background-image: url('/assets/img/tools/logo-nextjs.svg');
-  }
+	&.logo-vercel {
+		background-image: url('/assets/img/tools/logo-vercel.svg');
+	}
 
-  &.logo-vercel {
-    background-image: url('/assets/img/tools/logo-vercel.svg');
-  }
+	&.logo-vuejs {
+		background-image: url('/assets/img/tools/logo-vuejs.svg');
+	}
 
-  &.logo-vuejs {
-    background-image: url('/assets/img/tools/logo-vuejs.svg');
-  }
-
-  &.logo-hugo {
-    background-image: url('/assets/img/tools/logo-hugo.svg');
-  }
+	&.logo-hugo {
+		background-image: url('/assets/img/tools/logo-hugo.svg');
+	}
 }

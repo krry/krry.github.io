@@ -1,24 +1,26 @@
 <header class="site-header" role="banner" id="header">
-  <nav>
-    <ul class="header-nav">
-      <li class="home-node"><a class="home-link" href="/">
-        <span class="site-logo">
-          <span></span>
-          <svg class="icon atmanaut"><use xlink:href="#icon-bloob" /></svg>
-        </span>
-        <span class="site-title"> {{ site.title | escape }} </span>
-      </a></li>
-      {%- assign pages = site.html_pages | sort: 'order' -%}
-      {%- for p in pages -%}
-      {%- if p.nav == 'header' -%}
-      <li class="nav-node">
-        <a href="{{ p.url }}"
-           class="nav-link {%- if p.url == page.url -%} active{%- endif -%}">
-          {{ p.title | capitalize }}
-        </a>
-      </li>
-      {%- endif -%}
-      {%- endfor -%}
-    </ul>
-  </nav>
+	<nav>
+		<ul class="header-nav">
+			<li class="home-node">
+				<a class="home-link" href="/">
+					<span class="site-logo">
+						<span></span>
+						<svg class="icon atmanaut"><use xlink:href="#icon-bloob" /></svg>
+					</span>
+					<span class="site-title"> {{ site.title | escape }} </span>
+				</a>
+			</li>
+			{%- assign pages = site.html_pages | sort: 'order' -%} {%- for p in pages
+			-%} {%- if p.nav == 'header' -%}
+			<li class="nav-node">
+				<a
+					href="{{ p.url }}"
+					class="nav-link {%- if p.url == page.url -%} active{%- endif -%}"
+				>
+					{{ p.title | capitalize }}
+				</a>
+			</li>
+			{%- endif -%} {%- endfor -%}
+		</ul>
+	</nav>
 </header>

@@ -1,24 +1,26 @@
 ---
 layout: page
 title: C.V.
-headline: "C.V."
+headline: 'C.V.'
 permalink: /cv/
 bloob: purp50
 ---
 
 # Kerry Snyder
 
-### Coder • Writer • Loving Awareness
+### Rethinker • Coder • Writer
 
 ---
 
 ## Lately Built
 
 <dl>
-  <dt><a href="https://easeness.business">Easeness</a></dt>
+  <dt><a href="https://easeness.biz">Easeness</a></dt>
   <dd>A snappy blog about the yin to business' yang and the easy way forward. Built with NextJS atop a Sanity GraphQL CMS.</dd>
-  <dt><a href="https://nameless.atmanaut.me">Nameless</a></dt>
+  <dt><a href="https://nameless.quest">Nameless</a></dt>
   <dd>A friendly, graphic, interactive paean to the I Ching. Built with Vue 3 and PostCSS.</dd>
+  <dt><a href="https://kerrbear.wtf">Commonplace</a></dt>
+  <dd>A zettelkasten-flavored digital garden full of half-baked ideas and half-polished poems.</dd>
   <dt><a href="https://atmanaut.me">Atmanaut</a></dt>
   <dd>Musings about the spirit we share. Built with Hugo and Forestry CMS.</dd>
   <dt><a href="https://passage.atmanautica.com">Passage</a></dt>
@@ -29,7 +31,7 @@ bloob: purp50
 
 ## Work Story
 
-Since 2016 I have been consulting as a devsigner (that is, a designer who develops and vice versa) with [Atmanautica](). Here you'll find a [folio of my past and present work](/folio), built with Github Pages and vanilla 🍦 JS. Also [LinkedIn](https://linkedin.com/in/kerrysnyder) can provide you with a business-like version of this story.
+Since 2016 I have been consulting as a devsigner (that is, a designer who develops and vice versa). Here you'll find a [folio of my past and present work](/folio), built with Github Pages and vanilla 🍦 JS. Also [LinkedIn](https://linkedin.com/in/kerrysnyder) can provide you with a business-like version of this story.
 
 In the midst of the present span of consulting, I helped to start [Arrivo](https://www.arrivo-loop.com), a Los Angeles-based hyperloop engineering firm. We assembled an all-star squad of rocket scientists, fusion engineers, infrastructure wonks, financial magicians, and the like. As the Majordomo, I wore many hats, at times running Operations, Facilities, and IT, all the while composing an interactive 10,000-year timeline of transportation technology. Hyperloops can be somewhat circuitous to build.
 
@@ -51,5 +53,4 @@ In a past life (okay, this one) I became an intellectual property attorney in Po
 
 Born in Rockford, Illinois, at age three a Big Sur waterbeds commercial between Sesame Street episodes hypnotized me into following my manifest destiny to California, where I now reside in the Bay and further down the coast.
 
-Each day I focus on bringing ease, harmony, play, gratitude, and joy to realms of mass suffering through  patient space and the insight that arises.
-
+Each day I focus on bringing ease, harmony, play, gratitude, and joy to realms of mass suffering through patient space and the insight that arises.

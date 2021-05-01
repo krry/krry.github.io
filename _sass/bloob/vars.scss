@@ -1,7 +1,6 @@
 // absolute variables first
-$sans: 'Lato', system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !default;
-$serif: 'Aleo', Georgia, serif;
-$display-font: 'Righteous', 'Comic Sans MS', cursive;
+$font: 'Recursive', system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+	'Segoe UI Symbol' !default;
 $fore: hsl(196, 87%, 92%);
 $bkgd: hsl(262, 85%, 12%);
 $well: hsla(262, 89%, 21%, 0.7);
@@ -33,11 +32,11 @@ $shady: hsla(262, 43%, 10%, 0.3);
 
 // then relative variables, define defaults for each
 
-$base-font-family: $sans !default;
+$base-font-family: $font !default;
 $base-font-size: 20px !default;
 $small-font-size: $base-font-size * 0.875 !default;
 $base-font-weight: 400 !default;
-$base-line-height: 1.5 !default;
+$base-line-height: 1.618 !default;
 
 $spacing-unit: 2rem !default;
 

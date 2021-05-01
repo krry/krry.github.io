@@ -1,54 +1,55 @@
 .post .headline {
-  margin-top: 0;
+	margin-top: 0;
 }
 
 .post.blob {
-  display: block;
+	display: block;
 
-  h2 {
-    max-width: 27ch;
-  }
+	h2 {
+		max-width: 27ch;
+	}
 
-  ul,
-  ol,
-  table {
-    max-width: 60ch;
-    padding-left: 2rem;
-    text-align: left;
-  }
+	ul,
+	ol,
+	table {
+		max-width: 60ch;
+		padding-left: 2rem;
+		text-align: left;
+	}
 
-  h1,
-  h2,
-  h3,
-  ul,
-  ol,
-  table {
-    margin-left: auto;
-    margin-right: auto;
-  }
+	h1,
+	h2,
+	h3,
+	ul,
+	ol,
+	table {
+		margin-left: auto;
+		margin-right: auto;
+	}
 
-  hr {
-    background: $link-on;
-    border: 0;
-    border-radius: 100%;
-    height: 2px;
-    margin: 2rem auto;
-    width: 80%;
-
-  }
+	hr {
+		background: $link-on;
+		border: 0;
+		border-radius: 100%;
+		height: 2px;
+		margin: 2rem auto;
+		width: 80%;
+	}
 }
 
 .link-row {
-  align-items: baseline;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
+	align-items: baseline;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
 }
 
-.blob .post-meta {
-  text-align: right;
+.post-list .post-meta {
+	float: right;
+	padding: 1ch 0 1ch 1ch;
 }
 
-#kerry-snyder { /* stylelint-disable-line selector-max-id */
-  margin-bottom: 0;
+#kerry-snyder {
+	/* stylelint-disable-line selector-max-id */
+	margin-bottom: 0;
 }

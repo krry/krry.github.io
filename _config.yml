@@ -18,15 +18,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Atmanautica
+title: krry.dev
 email: kerry@atmanaut.me
 description: >- # >- means to ignore newlines until "baseurl:"
-  We design and develop handcrafted heart-first experiences
-  from the well of being for our world wide web.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://atmanautica.com" # the base hostname & protocol
-twitter_username: anatmanaut
-github_username:  krry
+  The devsign folio of @krry
+  Bringing ease to business
+baseurl: '' # the subpath of your site, e.g. /blog
+show_excerpts: true
+url: 'https://krry.dev' # the base hostname & protocol
+twitter_username: kerryourself
+github_username: krry
 google_analytics: UA-170088360-2
 disqus:
   shortname: atmanautica
@@ -36,10 +37,10 @@ disqus:
 sourcemap: development
 
 plugins:
-- jekyll-feed
-- jekyll-seo-tag
-- jekyll-sitemap
-- jekyll-minifier
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-minifier
 
 # jekyll-minifier:
 #   uglifier_args:

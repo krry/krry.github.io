@@ -1,110 +1,138 @@
 html {
-  box-sizing: border-box;
-  font-family: $sans;
-  font-size: 20px;
-  line-height: 1.375;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+	box-sizing: border-box;
+	font-family: $font;
+	line-height: 1.618;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+@media screen and (min-width: 45em) {
+	html {
+		font-size: calc(1em + 0.25 * (100vw - 45em) / 35);
+	}
+}
+
+@media screen and (min-width: 80em) {
+	html {
+		font-size: 1.25em;
+	}
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+:root {
+	--font-weight: 400;
+	--font-slant: 0;
+	--font-casual: 0;
+	--font-mono: 0;
+}
+
+* {
+	/* prettier-ignore */
+	font-variation-settings:
+		'wght' var(--font-weight),
+		'slnt' var(--font-slant),
+		'CASL' var(--font-casual),
+		'MONO' var(--font-mono);
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 body {
-  align-items: center;
-  background: $bkgd;
-  background: radial-gradient(circle, rgba(46, 105, 204, 1) 0%, rgba(61, 4, 158, 1) 46%, rgba(24, 5, 57, 1) 100%);
-  background-attachment: fixed;
-  background-position: center top;
-  // background-image: url("/assets/img/waves.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: $fore;
-  display: flex;
-  flex-flow: column nowrap;
-  font-family: $sans;
-  font-feature-settings: 'kern' 1;
-  font-kerning: normal;
-  font-size: $base-font-size;
-  font-weight: $base-font-weight;
-  height: 100%;
-  justify-content: space-between;
-  line-height: $base-line-height;
-  margin: 0;
-  min-height: 100vh;
-  overflow-x: hidden;
-  padding: 0 0.75rem;
-  text-size-adjust: 100%;
-  width: 100%;
+	align-items: center;
+	background: $bkgd;
+	background: radial-gradient(
+		circle,
+		rgba(46, 105, 204, 1) 0%,
+		rgba(61, 4, 158, 1) 46%,
+		rgba(24, 5, 57, 1) 100%
+	);
+	background-attachment: fixed;
+	background-position: center top;
+	// background-image: url("/assets/img/waves.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: $fore;
+	display: flex;
+	flex-flow: column nowrap;
+	font-feature-settings: 'kern' 1;
+	font-kerning: normal;
+	height: 100%;
+	justify-content: space-between;
+	margin: 0;
+	min-height: 100vh;
+	overflow-x: hidden;
+	padding: 0 0.75rem;
+	text-size-adjust: 100%;
+	width: 100%;
 }
 
 @include media-min-width($pad) {
-  body {
-    // background-image: url("/assets/img/waves-pad.jpg");
-  }
+	body {
+		// background-image: url("/assets/img/waves-pad.jpg");
+	}
 }
 
 @include media-min($pad) {
-  body {
-    font-size: 125%;
-    padding: 0;
-  }
+	body {
+		font-size: 120%;
+		padding: 0;
+	}
 }
 
 @include media-min($lap) {
-  body {
-    font-size: 150%;
-  }
+	body {
+		font-size: 144%;
+	}
 }
 
 .modal-open {
-  scroll-behavior: auto;
+	scroll-behavior: auto;
 
-  body {
-    height: 100vh;
-    overflow: hidden;
-    padding-right: 15px; /* Avoid width reflow */
-  }
+	body {
+		height: 100vh;
+		overflow: hidden;
+		padding-right: 15px; /* Avoid width reflow */
+	}
 }
 
 main {
-  display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
+	display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
 }
 
 .hidden {
-  display: none;
+	display: none;
 }
 
 .paused {
-  animation-play-state: paused;
+	animation-play-state: paused;
 
-  .waves {
-    display: none;
-  }
+	.waves {
+		display: none;
+	}
 }
 
 :focus {
-  outline-color: $link-new;
-  outline-offset: 3px;
-  outline-style: dashed;
+	outline-color: $link-new;
+	outline-offset: 3px;
+	outline-style: dashed;
 }
 
 ::selection {
-  background-color: $green;
-  color: $white;
+	background-color: $green;
+	color: $white;
 }
 
 hr {
-  background: none;
-  border-bottom: 1px dashed $fore;
-  width: 80%;
+	background: none;
+	border-bottom: 1px dashed $fore;
+	width: 80%;
 }

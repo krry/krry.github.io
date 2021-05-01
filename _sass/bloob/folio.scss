@@ -94,11 +94,6 @@
 
 	h4 {
 		color: $fore;
-		letter-spacing: 2px;
-		line-height: 1.25;
-		margin: 1em auto;
-		text-decoration: underline;
-		text-transform: uppercase;
 	}
 }
 
@@ -182,6 +177,10 @@
 	}
 }
 
+.gallery.portrait {
+	max-height: 60vh;
+}
+
 .folio-zoom .thumb {
 	cursor: pointer;
 	flex: 1;
@@ -207,7 +206,6 @@
 		display: none;
 		font-size: 0.875em;
 		font-style: italic;
-		line-height: 1.4;
 		margin: 1em auto;
 		max-width: 60ch;
 		padding: 0.5em;
