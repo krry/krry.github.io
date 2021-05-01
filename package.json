@@ -7,11 +7,12 @@
 	"scripts": {
 		"start": "bundle exec jekyll server --ssl-cert ./cert.pem --ssl-key ./key.pem -H 0.0.0.0 --livereload-port 6281 -P 6280 --incremental",
 		"watch": "rollup -c -w",
+		"lint": "eslint ./ --fix --ext js",
 		"dev": "npm run start & npm run watch"
 	},
 	"husky": {
 		"hooks": {
-			"pre-commit": "rg -s TODO --heading -g '*.{html,scss,js}' > .todo"
+			"pre-commit": "rg -s TODO --heading -g '*.{html,scss,js}' > .todo && yarn lint"
 		}
 	},
 	"devDependencies": {
