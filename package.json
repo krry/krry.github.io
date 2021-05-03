@@ -1,8 +1,8 @@
 {
 	"name": "krry.dev",
 	"description": "The devsign folio of @krry",
-	"version": "1.3.7",
-	"license": "CC-SA-BY-NA-4.0",
+	"version": "1.3.8",
+	"license": "MIT",
 	"private": true,
 	"scripts": {
 		"start": "bundle exec jekyll server --ssl-cert ./cert.pem --ssl-key ./key.pem -H 0.0.0.0 --livereload-port 6281 -P 6280 --incremental",
