@@ -1,6 +1,6 @@
 ---
 title: "Time to Hyde: Leaving Jekyll for What's Next.js"
-date: "2020-07-27 13:15:14 -0700"
+date: '2020-07-27 13:15:14 -0700'
 comments: true
 ---
 
