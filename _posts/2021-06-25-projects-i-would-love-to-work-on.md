@@ -12,7 +12,7 @@ As part of this return to operation, work is picking up too. I'm seeing a swell 
 
 Before the pandemic, pretty much everybody thought the world was going to hell in a handbasket, and many of us for different reasons and in different ways. All at once we found ourselves racing toward ecological, economic, political, and spiritual collapse.
 
-## Here's a synopsis of the status quo
+A synopsis of the status quo
 
 - [Since 1970 we have eliminated at least 68% of animal wildlife](https://www.worldwildlife.org/publications/living-planet-report-2020).
 - [26 billionaires hold as much wealth as the poorer half of humanity (that's nearly 4 billion people)](https://www.oxfamamerica.org/explore/research-publications/public-good-or-private-wealth/).
@@ -25,13 +25,13 @@ It's no wonder our reigning technocrats are building spaceships. It's no wonder 
 
 ### But are we really done for?
 
-Or are we feeling the whiplash of a massive cultural inflection point as sovereignty infects the populace much-slower-than-light-but-nearly-5G speed?
+Or are we feeling the whiplash of a massive cultural inflection point as sovereignty infects the populace at much-slower-than-light-but-nearly-5G speed?
 
 Last March I saw the skies clear and heard the birds sing as never before. That was two weeks after the Great Pause. What might happen, how might we heal, if we were to slow down to a sustainable pace for good?
 
-After over a year of lockdown (that wasn't even a word before 2020!) we've each and all had an excruciating but bountiful opportunity to reflect and redirect: to isolate our needs from our wants, to find compassion for ourselves, our neighbors, and all beings (except mosquitos), to shift into a mindset of abundance and ease.
+After over a year of lockdown (was that even a word before 2020!?) we've each and all had an excruciating but bountiful opportunity to reflect and redirect: to isolate our needs from our wants, to find compassion for ourselves, our neighbors, and all beings (except mosquitos), to shift into a mindset of abundance and ease.
 
-And yet I notice subliminal rage returning to the dance of traffic. Stories of random acts of intolerant, John-Wickesque violence crop up uninvited in furtive propaganda notifications. New old forests continue to burn spontaneously, while novel variants of that pesky virus emerge to plague and haunt us.
+And yet I notice subliminal rage returning to the dance of traffic. Stories of random acts of intolerant, John-Wickesque violence crop up uninvited in furtive social media propaganda notifications. New old forests continue to burn spontaneously, while novel variants of that pesky virus emerge to plague and haunt us.
 
 In these odd times, as at any time, we must ask, what is worth working on? What would I love to work on? What will the world pay me to work on? Where do these sets intersect?
 
@@ -47,4 +47,4 @@ I'll share my shortlist here of projects I would love to work on that the world 
 
 The list goes on and on…
 
-Anyway, off to get started. Hit me up :)
+Anyway, off to get started. Chime in :)
