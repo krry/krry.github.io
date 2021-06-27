@@ -14,12 +14,12 @@ Before the pandemic, pretty much everybody thought the world was going to hell i
 
 A synopsis of the status quo
 
+- [26 billionaires hold as much wealth as the poorer half of humanity.](https://www.oxfamamerica.org/explore/research-publications/public-good-or-private-wealth/) (That's nearly 4 billion people.)
+- [Humans today are consuming the resources of 1.8 earths.](https://populationmatters.org/resources-consumption) At this rate, we'll need 3 earths by 2050.
 - [Since 1970 we have eliminated at least 68% of animal wildlife](https://www.worldwildlife.org/publications/living-planet-report-2020).
-- [26 billionaires hold as much wealth as the poorer half of humanity (that's nearly 4 billion people)](https://www.oxfamamerica.org/explore/research-publications/public-good-or-private-wealth/).
-- [Bipartisan politics in the US are more polarized than ever](https://www.sciencedirect.com/science/article/abs/pii/S0378873317303039?via%3Dihub).
-- [We are losing our faith in a Higher Power](https://twitter.com/ryanburge/status/1108183399364263936) and in each other, dissolving our communities, and dressing up Money, Science, and Technology as our new Gods.
+- [We are losing our faith in a Higher Power](https://twitter.com/ryanburge/status/1108183399364263936), and instead dress up Money, Science, and Technology as our new Gods.
 - [The Standard Model of particle physics only describes about 5% of the universe: the regular matter-energy. The other 95% is unexplainably attributed to dark matter and dark energy.](https://iopscience.iop.org/article/10.1088/1361-6552/aa5b25)
-- [Humans today are consuming the resources of 1.8 earths. At this rate, we'll need 3 earths by 2050.](https://populationmatters.org/resources-consumption).
+- [Bipartisan politics in the US are more polarized than ever](https://www.sciencedirect.com/science/article/abs/pii/S0378873317303039?via%3Dihub).
 
 It's no wonder our reigning technocrats are building spaceships. It's no wonder the ultra-rich are setting up camp in abandoned missile silos, forming private militia, and digging moats around their hideouts in New Zealand and Alaska.
 
