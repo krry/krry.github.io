@@ -63,17 +63,32 @@
 	justify-content: center;
 
 	.headline {
-		margin-bottom: 0.25em;
-		margin-top: 1.5rem;
 		--font-weight: 833;
-		--font-slant: -8;
+		margin-top: 1.5rem;
+		margin-bottom: 0.25em;
 
 		@include media-min($pad) {
 			margin: 2rem 0;
 		}
 	}
 
-	h2 {
+	.expose {
+		display: inline-block;
+		text-stroke-color: $white;
+		text-stroke-width: 2px;
+		text-fill-color: transparent;
+		max-width: 0;
+		transform: scale(0);
+		transition: max-width 250ms 150ms, transform 250ms;
+	}
+
+	.flasher:hover .expose {
+		max-width: 100%;
+		transform: scale(1);
+		transition: max-width 250ms, transform 250ms 150ms;
+	}
+
+	.bloob + h2 {
 		margin-top: 0;
 	}
 

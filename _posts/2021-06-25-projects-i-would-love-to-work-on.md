@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Projects I Would Love to Work On
+title: 'Projects I Would Love to Work On'
 date: 2021-06-25 18:25:21 -0700
 author: Kerry
 comments: true
@@ -47,4 +47,4 @@ I'll share my shortlist here of projects I would love to work on that the world 
 
 The list goes on and on…
 
-Anyway, off to get started. Chime in :)
+I'm off to get crackin'. Chime in :)

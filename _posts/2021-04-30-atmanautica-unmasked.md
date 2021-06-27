@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Atmanautica Unmasked
+title: 'Atmanautica Unmasked'
 date: 2021-04-30 22:22:22 -0700
 author: Kerry
 comments: true
