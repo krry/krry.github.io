@@ -1,17 +1,14 @@
 <figure class="thumb gallery-item">
-  <img
-    class="lazy gallery-image"
-    src="/assets/img/folio/pre/{{ include.file }}"
-    data-src="/assets/img/folio/full/{{ include.file }}"
-    alt=""
-    />
-  <noscript>
-  <img
-    src="/assets/img/folio/full/{{ include.file }}"
-    alt="{{ include.caption }}"
-    />
-  </noscript>
-  <figcaption class=gallery-caption>
-    {{ include.caption }} ••• <a href="{{ include.credit }}">more</a>
-  </figcaption>
+	<img
+		class="lazy gallery-image"
+		src="/assets/img/folio/pre/{{ include.file }}"
+		data-src="/assets/img/folio/full/{{ include.file }}"
+		alt=""
+	/>
+	<noscript>
+		<img src="/assets/img/folio/full/{{ include.file }}" alt="{{ include.caption }}" />
+	</noscript>
+	<figcaption class="gallery-caption">
+		{{ include.caption }} ••• <a href="{{ include.link }}">more</a>
+	</figcaption>
 </figure>
