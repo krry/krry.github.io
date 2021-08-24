@@ -36,7 +36,7 @@ When working in the gift, I feel more focused, freer to express myself, and less
 
 ### Are you taking new projects?
 
-I'm always open to and fielding new opportunities. If you have something you are passionate about that needs early stage convergence and strategy delivered as design and development for web and well-being, I'd love to [hear from you](/contact). I am especially interesting in [projects of this ilk](/2021/06/25/projects-i-would-love-to-work-on).
+I'm always open to and fielding new opportunities. If you have something you are passionate about that needs early stage convergence and strategy delivered as design and development for web and well-being, I'd love to [hear from you](/contact). I am especially interesting in [projects of this ilk](/projects-i-would-love-to-work-on/).
 
 ### Why don't more people work in the gift?
 

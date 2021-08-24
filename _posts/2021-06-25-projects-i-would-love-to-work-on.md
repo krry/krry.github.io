@@ -2,6 +2,7 @@
 layout: post
 title: 'Projects I Would Love to Work On'
 date: 2021-06-25 18:25:21 -0700
+permalink: /projects-i-would-love-to-work-on/
 author: Kerry
 comments: true
 ---
@@ -12,7 +13,7 @@ As part of this return to operation, work is picking up too. I'm seeing a swell 
 
 Before the pandemic, pretty much everybody thought the world was going to hell in a handbasket, and many of us for different reasons and in different ways. All at once we found ourselves racing toward ecological, economic, political, and spiritual collapse.
 
-A synopsis of the status quo
+## A synopsis of the status quo
 
 - [26 billionaires hold as much wealth as the poorer half of humanity.](https://www.oxfamamerica.org/explore/research-publications/public-good-or-private-wealth/) (That's nearly 4 billion people.)
 - [Humans today are consuming the resources of 1.8 earths.](https://populationmatters.org/resources-consumption) At this rate, we'll need 3 earths by 2050.
@@ -39,11 +40,25 @@ In these odd times, as at any time, we must ask, what is worth working on? What 
 
 I'll share my shortlist here of projects I would love to work on that the world needs and that folks would pay for. I'd love to know what is on yours, and especially where our lists intersect. If anything sparks you, [tweet to me](https://twitter.com/kerryourself) or [email me](mailto:krry.dev@gmail.com).
 
-- **Old Rubber Hubbard Parks** — We recycle thousand-year plastics like those used in sneakers to create amazing, bouncy community playgrounds for kids who no longer go to school because Khan Academy and family pods. I'm interested in any facet of the plastic recycling game. Sooner or later this will become imperative.
-- Converting pandemic-bankrupted storefronts and centrally located commercial real estate into intimate play spaces where healers of all disciplines teach their techniques to cohorts of students of holistic well-being. We could call them **Full Smile Studios**. The growing mental health crisis cannot be quelled by treating our symptomatically sick and malformed minds. Our minds begin as a bodily defense, processing our sensory experience and attempting to predict conditions in order to maintain homeostasis.
-- A fleet of mobile oases for the growing hordes of delivery drivers and mobile workers, filled with supplies and offering services drivers need most, sponsored as a benefit by the companies who hire them, stocked by the drivers themselves, and always popping up where the surges in deliveries occur. Codename: **Moasis**
-- **Youlogy** — an AI-driven end-of-life storytelling platform that takes in your life's data (photos and videos, communications, writings, biometrics, locations, Quantified Self) and puts out a gorgeous, poignant, personal tribute to you for all to share.
-- **Kindest Regardenings** — reclaim dilapidated buildings or forgotten urban space as vertical farms, hanging gardens, wildlife preserves, botanical parks, etc.
+### Old Rubber Hubbard Parks
+
+We recycle thousand-year plastics like those used in sneakers to create amazing, bouncy community playgrounds for kids who no longer go to school because Khan Academy and family pods. I'm interested in any facet of the plastic recycling game. Sooner or later this will become imperative.
+
+### Full Smile Studios
+
+Converting pandemic-bankrupted storefronts and centrally located commercial real estate into intimate play spaces where healers of all disciplines teach their techniques to cohorts of students of holistic well-being. We could call them **Full Smile Studios**. The growing mental health crisis cannot be quelled by treating our symptomatically sick and malformed minds. Our minds begin as a bodily defense, processing our sensory experience and attempting to predict conditions in order to maintain homeostasis.
+
+### Moasis
+
+A fleet of mobile oases for the growing hordes of delivery drivers and mobile workers, filled with supplies and offering services drivers need most, sponsored as a benefit by the companies who hire them, stocked by the drivers themselves, and always popping up where the surges in deliveries occur. Codename: **Moasis**
+
+### Youlogy
+
+An AI-driven end-of-life storytelling platform that takes in your life's data (photos and videos, communications, writings, biometrics, locations, Quantified Self) and puts out a gorgeous, poignant, personal tribute to you for all to share.
+
+### Kindest Regardenings
+
+We can reclaim dilapidated buildings or forgotten urban space as vertical farms, hanging gardens, wildlife preserves, botanical parks, etc.
 
 The list goes on and on…
 

@@ -240,10 +240,10 @@
     }); // zoom this thumb
 
     thumb.classList.add('zoomed');
+    thumb.removeEventListener('click', zoomThumbs);
   }
 
   var useThumbs = function useThumbs() {
-    // TODO: do we need to remove these listeners under some conditions?
     var thumbs = document.querySelectorAll('.thumb');
 
     var _iterator = _createForOfIteratorHelper(thumbs),
