@@ -21,10 +21,10 @@ function zoomThumbs(e) {
 	})
 	// zoom this thumb
 	thumb.classList.add('zoomed')
+	thumb.removeEventListener('click', zoomThumbs)
 }
 
 const useThumbs = () => {
-	// TODO: do we need to remove these listeners under some conditions?
 	const thumbs = document.querySelectorAll('.thumb')
 	for (const thumb of thumbs) {
 		thumb.addEventListener('click', zoomThumbs)
