@@ -3280,3 +3280,8 @@ zwitch@^1.0.0:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/zwitch/-/zwitch-1.0.5.tgz#d11d7381ffed16b742f6af7b3f223d5cd9fe9920"
   integrity sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==
+
+zzfx@^1.1.8:
+  version "1.1.8"
+  resolved "https://registry.yarnpkg.com/zzfx/-/zzfx-1.1.8.tgz#54eda31d482d00b3ab45c636be588e57ef50ba0b"
+  integrity sha512-4HWCIuYV3ThQjgQScb6q8izG2S7lT+fdaWxQ2nYG0A/9+lBExsvP2f3gsoFoGnBEQItO/usoY/6RYkIx93JATg==
