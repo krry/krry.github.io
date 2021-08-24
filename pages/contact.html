@@ -2,25 +2,29 @@
 layout: page
 title: Contact
 headline: 'Get in Touch'
-permalink: '/contact/'
+permalink: /contact/
 nav: header
-order: 4
+order: 5
 bloob: purp33
 ---
 
 <h3>Want to chat?</h3>
 <div class="button-row">
 	<a href="/daily" class="btn holo">Step into my office</a>
+	<!-- Calendly link widget begin -->
+	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
 	<script
+		src="https://assets.calendly.com/assets/external/widget.js"
 		type="text/javascript"
-		src="https://x.ai/embed/xdotai-embed.js"
-		id="xdotaiEmbed"
-		data-page="/217/chat"
-		data-height
-		data-width
-		data-element
 		async
 	></script>
+	<a
+		href=""
+		class="btn lg"
+		onclick="Calendly.initPopupWidget({url: 'https://calendly.com/atmanaut'});return false;"
+		>Find time with me</a
+	>
+	<!-- Calendly link widget end -->
 </div>
-<p>or drop me a line</p>
+<p>or drop me a line…</p>
 {% include _contact.html %}
