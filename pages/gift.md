@@ -10,7 +10,7 @@ bloob: purp33
 
 This year, I have begun to transition my work into the realm of gift.
 
-This means that I no longer enter into contracts or make agreements of exchange, but rather I offer my talents and services freely as gifts to whom I choose, and just as openly accept and receive gifts from whomever wishes me and my family well. If you have a project that needs my magic touch, [please reach out](/contact).
+This means that I no longer enter into contracts or make agreements of exchange, but rather I offer my talents and services freely as gifts to whom I choose, and just as openly accept and receive gifts from whomever wishes me and my family well. If you have [a project](/projects-i-would-love-to-work-on/) that needs my magic touch, [please reach out](/contact).
 
 Working in the gift has already proven expansive and liberating. Giving is the easy part. Who doesn't want free work? But opening up to receiving and accepting feels more challenging.
 
@@ -26,7 +26,7 @@ If you have arrived here with some unsolved mysteries about what it means to liv
 
 My motives are those of an altruistic hedonist: it feels good and it feels right. I think this is a fantastic gauge for a gift as well.
 
-My secondary motive is less selfish: our economy, our ecology, our psyches, and our hearts are breaking all at once. I don't know how to stop this, or fix it, but the multi-faceted approach that Charles Eisenstein has laid out in _[Sacred Economics](https://charleseisenstein.org/books/sacred-economics/)_ and [_The More Beautiful World Our Hearts Know is Possible_](https://charleseisenstein.org/books/the-more-beautiful-world-our-hearts-know-is-possible/) encourages my intuition that only way out of the Upside Down is from the inside out. That is to say, if we want to enact lasting systemic reform and usher in an era of abundance and lovingkindness, we must each first face our fears and shed the beliefs that bind us to scarcity and violence. I cannot, in good conscience, support the practices of progress and profit that are tearing us apart.
+My secondary motive is less selfish and more [Atmanautical](/folio/?project=atmanaut): our economy, our ecology, our psyches, and our hearts are breaking all at once. I don't know how to stop this, or fix it, but the multi-faceted approach that Charles Eisenstein has laid out in _[Sacred Economics](https://charleseisenstein.org/books/sacred-economics/)_ and [_The More Beautiful World Our Hearts Know is Possible_](https://charleseisenstein.org/books/the-more-beautiful-world-our-hearts-know-is-possible/) encourages my intuition that only way out of the Upside Down is from the inside out. That is to say, if we want to enact lasting systemic reform and usher in an era of abundance and lovingkindness, we must each first face our fears and shed the beliefs that bind us to scarcity and violence. I cannot, in good conscience, support the practices of progress and profit that are tearing us apart.
 
 ### How does this impact your work?
 
