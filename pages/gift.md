@@ -48,7 +48,7 @@ At this point in ourstory (it's not just history anymore), working in the gift i
 
 Of course I am. That doubt is hard to dispel. But I am also aware that my work is invaluable when I pour my heart into it. In fact, what first led me toward this shift were so many futile attempts to quantify the value of my work.
 
-As a visionary and a creative working on the razor's edge of social good and information technology, I cannot predict the impact of my work, nor do I have anyone to price against. That's why I went into business, now [Easeness](https://easeness.biz) for myself in the first place: to fully embody the Fool that comes to me so naturally, to offer that unknown multiplier to those who are on the verge of a breakthrough, to perform a service only I can afford or manage to offer.
+As a visionary and a creative working on the razor's edge of social good and information technology, I cannot predict the impact of my work, nor do I have anyone to price against. That's why I went into business, now [Easeness](https://easeness.biz), for myself in the first place: to fully embody the Fool that comes to me so naturally, to offer that unknown multiplier to those who are on the verge of a breakthrough, to perform a service only I can afford or manage to offer.
 
 ## Magic coins make a wonderful gift
 
