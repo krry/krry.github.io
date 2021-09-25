@@ -66,11 +66,13 @@
 
 	.headline {
 		--font-weight: 833;
+		font-size: 2.5em;
 		margin-top: 1.5rem;
 		margin-bottom: 0.25em;
 		transition: all 0.25s ease-in-out;
 
 		@include media-min($pad) {
+			font-size: 3.052em;
 			margin: 2rem 0;
 		}
 	}
