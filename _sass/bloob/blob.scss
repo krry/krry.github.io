@@ -75,30 +75,43 @@
 		}
 	}
 
-	.flasher:hover {
-		color: $green-on;
-	}
-
-	.flasher {
+	.expose {
 		cursor: pointer;
 	}
 
-	.expose {
-		display: inline-block;
+	.expose:nth-of-type(2) {
+		color: $pink;
+		&:hover,
+		&:focus {
+			color: $pink-on;
+		}
+	}
+
+	.expose:first-of-type {
+		color: $green;
+		&:hover,
+		&:focus {
+			color: $green-on;
+		}
+	}
+
+	.expose:last-of-type {
+		color: $blue;
+		&:hover,
+		&:focus {
+			color: $link-on;
+		}
+	}
+
+	.insert {
+		// display: inline-block;
 		text-stroke-color: inherit;
 		text-stroke-width: 2px;
 		text-fill-color: transparent;
-		max-width: 100%;
+		// max-width: 100%;
 		// width: auto;
-		transform: scale(1);
-		transition: max-width 350ms, transform 250ms 150ms;
-	}
-
-	.expose.hidden {
-		max-width: 0;
-		display: none;
-		transform: scale(0);
-		transition: max-width 250ms 150ms, transform 350ms;
+		// transform: scale(1);
+		// transition: max-width 350ms, transform 250ms 150ms;
 	}
 
 	.bloob + h2 {

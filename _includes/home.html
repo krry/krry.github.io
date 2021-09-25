@@ -1,15 +1,41 @@
 <h1 id="flasher" class="headline flasher">
-	Dev<span class="expose hidden">eloping & de</span>signing
+	<span class="expose" data-filler="eloping & de">Dev<span class="insert"></span>signing</span>
 	<br />
-	com<span class="expose hidden">mmunities&nbsp;</span>passionate
+	<span class="expose" data-filler="mmunal, com" data-suffix=" about">
+		com<span class="insert"></span>passionate
+	</span>
 	<br />
-	<span class="expose hidden">about responsible</span> technology
+	<span class="expose" data-filler="ical harmon">technolog<span class="insert"></span>y</span>
 </h1>
 <script>
-	document.querySelector('#flasher').addEventListener('click', function () {
-		document.querySelectorAll('.expose').forEach(function (el) {
-			el.classList.toggle('hidden')
-		})
+	function printLetterByLetter(e) {
+		var i = 0
+		const el = e.target
+		const message = el.dataset.filler
+		const speed = el.dataset.speed ?? 50
+		var interval = setInterval(function () {
+			// looks for an empty span within this element
+			el.getElementsByClassName('insert')[0].innerHTML += message.charAt(i)
+			i++
+			if (i > message.length) {
+				clearInterval(interval)
+			}
+		}, speed)
+
+		el.removeEventListener('click', printLetterByLetter)
+		el.children[0].addEventListener('click', reloadTypewriter)
+	}
+
+	function reloadTypewriter(e) {
+		const el = e.target
+		console.log('reloadTypewriter', el)
+		el.innerHTML = ''
+		el.removeEventListener('click', reloadTypewriter)
+		el.parentElement.addEventListener('click', printLetterByLetter)
+	}
+
+	document.querySelectorAll('.expose').forEach(el => {
+		el.addEventListener('click', printLetterByLetter)
 	})
 </script>
 <h1 class="bloob purp50"></h1>
