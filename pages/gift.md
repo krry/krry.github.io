@@ -14,9 +14,10 @@ This means that I no longer enter into contracts or make agreements of exchange,
 
 Working in the gift has already proven expansive and liberating. Giving is the easy part. Who doesn't want free work? But opening up to receiving and accepting feels more challenging.
 
-## Gifts of money are always&nbsp;welcome
+## Gifts of coin are always&nbsp;welcome
 
 {% include venmo.html %}
+{% include wallet.html %}
 
 ## Gift FAQ
 
@@ -58,6 +59,4 @@ In fact, what first led me toward this shift were so many futile attempts to qua
 
 As a visionary creative working on the razor's edge of compassionate technology, I cannot predict the impact of my work, nor do I have anyone to against whom to price. That's why I went into [Easeness](https://easeness.biz) for myself in the first place: to fully embody the Fool that dances rapturously within me, everywhere offering division by zero to those on the verge of a breakthrough, performing a service only I can afford or manage to offer.
 
-## Magic coins make a wonderful&nbsp;gift
 
-{% include wallet.html %}
