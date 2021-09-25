@@ -74,6 +74,8 @@
 
 	.expose {
 		display: inline-block;
+		position: absolute;
+		bottom: 0;
 		text-stroke-color: $white;
 		text-stroke-width: 2px;
 		text-fill-color: transparent;

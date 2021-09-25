@@ -19,9 +19,11 @@ function zoomThumbs(e) {
 			closeThumb(e)
 		}
 	})
+	// wire the cycle buttons in the figcaption
+	wireThumbCycleButtons(thumb)
 	// zoom this thumb
 	thumb.classList.add('zoomed')
-	thumb.removeEventListener('click', zoomThumbs)
+	// thumb.removeEventListener('click', zoomThumbs)
 }
 
 const useThumbs = () => {
@@ -29,6 +31,32 @@ const useThumbs = () => {
 	for (const thumb of thumbs) {
 		thumb.addEventListener('click', zoomThumbs)
 	}
+}
+
+// when a thumb is zoomed, we wire up the event listeners on the buttons in the caption to cycle to the next/prev image in the gallery
+function wireThumbCycleButtons(thumb) {
+	const prevButton = thumb.querySelector('#prev_zoom')
+	const nextButton = thumb.querySelector('#next_zoom')
+	prevButton.addEventListener('click', e => {
+		e.preventDefault()
+		const prev = thumb.previousElementSibling
+		if (prev) {
+			prev.click()
+		} else {
+			thumb.closest('.gallery').querySelector('.thumb:last-child').click()
+		}
+	})
+	nextButton.addEventListener('click', e => {
+		e.preventDefault()
+		console.log('event', e)
+		const next = thumb.nextElementSibling
+		console.log('next', next)
+		if (next) {
+			next.click()
+		} else {
+			thumb.closest('.gallery').querySelector('.thumb:first-child').click()
+		}
+	})
 }
 
 export default useThumbs

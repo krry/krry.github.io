@@ -237,10 +237,11 @@
       if (e.keyCode === 27) {
         closeThumb(e);
       }
-    }); // zoom this thumb
+    }); // wire the cycle buttons in the figcaption
 
-    thumb.classList.add('zoomed');
-    thumb.removeEventListener('click', zoomThumbs);
+    wireThumbCycleButtons(thumb); // zoom this thumb
+
+    thumb.classList.add('zoomed'); // thumb.removeEventListener('click', zoomThumbs)
   }
 
   var useThumbs = function useThumbs() {
@@ -259,7 +260,35 @@
     } finally {
       _iterator.f();
     }
-  };
+  }; // when a thumb is zoomed, we wire up the event listeners on the buttons in the caption to cycle to the next/prev image in the gallery
+
+
+  function wireThumbCycleButtons(thumb) {
+    var prevButton = thumb.querySelector('#prev_zoom');
+    var nextButton = thumb.querySelector('#next_zoom');
+    prevButton.addEventListener('click', function (e) {
+      e.preventDefault();
+      var prev = thumb.previousElementSibling;
+
+      if (prev) {
+        prev.click();
+      } else {
+        thumb.closest('.gallery').querySelector('.thumb:last-child').click();
+      }
+    });
+    nextButton.addEventListener('click', function (e) {
+      e.preventDefault();
+      console.log('event', e);
+      var next = thumb.nextElementSibling;
+      console.log('next', next);
+
+      if (next) {
+        next.click();
+      } else {
+        thumb.closest('.gallery').querySelector('.thumb:first-child').click();
+      }
+    });
+  }
 
   // Run after the HTML document has finished loading
   var useLazyloads = function useLazyloads() {

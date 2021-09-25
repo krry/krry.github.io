@@ -202,8 +202,9 @@
 	}
 
 	figcaption {
-		background: $fore;
-		color: $bkgd;
+		color: $fore;
+		background-color: $bkgd;
+		border-radius: 0.5rem;
 		display: none;
 		font-size: 0.875em;
 		font-style: italic;
@@ -211,6 +212,14 @@
 		max-width: 60ch;
 		padding: 0.5em;
 		text-align: justify;
+	}
+
+	p {
+		flex: 1 0 auto;
+	}
+
+	button {
+		flex: 1;
 	}
 
 	&.zoomed {

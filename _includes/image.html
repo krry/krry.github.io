@@ -9,6 +9,23 @@
 		<img src="/assets/img/folio/full/{{ include.file }}" alt="{{ include.caption }}" />
 	</noscript>
 	<figcaption class="gallery-caption">
-		{{ include.caption }} ••• <a href="{{ include.link }}">more</a>
+		<button id="prev_zoom" class="cycle-button prev btn small holo">&larr;</button>
+		<p>{{ include.caption }} ••• <a href="{{ include.link }}">more</a></p>
+		<button id="next_zoom" class="cycle-button next btn small holo">&rarr;</button>
 	</figcaption>
 </figure>
+<style>
+	.gallery-caption {
+		position: relative;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.cycle-button {
+		width: 3rem;
+		height: 3rem;
+		padding: 0;
+		margin: 0;
+	}
+</style>
