@@ -1,18 +1,18 @@
-import babel from '@rollup/plugin-babel';
-import eslint from '@rbnlffl/rollup-plugin-eslint';
-import {nodeResolve} from '@rollup/plugin-node-resolve';
+import babel from '@rollup/plugin-babel'
+import eslint from '@rbnlffl/rollup-plugin-eslint'
+import {nodeResolve} from '@rollup/plugin-node-resolve'
 
 const config = {
-  input: 'src/index.js',
-  output: {
-    dir: 'assets/scripts',
-    format: 'iife'
-  },
-  plugins: [
-    babel({babelHelpers: 'bundled'}),
-    eslint({fix: true}),
-    nodeResolve()
-  ]
-};
+	input: 'src/index.js',
+	format: 'iife',
+	external: ['zzfx'],
+	output: {
+		dir: 'assets/scripts',
+		globals: {
+			zzfx: 'zzfx',
+		},
+	},
+	plugins: [babel({babelHelpers: 'bundled'}), eslint({fix: true}), nodeResolve()],
+}
 
-export default config;
+export default config

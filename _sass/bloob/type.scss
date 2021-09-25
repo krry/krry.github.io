@@ -49,24 +49,41 @@ h4 {
 h5 {
 	font-size: 1.25em;
 }
+h6 {
+	font-size: 1em;
+}
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
 	--font-weight: 777;
 	--font-casual: 0.8;
 	--font-mono: 0.2;
-	// --font-slant: -5;
 	margin-bottom: 0.75em;
 	margin-top: 1.5em;
+	line-height: 1.309;
+}
+
+h1 + h2 {
+	margin-top: -0.5em;
+}
+
+h2 + h3 {
+	margin-top: -0.5em;
+}
+
+h3 + h4 {
+	margin-top: -0.5em;
 }
 
 p {
 	--font-mono: 0;
-	--font-casual: 0.4;
+	--font-casual: 0.2;
 	--font-weight: 345;
+	--font-cursive: 0.5;
 	// hyphens: auto;
-	line-height: 1.618;
+	// line-height: 1.618;
 	margin: 1em auto;
 	overflow-wrap: break-word;
 }
@@ -98,6 +115,16 @@ hr {
 	color: $fore;
 	margin: 2em auto;
 	opacity: 0.5;
+}
+
+em,
+i {
+	--font-slant: -7;
+}
+
+strong,
+b {
+	--font-weight: 777;
 }
 
 .bloobies {

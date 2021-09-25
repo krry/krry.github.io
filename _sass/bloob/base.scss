@@ -1,7 +1,7 @@
 html {
 	box-sizing: border-box;
 	font-family: $font;
-	line-height: 1.618;
+	line-height: $line-height;
 	overflow-x: hidden;
 	scroll-behavior: smooth;
 }
@@ -29,6 +29,7 @@ html {
 	--font-slant: 0;
 	--font-casual: 0;
 	--font-mono: 0;
+	--font-cursive: 1;
 }
 
 * {
@@ -37,7 +38,8 @@ html {
 		'wght' var(--font-weight),
 		'slnt' var(--font-slant),
 		'CASL' var(--font-casual),
-		'MONO' var(--font-mono);
+		'MONO' var(--font-mono),
+		'CRSV' var(--font-cursive);
 }
 
 *,

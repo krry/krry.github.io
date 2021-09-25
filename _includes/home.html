@@ -1,7 +1,17 @@
-<h1 class="headline">
-	<span class="flasher">Advisor & Dev<span class="expose">eloper/De</span>signer</span> for
-	Innovators & Entrepreneurs
+<h1 id="flasher" class="headline flasher">
+	Dev<span class="expose hidden">eloping & de</span>signing
+	<br />
+	com<span class="expose hidden">mmunities&nbsp;</span>passionate
+	<br />
+	<span class="expose hidden">about responsible</span> technology
 </h1>
+<script>
+	document.querySelector('#flasher').addEventListener('click', function () {
+		document.querySelectorAll('.expose').forEach(function (el) {
+			el.classList.toggle('hidden')
+		})
+	})
+</script>
 <h1 class="bloob purp50"></h1>
 <h2>Here about business…</h2>
 <div class="button-row">

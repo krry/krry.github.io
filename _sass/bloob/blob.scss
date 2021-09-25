@@ -44,14 +44,16 @@
 
 	ul,
 	li,
-	p {
-		max-width: 60ch;
+	p,
+	h5 {
+		width: 60ch;
+		--font-weight: 375;
 	}
 
 	p,
 	li,
-	.post p {
-		--font-weight: 375;
+	.post p,
+	h5 {
 		text-align: left;
 	}
 }
@@ -66,26 +68,37 @@
 		--font-weight: 833;
 		margin-top: 1.5rem;
 		margin-bottom: 0.25em;
+		transition: all 0.25s ease-in-out;
 
 		@include media-min($pad) {
 			margin: 2rem 0;
 		}
 	}
 
-	.expose {
-		display: inline-block;
-		text-stroke-color: $white;
-		text-stroke-width: 2px;
-		text-fill-color: transparent;
-		max-width: 0;
-		transform: scale(0);
-		transition: max-width 250ms 150ms, transform 350ms;
+	.flasher:hover {
+		color: $green-on;
 	}
 
-	.flasher:hover .expose {
+	.flasher {
+		cursor: pointer;
+	}
+
+	.expose {
+		display: inline-block;
+		text-stroke-color: inherit;
+		text-stroke-width: 2px;
+		text-fill-color: transparent;
 		max-width: 100%;
+		// width: auto;
 		transform: scale(1);
 		transition: max-width 350ms, transform 250ms 150ms;
+	}
+
+	.expose.hidden {
+		max-width: 0;
+		display: none;
+		transform: scale(0);
+		transition: max-width 250ms 150ms, transform 350ms;
 	}
 
 	.bloob + h2 {
