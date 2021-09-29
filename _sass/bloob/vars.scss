@@ -9,9 +9,9 @@ $purp-on: hsl(262, 80%, 70%);
 $purp-old: hsl(262, 70%, 50%);
 $purp-new: hsl(262, 85%, 60%);
 $blue: hsl(196, 80%, 43%);
-$link-on: hsl(196, 80%, 70%);
-$link-old: hsl(196, 70%, 50%);
-$link-new: hsl(196, 85%, 60%);
+$blue-on: hsl(196, 80%, 70%);
+$blue-old: hsl(196, 70%, 50%);
+$blue-new: hsl(196, 85%, 60%);
 $pink: hsl(302, 80%, 43%);
 $pink-on: hsl(302, 80%, 70%);
 $pink-old: hsl(302, 70%, 50%);
@@ -28,6 +28,10 @@ $muted: hsla(196, 10%, 50%, 0.5);
 $shader: hsla(262, 43%, 10%, 0.9);
 $shade: hsla(262, 43%, 10%, 0.7);
 $shady: hsla(262, 43%, 10%, 0.3);
+$link: $blue;
+$link-on: $blue-on;
+$link-old: $blue-old;
+$link-new: $blue-new;
 
 // then relative variables, define defaults for each
 

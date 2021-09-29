@@ -8,9 +8,9 @@
 	color: $white;
 	cursor: pointer;
 	display: inline-block;
-	--font-casual: 0.5;
+	--font-mono: 1;
+	--font-casual: 0;
 	--font-weight: 666;
-	--font-mono: 0;
 	margin: 0.5em;
 	outline: none;
 	padding: 0.618em 1.618em;
@@ -22,6 +22,11 @@
 	&.pink {
 		background: $pink-new;
 		border-color: $pink-new;
+	}
+
+	&.green {
+		background: $green-new;
+		border-color: $green-new;
 	}
 
 	&.blue {
@@ -37,9 +42,13 @@
 			background: $pink-on;
 		}
 
+		&.green {
+			background: $green-on;
+		}
+
 		&.blue {
-			background: $pink-on;
-			border-color: $pink-new;
+			background: $blue-on;
+			border-color: $blue-new;
 		}
 	}
 
@@ -49,6 +58,10 @@
 
 		&.pink {
 			background: $green-new;
+		}
+
+		&.green {
+			background: $blue-new;
 		}
 	}
 
