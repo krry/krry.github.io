@@ -1,5 +1,3 @@
-import { zzfx } from 'zzfx';
-
 function _typeof(obj) {
   "@babel/helpers - typeof";
 
@@ -339,7 +337,6 @@ var useWaves = function useWaves() {
 };
 
 /* eslint-disable no-sparse-arrays */
-
 var useDrawer = function useDrawer() {
   var knob = document.getElementById('knob');
   var dresser = document.getElementById('dresser'); // let cello = document.getElementById("cello");

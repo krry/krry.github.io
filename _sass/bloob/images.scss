@@ -138,17 +138,17 @@ svg:not(:root) {
 }
 
 .img-row figure {
-	width: 50%;
+	margin: 1rem 1rem 0;
+	width: calc(50% - 2rem);
 	text-align: center;
-	margin-top: 1rem;
 }
 
 .img-row .paypal a {
-	padding: 0.5rem 0;
+	// padding: 0.5rem 0;
 }
 
 .img-row figure h3 {
-	margin: 0 !important;
+	margin: 0 auto !important;
 }
 
 .img-row img {
@@ -163,4 +163,13 @@ svg:not(:root) {
 	width: 75%;
 	font-size: 75%;
 	margin: auto;
+}
+
+.pay-link {
+	display: block;
+}
+
+.pay-link h3 {
+	color: $fore;
+	text-decoration: none;
 }

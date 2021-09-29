@@ -8,7 +8,7 @@
 /*********************************************
  * Elevator.js
  *********************************************/
-import {zzfx} from 'zzfx'
+// import {zzfx} from 'zzfx'
 function Elevator(options) {
 	'use strict'
 

@@ -1,6 +1,4 @@
 /* eslint-disable no-sparse-arrays */
-import {zzfx} from 'zzfx'
-
 const useDrawer = () => {
 	let knob = document.getElementById('knob')
 	let dresser = document.getElementById('dresser')
