@@ -3,9 +3,7 @@ layout: default
 ---
 
 <section id="{{ page.title | downcase }}" class="blob {{ page.title | downcase }}">
-  {%- if page.headline -%}
-  <h1 class="bloob {{page.bloob}}">{{ page.headline }}</h1>
-  {%- endif -%}
-
-  {{ content }}
+	{%- if page.headline -%}
+	<h1 class="bloob {{page.bloob}}">{{ page.headline }}</h1>
+	{%- endif -%} {{ content }}
 </section>

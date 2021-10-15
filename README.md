@@ -35,3 +35,9 @@ bundle exec jekyll serve --livereload --incremental --host 0.0.0.0
 ```
 
 Eat and be food, yall.
+
+## TODO
+
+- [ ] let folio pieces be viewed twice
+- [ ] let guests cycle through folio pieces with keyboard or mouse
+- [ ]

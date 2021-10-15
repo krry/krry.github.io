@@ -1,16 +1,15 @@
 import babel from '@rollup/plugin-babel'
 import eslint from '@rbnlffl/rollup-plugin-eslint'
 import {nodeResolve} from '@rollup/plugin-node-resolve'
-import {zzfx} from 'zzfx'
 
 const config = {
 	input: 'src/index.js',
 	format: 'iife',
-	external: ['zzfx'],
+	external: ['zzfx'], // added to DOM in scripts.html
 	output: {
 		dir: 'assets/scripts',
 		globals: {
-			zzfx: zzfx,
+			/* zzfx: ZzFX,*/
 		},
 	},
 	plugins: [babel({babelHelpers: 'bundled'}), eslint({fix: true}), nodeResolve()],

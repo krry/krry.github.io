@@ -12,5 +12,29 @@
 		"thumb",
 		"use",
 		"vercel"
-	]
+	],
+	"workbench.colorTheme": "Shades of Purple",
+	"workbench.colorCustomizations": {
+		"activityBar.activeBackground": "#7a39ea",
+		"activityBar.activeBorder": "#562609",
+		"activityBar.background": "#7a39ea",
+		"activityBar.foreground": "#e7e7e7",
+		"activityBar.inactiveForeground": "#e7e7e799",
+		"activityBarBadge.background": "#562609",
+		"activityBarBadge.foreground": "#e7e7e7",
+		"editorGroup.border": "#7a39ea",
+		"panel.border": "#7a39ea",
+		"sash.hoverBorder": "#7a39ea",
+		"sideBar.border": "#7a39ea",
+		"statusBar.background": "#5e17d9",
+		"statusBar.foreground": "#e7e7e7",
+		"statusBarItem.hoverBackground": "#7a39ea",
+		"statusBarItem.remoteBackground": "#5e17d9",
+		"statusBarItem.remoteForeground": "#e7e7e7",
+		"titleBar.activeBackground": "#5e17d9",
+		"titleBar.activeForeground": "#e7e7e7",
+		"titleBar.inactiveBackground": "#5e17d999",
+		"titleBar.inactiveForeground": "#e7e7e799"
+	},
+	"peacock.color": "hsl(262, 81%, 47%);"
 }
