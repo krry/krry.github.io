@@ -25,6 +25,43 @@
         'floating-chat.donateButton.text-color': '#fff'
       });
     </script>
-  </body>
+    <script>
+      const printOpts = {once: true, capture: true}
 
+      function printLetterByLetter(e) {
+        const el = e.target
+        if (!el) return false
+        let i = 0
+        const message = el.dataset.filler
+        const speed = el.dataset.speed ?? 50
+        const insert = el.children[0]
+        var interval = setInterval(function () {
+          // looks for an empty span within this element
+          if (!insert) return
+          insert.innerHTML += message.charAt(i)
+          i++
+          if (i >= message.length) {
+            clearInterval(interval)
+          }
+        }, speed)
+
+        el.removeEventListener('click', printLetterByLetter, printOpts)
+        insert?.addEventListener('click', reloadTypewriter, printOpts)
+      }
+
+      function reloadTypewriter(e) {
+        const el = e.target
+        if (!el) return false
+        console.log('reloadTypewriter', el)
+        el.innerHTML = ''
+        el.removeEventListener('click', reloadTypewriter, printOpts)
+        el.parentNode?.addEventListener('click', printLetterByLetter, printOpts)
+      }
+
+      document.querySelectorAll('.expose').forEach(el => {
+        if (!el) return false
+        el.addEventListener('click', printLetterByLetter)
+      })
+    </script>
+  </body>
 </html>

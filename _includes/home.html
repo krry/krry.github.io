@@ -1,4 +1,4 @@
-<h1 id="flasher" class="headline flasher">
+<h1 class="headline">
 	<span class="expose" data-filler="eloping & de">Dev<span class="insert"></span>signing</span>
 	<br />
 	<span class="expose" data-filler="mmunal, com" data-suffix=" about">
@@ -7,37 +7,6 @@
 	<br />
 	<span class="expose" data-filler="ical harmon">technolog<span class="insert"></span>y</span>
 </h1>
-<script>
-	function printLetterByLetter(e) {
-		var i = 0
-		const el = e.target
-		const message = el.dataset.filler
-		const speed = el.dataset.speed ?? 50
-		var interval = setInterval(function () {
-			// looks for an empty span within this element
-			el.getElementsByClassName('insert')[0].innerHTML += message.charAt(i)
-			i++
-			if (i > message.length) {
-				clearInterval(interval)
-			}
-		}, speed)
-
-		el.removeEventListener('click', printLetterByLetter)
-		el.children[0].addEventListener('click', reloadTypewriter)
-	}
-
-	function reloadTypewriter(e) {
-		const el = e.target
-		console.log('reloadTypewriter', el)
-		el.innerHTML = ''
-		el.removeEventListener('click', reloadTypewriter)
-		el.parentElement.addEventListener('click', printLetterByLetter)
-	}
-
-	document.querySelectorAll('.expose').forEach(el => {
-		el.addEventListener('click', printLetterByLetter)
-	})
-</script>
 <h1 class="bloob purp50"></h1>
 <h2>Here about business…</h2>
 <div class="button-row">
@@ -52,16 +21,3 @@
 	<a class="btn holo lg" href="https://easeness.biz">Easeness 🍃</a>
 	<a class="btn holo lg" href="https://kerrbear.wtf">Commonplace ✨</a>
 </div>
-<!-- <script>
-	window.productHuntUpcoming = {
-		appId: 127099,
-		position: 'bottomLeft',
-	}
-	;(function (doc, scr, src, a, b) {
-		a = doc.createElement(scr)
-		b = doc.getElementsByTagName(scr)[0]
-		a.async = true
-		a.src = src
-		b.parentNode.insertBefore(a, b)
-	})(document, 'script', 'https://assets.producthunt.com/assets/upwigloader.js')
-</script> -->

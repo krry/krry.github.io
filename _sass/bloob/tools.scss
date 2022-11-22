@@ -92,6 +92,10 @@
 		color: $black;
 	}
 
+	&.logo-svelte {
+		background-image: url('/assets/img/tools/logo-svelte.svg');
+	}
+
 	&.logo-figma {
 		background-image: url('/assets/img/tools/logo-figma.svg');
 	}

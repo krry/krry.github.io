@@ -5,6 +5,7 @@
 		"darkmode",
 		"easeness",
 		"easenesses",
+		"fltr",
 		"krryon",
 		"lazyloads",
 		"leadgen",
@@ -22,10 +23,7 @@
 		"activityBar.inactiveForeground": "#e7e7e799",
 		"activityBarBadge.background": "#562609",
 		"activityBarBadge.foreground": "#e7e7e7",
-		"editorGroup.border": "#7a39ea",
-		"panel.border": "#7a39ea",
 		"sash.hoverBorder": "#7a39ea",
-		"sideBar.border": "#7a39ea",
 		"statusBar.background": "#5e17d9",
 		"statusBar.foreground": "#e7e7e7",
 		"statusBarItem.hoverBackground": "#7a39ea",
@@ -34,7 +32,14 @@
 		"titleBar.activeBackground": "#5e17d9",
 		"titleBar.activeForeground": "#e7e7e7",
 		"titleBar.inactiveBackground": "#5e17d999",
-		"titleBar.inactiveForeground": "#e7e7e799"
+		"titleBar.inactiveForeground": "#e7e7e799",
+		"statusBar.border": "#5e17d9",
+		"statusBar.debuggingBackground": "#92d917",
+		"statusBar.debuggingBorder": "#92d917",
+		"statusBar.debuggingForeground": "#15202b",
+		"tab.activeBorder": "#7a39ea",
+		"titleBar.border": "#5e17d9",
+		"commandCenter.border": "#e7e7e799"
 	},
 	"peacock.color": "hsl(262, 81%, 47%);"
 }
